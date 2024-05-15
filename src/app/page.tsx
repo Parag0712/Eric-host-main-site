@@ -16,7 +16,7 @@ const page = (props: Props) => {
             <div className='flex flex-col gap-3 items-center lg:items-start lg:text-left '>
               {/* Heading */}
               <div className='flex flex-col gap-4 md:gap-5'>
-                <div className='font-[500] text-[16px] leading-[16px] md:leading-[25px] md:text-[20px] xl:text-[25px] font-poppins text-center'>Elevate Your Business with Our Cutting-Edge</div>
+                <div className='font-[500] text-[16px] leading-[16px] md:leading-[25px] md:text-[20px] xl:text-[25px] font-poppins text-center lg:text-left'>Elevate Your Business with Our Cutting-Edge</div>
                 <div className='font-[600] ml-[-1px] font-poppins  leading-[30px] md:leading-[55px] md:text-left text-[25px] md:text-[45px] lg:text-[50px]'>Business Hosting Solutions!</div>
               </div>
               {/* List of Feature */}
@@ -62,7 +62,7 @@ const page = (props: Props) => {
               width={100}
               layout='responsive'
               alt='HeroImage'
-              className='max-h-[400px]'
+              className='max-h-[400px] lg:max-h-[100%]'
             />
           </div>
         </div>
