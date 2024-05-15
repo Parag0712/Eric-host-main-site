@@ -59,7 +59,7 @@ export const Navbar = () => {
             <div className="relative group  ">
                 <button
                     className={cn(buttonVariants({ variant: "ghost", className: "text-[16px]  text-left flex  justify-between" }), "w-[100%] text-left")}
-                    onClick={()=>{handleClick(link)}}
+                    onClick={() => { handleClick(link) }}
                 >
                     {link.text}
                     <svg
@@ -89,7 +89,7 @@ export const Navbar = () => {
                                 <li key={subLink.title} className="w-[100%]">
                                     <Link
                                         href={subLink.href}
-                                        className={cn(buttonVariants({ variant: "ghost",className:"text-left items-start" }), "text-[15px] w-[100%]")}
+                                        className={cn(buttonVariants({ variant: "ghost", className: "text-left items-start" }), "text-[15px] w-[100%]")}
                                         onClick={(e) => {
                                             setIsOpen(false);
                                         }}
