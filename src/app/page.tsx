@@ -55,7 +55,7 @@ const page = (props: Props) => {
             </div>
           </div>
           {/* Right Side */}
-          <div className='right w-full order-2 lg:order-2 lg:block lg:w-[50%] mb-16 md:mb-0 '>
+          <div className='right w-full order-2 hidden lg:order-2 lg:block lg:w-[50%] mb-16 md:mb-0 '>
             <Image
               src={HeroImage}
               height={100}
