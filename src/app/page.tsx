@@ -12,7 +12,7 @@ const page = (props: Props) => {
       {/* Hero Seciton */}
       <Container className=''>
         <div className='flex px-3 md:px-0 py-[2rem] md:py-[4rem] items-center justify-between flex-col md:gap-7 lg:flex-row'>
-          <div className='left w-full lg:w-[50%] order-2 lg:order-1 text-ericheading '>
+          <div className='left w-full lg:w-[50%] order-1 lg:order-1 text-ericheading '>
             <div className='flex flex-col gap-3 items-center lg:items-start lg:text-left '>
               {/* Heading */}
               <div className='flex flex-col gap-4 md:gap-5'>
@@ -55,7 +55,7 @@ const page = (props: Props) => {
             </div>
           </div>
           {/* Right Side */}
-          <div className='right w-full order-1 lg:order-2 lg:block lg:w-[50%] mb-16 md:mb-0 '>
+          <div className='right w-full order-2 lg:order-2 lg:block lg:w-[50%] mb-16 md:mb-0 '>
             <Image
               src={HeroImage}
               height={100}
