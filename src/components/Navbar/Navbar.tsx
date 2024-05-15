@@ -33,10 +33,8 @@ export const Navbar = () => {
         (link: any) => {
             if (isVisible === link.text) {
                 setIsVisible(null); // Close the menu if it's already open
-                setIsOpen(false);
             } else {
                 setIsVisible(link.text); // Open the clicked menu
-                setIsOpen(true);
             }
         },
         [isVisible, setIsOpen]
@@ -61,7 +59,7 @@ export const Navbar = () => {
             <div className="relative group  ">
                 <button
                     className={cn(buttonVariants({ variant: "ghost", className: "text-[16px]  text-left flex  justify-between" }), "w-[100%] text-left")}
-                    onClick={() => setIsVisible(link.text)}
+                    onClick={()=>{handleClick(link)}}
                 >
                     {link.text}
                     <svg
@@ -81,7 +79,7 @@ export const Navbar = () => {
                 </button>
                 {link.options && (
                     <div
-                        className={`text-center min-w-[220px] transition-all duration-300 ${isMenuOpen
+                        className={` min-w-[220px] transition-all duration-300 ${isMenuOpen
                             ? "h-auto opacity-100 pointer-events: auto"
                             : "h-0 overflow-hidden opacity-0 pointer-events: none"
                             }`}
@@ -91,7 +89,7 @@ export const Navbar = () => {
                                 <li key={subLink.title} className="w-[100%]">
                                     <Link
                                         href={subLink.href}
-                                        className={cn(buttonVariants({ variant: "ghost" }), "text-[15px] w-[100%]")}
+                                        className={cn(buttonVariants({ variant: "ghost",className:"text-left items-start" }), "text-[15px] w-[100%]")}
                                         onClick={(e) => {
                                             setIsOpen(false);
                                         }}
