@@ -132,13 +132,12 @@ export const Navbar = () => {
                                 </Menu>
                             </SheetTrigger>
 
-                            <SheetContent side={"left"} className="w-full flex flex-col items-stretch justify-between">
+                            <SheetContent side={"left"} className="flex flex-col items-stretch justify-between">
                                 <div>
-
                                     <SheetHeader>
                                         <SheetTitle className="font-bold text-xl">
-                                            <Link href="/" className="flex items-center mb-5">
-                                                <Image src={logo} className="lg:h-auto h-7" alt="eric-host" />
+                                            <Link href="/" className="flex mb-5">
+                                                <Image src={logo} className=" h-7" alt="eric-host" />
                                             </Link  >
                                         </SheetTitle>
                                     </SheetHeader>

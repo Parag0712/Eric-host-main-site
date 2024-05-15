@@ -72,9 +72,10 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
-      box-sizing: border-box
+      box-sizing: border-box;
       /* font-family: "poppins" */
-
+      font-family: "Poppins", sans-serif;
+      
     }
     body {
       @apply bg-background text-foreground;
