@@ -48,7 +48,7 @@ const page = (props: Props) => {
                 <div className='text-[15px] leading-[20px] md:text-[20px]'>+3 Months Free</div>
               </div>
               {/* Button */}
-              <div className='flex gap-6 mt-4 flex-col w-full sm:w-[70%] md:flex-row '>
+              <div className='flex gap-5 sm:gap-6 mt-4 flex-col  w-[70%] sm:flex-row '>
                 <Button className='bg-primary w-full text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4'>Explore Plans</Button>
                 <Button className='text-primary w-full border-2 border-primary text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4' variant={"outline"}>02:30:17:20</Button>
               </div>
