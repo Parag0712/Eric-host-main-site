@@ -1,0 +1,103 @@
+{
+    "navbar": [
+        {
+            "href": "/",
+            "text": "Home",
+            "options": []
+        },
+        {
+            "href": "/",
+            "text": "Hosting",
+            "options": [
+                {
+                    "title": "Shared Hosting",
+                    "href": "/",
+                    "description": "Shared Hosting Starting at ₹ 39/-"
+                },
+                {
+                    "title": "Business Hosting",
+                    "href": "/",
+                    "description": "Business Hosting Starting at ₹ 139/-"
+                },
+                {
+                    "title": "Unlimited Hosting",
+                    "href": "/",
+                    "description": "Unlimited Hosting Starting at ₹ 329/mo"
+                },
+                {
+                    "title": "Mini Hosting",
+                    "href": "/",
+                    "description": "Mini Hosting Starting at ₹ 29/-"
+                },
+                {
+                    "title": "Indian Cloud Hosting",
+                    "href": "/",
+                    "description": "Indian Cloud Hosting Starting at ₹ 69/-"
+                },
+                {
+                    "title": "Reseller Hosting",
+                    "href": "/",
+                    "description": "Reseller Hosting Starting at ₹ 799/-"
+                }
+            ]
+        },
+        {
+            "href": "/",
+            "text": "Domain",
+            "options": [
+                {
+                    "title": "Domain Registration",
+                    "href": "/",
+                    "description": "Register Your Domain Name"
+                },
+                {
+                    "title": "Domain Transfer",
+                    "href": "/",
+                    "description": "Transfer Your Domain Easily"
+                },
+                {
+                    "title": "Domain Checker",
+                    "href": "/",
+                    "description": "Find the Your Perfect Domain Name"
+                }
+            ]
+        },
+        {
+            "href": "/",
+            "text": "Server",
+            "options": [
+                {
+                    "title": "VPS Server",
+                    "href": "/",
+                    "description": "Get full control of your server"
+                },
+                {
+                    "title": "Managed VPS Server",
+                    "href": "/",
+                    "description": "Managed VPS Server"
+                }
+            ]
+        },
+        {
+            "href": "/",
+            "text": "Blog",
+            "options": []
+        },
+        {
+            "href": "/",
+            "text": "Support",
+            "options": [
+                {
+                    "title": "Contact Us",
+                    "href": "/",
+                    "description": "Face any problem contact us"
+                },
+                {
+                    "title": "About Us Server",
+                    "href": "/",
+                    "description": "We are leading hosting company"
+                }
+            ]
+        }
+    ]
+}
