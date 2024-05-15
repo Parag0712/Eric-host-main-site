@@ -14,6 +14,7 @@ import {
 import { cn } from "@/lib/utils"
 import Image from "next/image"
 import domainimage from '../../../public/HomePage/feature_new-1.svg'
+import { ServerImage } from "@/assests/config"
 
 const Hosting: { title: string; href: string; description: string }[] = [
     { "title": "Shared Hosting", "href": "/", "description": "Shared Hosting Starting at ₹ 39/-" },
@@ -33,11 +34,13 @@ const Domain: { title: string; href: string; description: string }[] = [
 const Server: { title: string; href: string; description: string }[] = [
     { "title": "VPS Server", "href": "/", "description": "Get full control of your server" },
     { "title": "Managed VPS Server", "href": "/", "description": "Managed VPS Server" },
+    { "title": "View VPS Server", "href": "/", "description": "VPS Server" },
 ];
 
 const Support: { title: string; href: string; description: string }[] = [
     { "title": "Contact Us", "href": "/", "description": "Face any problem contact us" },
     { "title": "About Us Server", "href": "/", "description": "We are leading hosting company" },
+    { "title": "Support", "href": "/",  "description": "We provide exceptional customer support 24/7" },
 ];
 
 export function NavigationLink() {
@@ -56,7 +59,7 @@ export function NavigationLink() {
                 <NavigationMenuItem className="">
                     <NavigationMenuTrigger className="text-[16px]">Hosting</NavigationMenuTrigger>
                     <NavigationMenuContent className="w-full absolute ">
-                        <ul className="grid w-[400px] p-4 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[1000px] ">
+                        <ul className="grid w-[400px] p-8 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[920px] ">
                             {Hosting.map((component) => (
                                 <ListItem
                                     key={component.title}
@@ -122,8 +125,8 @@ export function NavigationLink() {
                                         <div className="relative w-full h-full">
                                             <Image
                                                 src={domainimage}
+                                                alt="Server"
                                                 layout="fill"
-                                                alt="Domain"
                                                 className="object-contain"
                                             />
                                         </div>
@@ -204,7 +207,7 @@ const ListItem = React.forwardRef<
                 <a
                     ref={ref}
                     className={cn(
-                        "h-full flex flex-col gap-2 justify-center select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                        "h-full flex flex-col gap-2 mb-2 justify-center select-none space-y-2 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                         className
                     )}
                     {...props}

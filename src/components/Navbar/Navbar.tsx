@@ -105,7 +105,6 @@ export const Navbar = () => {
         );
     };
 
-
     return (
         <header className="sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background py-2">
             <NavigationMenu className="mx-auto">
