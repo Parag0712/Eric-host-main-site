@@ -17,6 +17,9 @@ const config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      poppins: ['Poppins', 'sans-serif'],
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -24,9 +27,9 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+        primary: { DEFAULT: "#4246C9",
+        foreground: "#ffffff",
+        hover: "#2c3195", // Cust
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -52,6 +55,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        ericheading:{
+          DEFAULT: "#061C3D",
+          foreground: "#061C3D",
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

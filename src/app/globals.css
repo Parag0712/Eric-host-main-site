@@ -75,9 +75,22 @@
       box-sizing: border-box;
       /* font-family: "poppins" */
       font-family: "Poppins", sans-serif;
-      
     }
     body {
       @apply bg-background text-foreground;
     }
+
+    .bg-primary-color{
+      background-color: #4246C9;
+    }
+    .bg-secondary-color{
+      background-color:#F0F5FF;
+    }
+    .text-primary-color{
+      color: #4246C9;
+    }
+    .text-secondary-color{
+      color:#F0F5FF;
+    }
+
   }
