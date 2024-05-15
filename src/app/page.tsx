@@ -17,7 +17,7 @@ const page = (props: Props) => {
               {/* Heading */}
               <div className='flex flex-col gap-4 md:gap-5'>
                 <div className='font-[500] text-[16px] leading-[16px] md:leading-[25px] md:text-[20px] xl:text-[25px] font-poppins text-center lg:text-left'>Elevate Your Business with Our Cutting-Edge</div>
-                <div className='font-[600] ml-[-1px] font-poppins  leading-[30px] md:leading-[55px] md:text-left text-[25px] md:text-[45px] lg:text-[50px]'>Business Hosting Solutions!</div>
+                <div className='font-[600] ml-[-1px] font-poppins text-center leading-[30px] md:leading-[55px] md:text-left text-[25px] md:text-[45px] lg:text-[50px]'>Business Hosting Solutions!</div>
               </div>
               {/* List of Feature */}
               <div className=' mt-2'>
@@ -49,8 +49,8 @@ const page = (props: Props) => {
               </div>
               {/* Button */}
               <div className='flex gap-6 mt-4 flex-col w-full sm:w-[70%] md:flex-row '>
-                <Button className='bg-primary w-full text-[14px] md:text-[16px] font-semibold py-6 px-4'>Explore Plans</Button>
-                <Button className='text-primary w-full border-2 border-primary text-[14px] md:text-[16px] font-semibold py-6 px-4' variant={"outline"}>02:30:17:20</Button>
+                <Button className='bg-primary w-full text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4'>Explore Plans</Button>
+                <Button className='text-primary w-full border-2 border-primary text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4' variant={"outline"}>02:30:17:20</Button>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ const page = (props: Props) => {
               width={100}
               layout='responsive'
               alt='HeroImage'
-              className='max-h-[400px] lg:max-h-[100%]'
+              className='max-h-[350px] sm:max-h-[400px] lg:max-h-[100%]'
             />
           </div>
         </div>
