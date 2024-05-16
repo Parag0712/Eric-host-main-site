@@ -1,3 +1,4 @@
+"use client"
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,6 +12,7 @@ import {
 import { Check } from "lucide-react";
 import PricingCard from "./PricingCard";
 import data from '../../data/HomePage/pricing.json'
+import { useState } from "react";
 
 enum PopularPlanType {
     NO = 0,
@@ -75,6 +77,8 @@ const pricingList: PricingProps[] = [
 ];
 
 export const Pricing = () => {
+    const [isAnnual, setIsAnnual] = useState(true);
+
     return (
         <section
             id="pricing"
@@ -88,15 +92,21 @@ export const Pricing = () => {
                 </span>
                 Access
             </h2>
-            <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                reiciendis.
-            </h3>
+            <div className="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16 mt-8">
+                <div className="relative flex w-full p-1 bg-white dark:bg-slate-900 rounded-full">
+                    <span className="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
+                        <span className={`absolute inset-0 w-1/2 bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out ${isAnnual ? 'translate-x-0' : 'translate-x-full'}`}></span>
+                    </span>
+                    <button className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${isAnnual ? 'text-white' : 'text-slate-500 dark:text-slate-400'}`} onClick={() => setIsAnnual(true)} aria-pressed={isAnnual}>Monthly </button>
+                    <button className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${isAnnual ? 'text-slate-500 dark:text-slate-400' : 'text-white'}`} onClick={() => setIsAnnual(false)} aria-pressed={!isAnnual}>Yearly </button>
+                </div>
+            </div>
             <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 ">
-                {pricingList.map((pricing: PricingProps,index) => (
-                    <PricingCard 
+                {pricingList.map((pricing: PricingProps, index) => (
+                    <PricingCard
                         pricing={pricing}
                         plan={data.plans[index]}
+                        isAnnual ={!isAnnual}
                     />
 
                 ))}

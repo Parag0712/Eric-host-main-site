@@ -6,9 +6,9 @@ import { Check } from 'lucide-react'
 
 type Props = {}
 
-const PricingCard = ({ pricing, plan }: any) => {
+const PricingCard = ({ pricing, plan,isAnnual }: any) => {
     const currency = "₹"
-    const year = false;
+    const year = isAnnual;
     const PlanPrice = year ? plan.monthly : plan.annually;
     enum PopularPlanType {
         NO = 0,
@@ -73,7 +73,7 @@ const PricingCard = ({ pricing, plan }: any) => {
                 <Button className="w-full my-6">Support</Button>
 
                 <div className="space-y-4">
-                    {plan.security.map((benefit: any,index) => (
+                    {plan.security.map((benefit: any,index:any) => (
                         <span
                             key={index}
                             className="flex"
