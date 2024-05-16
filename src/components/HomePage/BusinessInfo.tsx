@@ -8,9 +8,8 @@ const BusinessInfo = (props: Props) => {
     return (
         <Container
             id="pricing"
-            className=" pb-24 sm:pb-[7rem] lg:py-[6rem] flex flex-col gap-6 md:gap-7"
+            className=" pb-24 sm:pb-[7rem] lg:mb-16 lg:py-[6rem] flex flex-col gap-6 md:gap-7 lg:gap-9"
         >
-
             <h2 className=" text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem] font-bold  text-center">
                 Business
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">

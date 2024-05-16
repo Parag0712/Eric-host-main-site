@@ -9,9 +9,8 @@ const Testimonials = (props: Props) => {
         <section
             className="w-full bg-[#4346C2] "
         >
-
             <div className="h-[20rem] sm:h-[25rem] rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-          <InfiniteMovingCards
+                <InfiniteMovingCards
                     items={testimonials.testimonials}
                     direction="right"
                     speed="slow"

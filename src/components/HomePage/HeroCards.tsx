@@ -21,7 +21,7 @@ import Image from "next/image";
 
 export const HeroCards = () => {
     return (
-        <Container className="lg:max-w-full  px-0  hidden lg:flex flex-row flex-wrap gap-8 relative  w-[400px] lg:w-[600px] xl:w-[700px] h-[500px]">
+        <Container className="px-1 lg:max-w-full xl:max-w-full  px-0  hidden lg:flex flex-row flex-wrap gap-8 relative  w-[400px] lg:w-[600px] xl:w-[700px] h-[500px]">
             <Image 
                 src={heroimg}
                 alt=""
@@ -47,11 +47,7 @@ export const HeroCards = () => {
             {/* Team */}
             <Card className="hidden absolute xl:right-[20px] xl:top-4 w-80 xl:flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="mt-8 flex justify-center items-center pb-2">
-                    {/* <img
-                        src="/logo.svg"
-                        alt="user avatar"
-                        className="absolute grayscale-[0%] -top-12 rounded-full w-24 bg-primary  h-24 aspect-square object-contain"
-                    /> */}
+               
                     <div
                         className="absolute grayscale-[0%] -top-12 rounded-full w-20 bg-slate-50 flex items-center justify-center border-2  fill-primary h-20 p-4 aspect-square object-contain"
                     >
