@@ -1,15 +1,8 @@
-import React from 'react'
-import Container from '@/components/General/Container'
-import Image from 'next/image'
-import { Button } from '@/components/ui/button'
-import { HeroImage, RaingImage } from '@/assests/config'
-import { FaCheckCircle } from "react-icons/fa"
-import HeroSection from '@/components/HomePage/HeroSection'
-import { Pricing } from '@/components/HomePage/Pricing'
-import Card from '@/components/Card'
+import BusinessInfo from '@/components/HomePage/BusinessInfo'
 import { ChooseThePlans } from '@/components/HomePage/ChooseThePlans'
 import { Hero } from '@/components/HomePage/Hero'
-import BusinessInfo from '@/components/HomePage/BusinessInfo'
+import { Pricing } from '@/components/HomePage/Pricing'
+import Testimonials from '@/components/HomePage/Testimonials'
 type Props = {}
 
 const page = (props: Props) => {
@@ -19,6 +12,8 @@ const page = (props: Props) => {
       <Pricing />
       <ChooseThePlans />
       <BusinessInfo />
+      <Testimonials />
+      
     </section>
   )
 }
