@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { HeroImage, RaingImage } from '@/assests/config'
 import { FaCheckCircle } from "react-icons/fa"
 import HeroSection from '@/components/HomePage/HeroSection'
+import { Pricing } from '@/components/HomePage/Pricing'
 type Props = {}
 
 const page = (props: Props) => {
@@ -12,6 +13,7 @@ const page = (props: Props) => {
     <section>
       {/* Hero Seciton */}
       <HeroSection />
+      <Pricing />
     </section>
   )
 }
