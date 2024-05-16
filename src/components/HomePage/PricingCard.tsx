@@ -20,8 +20,8 @@ const PricingCard = ({ pricing, plan, isAnnual }: any) => {
             key={plan.title}
             className={
                 plan.popular === PopularPlanType.YES
-                    ? "drop-shadow-xl shadow-black/10 capitalize dark:shadow-white/10 border-[1px] transition-all duration-150  hover:shadow-xl  hover:border-primary  lg:scale-[1.03]"
-                    : "border-[1px] transition-all duration-150 capitalize hover:shadow-xl  hover:border-primary "
+                    ? "drop-shadow-xl shadow-black/10 capitalize dark:shadow-white/10 border-[1px] transition-all duration-150  hover:shadow-xl  hover:scale-[1.04]  lg:scale-[1.03]"
+                    : "border-[1px] transition-all duration-150 capitalize hover:shadow-xl  hover:scale-[1.01] "
             }
         >
             <CardHeader>

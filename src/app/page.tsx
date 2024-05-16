@@ -7,6 +7,7 @@ import { FaCheckCircle } from "react-icons/fa"
 import HeroSection from '@/components/HomePage/HeroSection'
 import { Pricing } from '@/components/HomePage/Pricing'
 import Card from '@/components/Card'
+import { ChooseThePlans } from '@/components/HomePage/ChooseThePlans'
 type Props = {}
 
 const page = (props: Props) => {
@@ -15,6 +16,7 @@ const page = (props: Props) => {
       {/* Hero Seciton */}
       <HeroSection />
       <Pricing />
+      <ChooseThePlans />
     </section>
   )
 }
