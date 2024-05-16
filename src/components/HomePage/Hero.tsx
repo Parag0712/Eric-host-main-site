@@ -3,12 +3,14 @@ import { Button } from "../ui/button";
 import { buttonVariants } from "../ui/button";
 import { HeroCards } from "./HeroCards";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
+import { HeroImage, HeroImage1, RaingImage, RaingImage2 } from "@/assests/config";
 
 export const Hero = () => {
     return (
-        <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
-            <div className="text-center lg:text-start space-y-5">
-                <main className="text-4xl sm:text-5xl md:text-6xl font-bold">
+        <section className="container grid lg:grid-cols-2 place-items-center  xl:gap-y-44 py-20 md:py-32 lg:py-24 xl:py-32  gap-10">
+            <div className="text-center lg:text-start space-y-5 col-span-2 lg:col-auto">
+                <main className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold">
                     <h1 className="inline">
                         <span className="inline bg-gradient-to-r from-primary  to-[#4346C2] text-transparent bg-clip-text">
                             Busines
@@ -72,8 +74,34 @@ export const Hero = () => {
                 <HeroCards />
             </div>
 
+            <div className='w-full  hidden  col-span-2  sm:block'>
+                <Image
+                    src={RaingImage}
+                    layout='responsive'
+                    alt='Rating Image '
+                    className="w-full object-cover"
+                />
+            </div>
+            <div className='right w-full  col-span-2 mx-auto lg:order-2 max-w-[80%] lg:hidden'>
+                    <Image
+                        src={HeroImage}
+                        layout='responsive'
+                        alt='HeroImage'
+                        className='h-auto mx-auto sm:max-h-[400px] object-contain lg:max-h-[100%]'
+                    />
+                </div>
+            <div className='w-full max-w-[80%]  col-span-2 sm:max-w-[70%] m-auto sm:hidden'>
+                <Image
+                    src={RaingImage2}
+                    height={100}
+                    width={200}
+                    layout='responsive'
+                    alt='Rating Image'
+                />
+            </div>
+
             {/* Shadow effect */}
-            <div className="shadow"></div>
+            <div className="shadow hidden"></div>
         </section>
     );
 };
