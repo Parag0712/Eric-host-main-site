@@ -6,6 +6,7 @@ import { HeroImage, RaingImage } from '@/assests/config'
 import { FaCheckCircle } from "react-icons/fa"
 import HeroSection from '@/components/HomePage/HeroSection'
 import { Pricing } from '@/components/HomePage/Pricing'
+import Card from '@/components/Card'
 type Props = {}
 
 const page = (props: Props) => {

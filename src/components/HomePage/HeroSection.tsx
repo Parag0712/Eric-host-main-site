@@ -52,7 +52,7 @@ const HeroSection = (props: Props) => {
                         {/* Button */}
                         <div className='flex gap-5 sm:gap-6 mt-4 flex-col  w-[70%] sm:flex-row '>
                             <Button className='bg-primary w-full text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4'>Explore Plans</Button>
-                            <Button className='text-primary w-full border-2 border-primary text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4' variant={"outline"}>02:30:17:20</Button>
+                            <Button className='text-primary w-full border-2 border-primary text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4 hover:text-primary' variant={"outline"}>02:30:17:20</Button>
                         </div>
                     </div>
                 </div>

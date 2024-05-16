@@ -3,10 +3,10 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from '../ui/button'
 import { Badge } from '../ui/badge'
 import { Check } from 'lucide-react'
-
+import Link from 'next/link'
 type Props = {}
 
-const PricingCard = ({ pricing, plan,isAnnual }: any) => {
+const PricingCard = ({ pricing, plan, isAnnual }: any) => {
     const currency = "₹"
     const year = isAnnual;
     const PlanPrice = year ? plan.monthly : plan.annually;
@@ -44,6 +44,12 @@ const PricingCard = ({ pricing, plan,isAnnual }: any) => {
                 <CardDescription>{plan.description}</CardDescription>
             </CardHeader>
 
+            <CardContent>
+                <Button className={`w-full text-[16px] font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
+            </CardContent>
+
+            <hr className="w-4/5 m-auto mb-4" />
+
             <CardFooter className="flex flex-col justify-start items-start w-full">
 
                 <div className="space-y-4">
@@ -57,9 +63,9 @@ const PricingCard = ({ pricing, plan,isAnnual }: any) => {
                         </span>
                     ))}
                 </div>
-                <Button className="w-full my-6">Security</Button>
+                <Button className="w-full my-6 py-5">Security</Button>
 
-                <div className="space-y-4">
+                <div className="space-y-4 ">
                     {plan.security.map((benefit: any) => (
                         <span
                             key={benefit}
@@ -70,10 +76,11 @@ const PricingCard = ({ pricing, plan,isAnnual }: any) => {
                         </span>
                     ))}
                 </div>
-                <Button className="w-full my-6">Support</Button>
+                <Button className="w-full my-6 py-5">Support</Button>
+
 
                 <div className="space-y-4">
-                    {plan.security.map((benefit: any,index:any) => (
+                    {plan.security.map((benefit: any, index: any) => (
                         <span
                             key={index}
                             className="flex"
@@ -83,10 +90,11 @@ const PricingCard = ({ pricing, plan,isAnnual }: any) => {
                         </span>
                     ))}
                 </div>
-                <Button className="w-full my-6">Resources</Button>
+                <Button
+                    className="w-full my-6 py-5">Resources</Button>
 
                 <div className="space-y-4">
-                    {plan.resources.map((benefit: any,index:any) => (
+                    {plan.resources.map((benefit: any, index: any) => (
                         <span
                             key={index}
                             className="flex"
@@ -95,8 +103,8 @@ const PricingCard = ({ pricing, plan,isAnnual }: any) => {
                             <h3 className="ml-2">{benefit.description}</h3>
                         </span>
                     ))}
+
                 </div>
-                
             </CardFooter>
 
         </Card>
