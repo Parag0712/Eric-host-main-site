@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -27,9 +27,10 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: { DEFAULT: "#4246C9",
-        foreground: "#ffffff",
-        hover: "#2c3195", // Cust
+        primary: {
+          DEFAULT: "#4246C9",
+          foreground: "#ffffff",
+          hover: "#2c3195", // Cust
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -55,7 +56,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        ericheading:{
+        ericheading: {
           DEFAULT: "#061C3D",
           foreground: "#061C3D",
         }
@@ -74,10 +75,19 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "background-shine": {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "background-shine": "background-shine 2s linear infinite",
       },
     },
   },
