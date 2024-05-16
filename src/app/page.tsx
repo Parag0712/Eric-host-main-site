@@ -9,16 +9,16 @@ import { Pricing } from '@/components/HomePage/Pricing'
 import Card from '@/components/Card'
 import { ChooseThePlans } from '@/components/HomePage/ChooseThePlans'
 import { Hero } from '@/components/HomePage/Hero'
+import BusinessInfo from '@/components/HomePage/BusinessInfo'
 type Props = {}
 
 const page = (props: Props) => {
   return (
     <section>
-      {/* Hero Seciton */}
-      {/* <HeroSection /> */}
       <Hero />
       <Pricing />
       <ChooseThePlans />
+      <BusinessInfo />
     </section>
   )
 }

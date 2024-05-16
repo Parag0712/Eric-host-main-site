@@ -85,7 +85,6 @@ export const Pricing = () => {
             className="container pb-24 sm:pb-32"
         >   
             <h2 className=" text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem] font-bold  text-center">
-            {/* <h2 className="text-3xl md:text-4xl font-bold text-center"> */}
                 Choose the plans that’s
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                     {" "}

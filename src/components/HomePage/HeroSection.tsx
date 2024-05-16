@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { HeroImage, RaingImage, RaingImage2 } from '@/assests/config'
 import { FaCheckCircle } from "react-icons/fa"
-import { HeroCards } from './HeroCards'
 type Props = {}
 
 const HeroSection = (props: Props) => {
@@ -57,23 +56,14 @@ const HeroSection = (props: Props) => {
                 </div>
                 {/* Right Side */}
                 <div className='right w-full order-2  lg:order-2 lg:block lg:w-[53%] xl:w-[50%] mt-12 md:mt-0 '>
-                    {/* <Image
+                    <Image
                         src={HeroImage}
                         height={100}
                         width={100}
                         layout='responsive'
                         alt='HeroImage'
                         className='h-auto sm:max-h-[400px] object-contain lg:max-h-[100%]'
-                    /> */}
-
-                  
-            {/* Hero cards sections */}
-            <div className="z-10">
-                <HeroCards />
-            </div>
-
-            {/* Shadow effect */}
-            <div className="shadow"></div>  
+                    />
                 </div>
             </div>
             <div className='w-full mt-7 hidden md:block'>
@@ -86,7 +76,7 @@ const HeroSection = (props: Props) => {
                 />
             </div>
 
-            {/* <div className='w-full mt-7 max-w-[80%] sm:max-w-[70%] m-auto md:hidden'>
+            <div className='w-full mt-7 max-w-[80%] sm:max-w-[70%] m-auto md:hidden'>
                 <Image
                     src={RaingImage2}
                     height={100}
@@ -94,7 +84,7 @@ const HeroSection = (props: Props) => {
                     layout='responsive'
                     alt='Rating Image'
                 />
-            </div> */}
+            </div>
         </Container>
         
         </>

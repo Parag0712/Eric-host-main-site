@@ -49,10 +49,10 @@ export const ChooseThePlans = () => {
     return (
         <section
             id="howItWorks"
-            className="container text-center pb-24 sm:pb-[7rem]"
+            className="container text-center pb-24 sm:pb-[7rem] lg:sm:py-[7rem]"
         >
             <h2 className=" text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem]  font-bold  ">
-                We Provide You
+                We Provide You<br />
                 <span className="pb-2 bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                 {" "}  World Class{" "}
                 </span> <br /> Best Hosting Features For You
@@ -65,7 +65,10 @@ export const ChooseThePlans = () => {
                 {features.map(({ icon, title, description }: FeatureProps) => (
                     <Card
                         key={title}
-                        className="bg-muted/50 py-[2.5rem] justify-center flex flex-col gap-3"
+                        className="bg-muted/50 py-[2.5rem] justify-center flex flex-col gap-3
+                        
+                        border-[1px] transition-all duration-150 capitalize hover:shadow-xl  hover:scale-[1.01]
+                        "
                     >
                         <CardHeader className="py-0 ">
                             <CardTitle className="pb-0 text-[20px] grid gap-4  place-items-center">
