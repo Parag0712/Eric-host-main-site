@@ -30,11 +30,11 @@ export const FAQ = () => {
                         value={value}
                         className=" my-4 border-[#C7C7C7] border-[1px] rounded-lg  "
                     >
-                        <AccordionTrigger className="text-left text-[#061C3D] text-[16px] px-4 hover:no-underline  font-poppins" >
+                        <AccordionTrigger className="text-left text-[#061C3D] text-[14px] sm:text-[16px] px-4 hover:no-underline  font-poppins" >
                             {question}
                         </AccordionTrigger>
 
-                        <AccordionContent  className="font-poppins text-[#061C3D] text-[16px] px-5">{answer}</AccordionContent>
+                        <AccordionContent  className="font-poppins text-[#061C3D] text-[14px] sm:text-[16px] px-5">{answer}</AccordionContent>
                     </AccordionItem>
                 ))}
             </Accordion>

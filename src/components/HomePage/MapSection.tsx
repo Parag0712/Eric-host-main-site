@@ -20,7 +20,8 @@ const MapSection = (props: Props) => {
                         {" "}
                     </span>
                 </h2>
-                <p className="text-center md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
+                <p className="text-sm sm:text-xl text-muted-foreground mt-2  mx-auto lg:mx-0 text-center">
+                    
                     Our web hosting, WordPress hosting, and cloud hosting plans offer server locations in: Canada, United Kingdom, France, India, and Singapore.</p>
             </div>
             <div className="text-center flex flex-col gap-5  md:gap-7">

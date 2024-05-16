@@ -29,7 +29,7 @@ export const Hero = () => {
                     Elevate Your Business with Our Cutting-Edge
                 </p>
                 <div className=''>
-                    <ul className='text-md sm:text-xl text-ericheading md:w-10/12 mx-auto lg:mx-0'>
+                    <ul className='text-md font-[400] sm:text-lg text-ericheading md:w-10/12 mx-auto lg:mx-0'>
                         <li className='flex gap-2 items-center justify-center lg:justify-normal'>
                             <FaCheckCircle className='text-green-600' />
                             <p>Premium Servers</p>
@@ -52,15 +52,17 @@ export const Hero = () => {
                     <div className='text-[15px] md:text-[20px] mt-[-10px]'>
                         <span className='text-[30px] md:text-[40px] font-bold'>₹2.99</span>/month
                     </div>
-                    <div className='text-[15px] leading-[20px] md:text-[19px]'>+3 Months Free</div>
+                    <div className='text-md leading-[20px] sm:text-lg'>+3 Months Free</div>
                 </div>
-                <div className="space-y-4 md:space-y-0 md:space-x-4">
-                    <Button className="w-full py-2 md:w-1/3">Explore Plans</Button>
+
+
+                <div className="space-y-4 md:space-y-0 sm:space-x-4">
+                    <Button className="w-9/12  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">Explore Plans</Button>
                     <a
                         rel="noreferrer noopener"
                         href="https://github.com/leoMirandaa/shadcn-landing-page.git"
                         target="_blank"
-                        className={`w-full md:w-1/3 ${buttonVariants({
+                        className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4 ${buttonVariants({
                             variant: "outline",
                         })}`}
                     >
@@ -83,13 +85,13 @@ export const Hero = () => {
                 />
             </div>
             <div className='right w-full  col-span-2 mx-auto lg:order-2 max-w-[80%] lg:hidden'>
-                    <Image
-                        src={HeroImage}
-                        layout='responsive'
-                        alt='HeroImage'
-                        className='h-auto mx-auto sm:max-h-[400px] object-contain lg:max-h-[100%]'
-                    />
-                </div>
+                <Image
+                    src={HeroImage}
+                    layout='responsive'
+                    alt='HeroImage'
+                    className='h-auto mx-auto sm:max-h-[400px] object-contain lg:max-h-[100%]'
+                />
+            </div>
             <div className='w-full max-w-[80%]  col-span-2 sm:max-w-[70%] m-auto sm:hidden'>
                 <Image
                     src={RaingImage2}
