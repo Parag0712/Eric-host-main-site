@@ -8,3 +8,5 @@ export { default as HeroImage } from '../../public/HomePage/heroimg3.png';
 
 export { default as ServerImage } from '../../public/HomePage/Server_bro.svg';
 
+export { default as Logo2 } from '../../public/HomePage/logo2.png';
+

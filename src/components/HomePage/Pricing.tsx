@@ -82,9 +82,8 @@ export const Pricing = () => {
     return (
         <section
             id="pricing"
-            className="container py-24 sm:py-32"
-        >
-            
+            className="container pb-24 sm:pb-32"
+        >   
             <h2 className=" text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem] font-bold  text-center">
             {/* <h2 className="text-3xl md:text-4xl font-bold text-center"> */}
                 Choose the plans that’s
