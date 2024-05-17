@@ -38,7 +38,7 @@ const BusinessInfo = (props: Props) => {
             </div>
             <div className='flex justify-center mt-2'>
                 
-            <Button className="w-full my-6 py-6 text-[17px] max-w-[400px] mx-auto">Explore All Plans</Button>
+            <Button className="w-full my-6 py-6 text-[17px] max-w-[300px] mx-auto rounded-[4px] ">Explore All Plans</Button>
             </div>
         </Container>
     )

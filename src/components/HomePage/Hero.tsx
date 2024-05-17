@@ -57,12 +57,12 @@ export const Hero = () => {
 
 
                 <div className="space-y-4 md:space-y-0 sm:space-x-4">
-                    <Button className="w-9/12  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">Explore Plans</Button>
+                    <Button className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">Explore Plans</Button>
                     <a
                         rel="noreferrer noopener"
                         href="https://github.com/leoMirandaa/shadcn-landing-page.git"
                         target="_blank"
-                        className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4 ${buttonVariants({
+                        className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-[4px]  py-5 sm:py-6 px-4 ${buttonVariants({
                             variant: "outline",
                         })}`}
                     >

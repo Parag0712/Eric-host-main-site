@@ -22,7 +22,7 @@ import link from '../../data/Navbar/link.json'
 export const HeroCards = () => {
     return (
         <Container className=" lg:max-w-full xl:max-w-full  px-0  hidden lg:flex flex-row flex-wrap gap-8 relative  w-[400px] lg:w-[600px] xl:w-[700px] h-[500px]">
-            <Image 
+            <Image
                 src={heroimg}
                 alt=""
                 layout="responsive"
@@ -39,7 +39,7 @@ export const HeroCards = () => {
                 </CardHeader>
 
                 <CardContent>
-                Erichost: superb support, easy navigation, fast servers, unbeatable pricing.
+                    Erichost: superb support, easy navigation, fast servers, unbeatable pricing.
                 </CardContent>
             </Card>
 
@@ -47,7 +47,7 @@ export const HeroCards = () => {
             {/* Team */}
             <Card className="hidden absolute xl:right-[20px] xl:top-4 w-80 xl:flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="mt-8 flex justify-center items-center pb-2">
-               
+
                     <div
                         className="absolute grayscale-[0%] -top-12 rounded-full w-20 bg-slate-50 flex items-center justify-center border-2  fill-primary h-20 p-4 aspect-square object-contain"
                     >
@@ -76,7 +76,7 @@ export const HeroCards = () => {
                                 size: "sm",
                             })}
                         >
-                            <span className="sr-only">Github icon</span>
+                            <span className="sr-only">FaceBookIcon</span>
                             <FaFacebook className="w-5 h-5" />
                         </a>
                         <a
@@ -214,7 +214,7 @@ export const HeroCards = () => {
                 </CardHeader>
 
                 <CardContent>
-                    <Button className="w-full">Buy Now</Button>
+                    <Button className="w-full rounded-[4px] ">Buy Now</Button>
                 </CardContent>
 
                 <hr className="w-4/5 m-auto mb-4" />
