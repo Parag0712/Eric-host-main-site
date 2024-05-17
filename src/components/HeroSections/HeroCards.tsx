@@ -1,25 +1,36 @@
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
-import { Badge } from "../ui/badge";
+"use client"
+import { heroimg } from "@/assests/config";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
     Card,
     CardContent,
     CardDescription,
+    CardFooter,
     CardHeader,
     CardTitle,
-    CardFooter,
 } from "@/components/ui/card";
-import { Check, Linkedin } from "lucide-react";
 import { } from "@radix-ui/react-icons";
-import { CloudIcon, LightBulbIcon } from "./Logo";
-import Logo from '../../../public/logo.svg'
-import { FaFacebook } from "react-icons/fa";
-import Container from "../General/Container";
-import { heroimg } from "@/assests/config";
+import { Check, Linkedin, Router } from "lucide-react";
 import Image from "next/image";
-import link from '../../data/Navbar/link.json'
+import { FaFacebook } from "react-icons/fa";
+import link from '../../data/Navbar/link.json';
+import Container from "../Conatianers/Container";
+import { Badge } from "../ui/badge";
+import { CloudIcon, LightBulbIcon } from "../Cta-logo/Logo";
+import { useRouter } from "next/navigation";
 
-export const HeroCards = () => {
+type PricingData = {
+    name: string;
+    popular?: boolean;
+    price: string;
+    href:string;
+    description: string;
+    buttonText: string;
+    features: string[];
+};
+export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
+    
+    const router = useRouter();
     return (
         <Container className=" lg:max-w-full xl:max-w-full  px-0  hidden lg:flex flex-row flex-wrap gap-8 relative  w-[400px] lg:w-[600px] xl:w-[700px] h-[500px]">
             <Image
@@ -193,49 +204,40 @@ export const HeroCards = () => {
             </Card>
 
             {/* Pricing */}
-            <Card className="hidden xl:block absolute top-[160px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+            <Card className="hidden xl:block absolute top-[160px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader>
                     <CardTitle className="flex item-center justify-between">
-                        Bronze
-                        <Badge
-                            variant="secondary"
-                            className="text-sm text-primary"
-                        >
-                            Most popular
-                        </Badge>
+                        {pricingData.name}
+                        {pricingData.popular && (
+                            <Badge variant="secondary" className="text-sm text-primary">
+                                Most popular
+                            </Badge>
+                        )}
                     </CardTitle>
                     <div>
-                        <span className="text-3xl font-bold">₹399</span>
+                        <span className="text-3xl font-bold">{pricingData.price}</span>
                         <span className="text-muted-foreground"> /month</span>
                     </div>
 
-                    <CardDescription>Enhanced Capabilities For Growing Businesses
-                    </CardDescription>
+                    <CardDescription>{pricingData.description}</CardDescription>
                 </CardHeader>
 
                 <CardContent>
-                    <Button className="w-full rounded-[4px] ">Buy Now</Button>
+                    <Button onClick={()=>router.push(pricingData.href)}  className="w-full rounded-[4px] ">{pricingData.buttonText}</Button>
                 </CardContent>
 
                 <hr className="w-4/5 m-auto mb-4" />
 
                 <CardFooter className="flex">
                     <div className="space-y-4">
-                        {["100 Websites", "100 Gb Disk Space", "Free Ssl Certificate", "50 Sub-Domains"].map(
-                            (benefit: string) => (
-                                <span
-                                    key={benefit}
-                                    className="flex"
-                                >
-                                    <Check className="text-green-500" />{" "}
-                                    <h3 className="ml-2">{benefit}</h3>
-                                </span>
-                            )
-                        )}
+                        {pricingData.features.map((feature) => (
+                            <span key={feature} className="flex">
+                                <Check className="text-green-500" /> <h3 className="ml-2">{feature}</h3>
+                            </span>
+                        ))}
                     </div>
                 </CardFooter>
             </Card>
-
             {/* Service */}
             <Card className="hidden xl:block absolute w-[350px] -right-[10px] bottom-[45px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">

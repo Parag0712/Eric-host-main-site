@@ -1,12 +1,10 @@
-import React from 'react'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card'
-import { Button } from '../ui/button'
-import { Badge } from '../ui/badge'
 import { Check } from 'lucide-react'
-import Link from 'next/link'
-type Props = {}
+import { Badge } from '../ui/badge'
+import { Button } from '../ui/button'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card'
+import { useRouter } from 'next/navigation'
 
-const PricingCard = ({ pricing, plan, isAnnual }: any) => {
+const PricingCard = ({ plan, isAnnual }: any) => {
     const currency = "₹"
     const year = isAnnual;
     const PlanPrice = year ? plan.monthly : plan.annually;
@@ -14,7 +12,7 @@ const PricingCard = ({ pricing, plan, isAnnual }: any) => {
         NO = 0,
         YES = 1,
     }
-
+    const router = useRouter();
     return (
         <Card
             key={plan.title}
@@ -45,7 +43,9 @@ const PricingCard = ({ pricing, plan, isAnnual }: any) => {
             </CardHeader>
 
             <CardContent>
-                <Button className={`rounded-[4px]  w-full text-[16px] font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
+                <Button
+                    onClick={() => router.push(plan.href)}
+                    className={`rounded-[4px]  w-full text-[16px] font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />

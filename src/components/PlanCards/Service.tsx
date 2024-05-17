@@ -32,20 +32,20 @@ export const Services: FC<ServicesProps> = ({
         <section className="container py-16 sm:py-24">
             <div className={`grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center ${textwhite ? "text-white" : ""}`} >
                 <div className={`order-2 ${reversecard? "":"lg:order-1"}`}>
-                    <p className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text text-lg mb-2 ${textwhite ? "text-white" : ""}`}>
+                    <p className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text  md:text-lg mb-2 ${textwhite ? "text-white" : ""}`}>
                         {subtitle}
                     </p>
-                    <h2 className={`text-3xl text-black md:text-4xl font-bold mb-3 ${textwhite ? "text-white" : ""}`}>
+                    <h2 className={`text-2xl  text-black md:text-4xl font-bold mb-3 ${textwhite ? "text-white" : ""}`}>
                         {title}
                     </h2>
                     <div className="flex flex-col gap-8 mt-2">
-                        <p className="text-md mt-2">
+                        <p className="text-sm md:text-md mt-2">
                             {description}
                         </p>
                     </div>
                     <div>
                         <Button
-                            onClick={()=>router.push("/")}
+                            onClick={()=>router.push(buttonLink)}
                         className="rounded-[4px] w-[200px] mt-5 md:mt-6 text-[14px] md:text-[16px] font-semibold mx-auto py-4 md:py-5 px-4 text-white bg-green-500 hover:bg-green-600">
                             {buttonText}
                         </Button>

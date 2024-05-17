@@ -4,27 +4,31 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import faq from '../../data/HomePage/faq.json'
+import SmallHeading from "../Heading/SmallHeading";
 
-export const FAQ = () => {
+export const FAQ = ({ faq }: any) => {
     return (
         <section
             id="faq"
-            className="container py-20  md:pb-32 "
+            className="container py-20   "
         >
-            <h2 className="text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem] font-bold  text-center">
-                Frequently Asked{" "}
-                <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                    Questions
-                </span>
-            </h2>
+            <SmallHeading
+                headingContent={
+                    <>
+                        Frequently Asked{" "}
+                        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+                            Questions
+                        </span>
+                    </>
+                }
+            />
 
             <Accordion
                 type="single"
                 collapsible
                 className="w-full mt-10"
             >
-                {faq.faq.map(({ question, answer, value }: any, idx) => (
+                {faq.faq.map(({ question, answer, value }: any, idx: any) => (
                     <AccordionItem
                         key={idx}
                         value={value}
@@ -34,7 +38,7 @@ export const FAQ = () => {
                             {question}
                         </AccordionTrigger>
 
-                        <AccordionContent  className="font-poppins text-[#061C3D] text-[14px] sm:text-[16px] px-5">{answer}</AccordionContent>
+                        <AccordionContent className="font-poppins text-[#061C3D] text-[14px] sm:text-[16px] px-5">{answer}</AccordionContent>
                     </AccordionItem>
                 ))}
             </Accordion>

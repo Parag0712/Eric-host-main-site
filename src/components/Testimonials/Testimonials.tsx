@@ -1,4 +1,4 @@
-import Container from '../General/Container'
+import Container from '../Conatianers/Container'
 import { InfiniteMovingCards } from '../ui/infinite-moving-cards'
 import testimonials from "../../data/HomePage/testimonials.json";
 

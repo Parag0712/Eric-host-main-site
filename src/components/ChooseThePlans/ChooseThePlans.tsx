@@ -1,6 +1,7 @@
 "use client"
 import { Card, CardContent, CardHeader, CardTitle, } from "../ui/card";
-import { CloudIcon, LightingIcon, LockIcon, SecureIcon, ServerIcon, WordPressIcon } from "./Logo";
+import { CloudIcon, LightingIcon, LockIcon, SecureIcon, ServerIcon, ThumIcon, WordPressIcon } from "../Cta-logo/Logo";
+import Heading from "../Heading/Heading";
 
 interface FeatureProps {
     icon: JSX.Element;
@@ -43,6 +44,24 @@ const features: FeatureProps[] = [
         description:
             "WordPress Included in Every cPanel. WP is free in every cPanel. WordPress is a softaculous application and all the softaculous applications are installed in few clicks.",
     },
+    {
+        icon: <ServerIcon />,
+        title: "FREE Migration",
+        description:
+            "A dedicated server, is a type of Internet hosting in which the client leases an entire server not shared with anyone else.",
+    },
+    {
+        icon: <SecureIcon />,
+        title: "Unmatched Security Measures",
+        description:
+            "Security is not an afterthought; it’s our top priority. We employ state-of-the-art security protocols, including firewalls, regular malware scans, and SSL certificates, to safeguard your website and customer data.",
+    },
+    {
+        icon: <ThumIcon />,
+        title: "Reliability at Its Best",
+        description:
+            "We pride ourselves on providing rock-solid reliability. With a 99.9% uptime guarantee, you can trust us to keep your website up and running, ensuring your visitors never face downtime.",
+    },
 ];
 
 export const ChooseThePlans = () => {
@@ -51,15 +70,17 @@ export const ChooseThePlans = () => {
             id="howItWorks"
             className="container text-center pb-24 sm:pb-[7rem] lg:sm:py-[7rem]"
         >
-            <h2 className=" text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem]  font-bold  ">
-                We Provide You<br />
-                <span className="pb-2 bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                {" "}  World Class{" "}
-                </span> <br /> Best Hosting Features For You
-            </h2>
-            <p className="md:w-3/4 mx-auto mt-4 mb-8 text-xl text-muted-foreground">
-                EricHost provides 99%+ uptime with top-notch speed at the affordable price.
-            </p>
+            <Heading
+                headingContent={
+                    <>
+                        We Provide You<br />
+                        <span className="pb-2 bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+                            {" "}  World Class{" "}
+                        </span> <br /> Best Hosting Features For You
+                    </>
+                }
+                description="EricHost provides 99%+ uptime with top-notch speed at the affordable price."
+            />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:mt-10">
                 {features.map(({ icon, title, description }: FeatureProps) => (

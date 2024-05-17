@@ -1,4 +1,4 @@
-import { LogoIcon } from "../HomePage/Logo";
+import { LogoIcon } from "../Cta-logo/Logo";
 import navData from '../../data/Navbar/data.json'
 import { Facebook, Linkedin, Mail, Phone, Twitter, Youtube } from "lucide-react";
 import { Logo } from "@/assests/config";

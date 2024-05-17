@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Container from '@/components/General/Container'
+import Container from '@/components/Conatianers/Container'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { HeroImage, RaingImage, RaingImage2 } from '@/assests/config'

@@ -1,4 +1,4 @@
-import { Button } from "../../components/ui/button";
+import { Button } from "../ui/button";
 
 export const Cta = () => {
   return (
@@ -8,7 +8,7 @@ export const Cta = () => {
     >
       <div className="container flex flex-col md:flex-row gap-4 justify-between items-center">
         <div className="lg:col-start-1">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold ">
+          <h2 className="text-2xl md:text-3xl text-center lg:text-4xl font-bold ">
            Get
             <span className="bg-gradient-to-b from-black/60 to-black text-transparent bg-clip-text">
               {" "}
