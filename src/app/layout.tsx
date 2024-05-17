@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Footer } from "@/components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,12 +26,15 @@ export default function RootLayout({
       <body className={cn("scroll-smooth font-poppins ", inter.className, {
         "debug-screens": process.env.NODE_ENV === "development",
       })}>
-        <div>
+        <header>
           <Navbar />
-        </div>
+        </header>
         <main>
           {children}
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils"
 import Image from "next/image"
 import domainimage from '../../../public/HomePage/feature_new-1.svg'
 import { ServerImage } from "@/assests/config"
+import navData from "../../data/Navbar/data.json";
 
 const Hosting: { title: string; href: string; description: string }[] = [
     { "title": "Shared Hosting", "href": "/", "description": "Shared Hosting Starting at ₹ 39/-" },
@@ -40,10 +41,11 @@ const Server: { title: string; href: string; description: string }[] = [
 const Support: { title: string; href: string; description: string }[] = [
     { "title": "Contact Us", "href": "/", "description": "Face any problem contact us" },
     { "title": "About Us Server", "href": "/", "description": "We are leading hosting company" },
-    { "title": "Support", "href": "/",  "description": "We provide exceptional customer support 24/7" },
+    { "title": "Support", "href": "/", "description": "We provide exceptional customer support 24/7" },
 ];
 
 export function NavigationLink() {
+    const navbar= navData.navbar;
     return (
         <NavigationMenu className="text-black w-full hidden lg:block">
             <NavigationMenuList>
@@ -51,16 +53,16 @@ export function NavigationLink() {
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref className="">
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            <span className="text-[16px]">Home</span>
+                            <span className="text-[16px]">{navbar[0].text}</span>
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 {/* Hosting */}
                 <NavigationMenuItem className="">
-                    <NavigationMenuTrigger className="text-[16px]">Hosting</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-[16px]">{navbar[1].text}</NavigationMenuTrigger>
                     <NavigationMenuContent className="w-full absolute ">
                         <ul className="grid w-[400px] p-8 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[920px] ">
-                            {Hosting.map((component) => (
+                            {navbar[1].options.map((component) => (
                                 <ListItem
                                     key={component.title}
                                     title={component.title}
@@ -75,7 +77,7 @@ export function NavigationLink() {
 
                 {/* Domain */}
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-[16px]">Domain</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-[16px]">{navbar[2].text}</NavigationMenuTrigger>
 
                     <NavigationMenuContent>
                         <ul className="grid w-[400px] p-4 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[1000px] ">
@@ -98,7 +100,7 @@ export function NavigationLink() {
                                 </NavigationMenuLink>
                             </li>
 
-                            {Domain.map((component) => (
+                            {navbar[2].options.map((component) => (
                                 <ListItem
                                     key={component.title}
                                     title={component.title}
@@ -113,7 +115,7 @@ export function NavigationLink() {
 
                 {/* Vps Server */}
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-[16px]">Server</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-[16px]">{navbar[3].text}</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid w-[400px] p-4 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[1000px] ">
                             <li className="row-span-3">
@@ -135,7 +137,7 @@ export function NavigationLink() {
                                 </NavigationMenuLink>
                             </li>
 
-                            {Server.map((component) => (
+                            {navbar[3].options.map((component) => (
                                 <ListItem
                                     key={component.title}
                                     title={component.title}
@@ -151,13 +153,13 @@ export function NavigationLink() {
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref className="">
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            <span className="text-[16px]">Blog</span>
+                            <span className="text-[16px]">{navbar[4].text}</span>
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 {/* Support */}
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-[16px]">Support</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="text-[16px]">{navbar[5].text}</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid w-[400px] p-4 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[1000px] ">
                             <li className="row-span-3">
@@ -179,7 +181,7 @@ export function NavigationLink() {
                                 </NavigationMenuLink>
                             </li>
 
-                            {Support.map((component) => (
+                            {navbar[5].options.map((component) => (
                                 <ListItem
                                     key={component.title}
                                     title={component.title}

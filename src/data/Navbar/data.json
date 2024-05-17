@@ -11,32 +11,32 @@
             "options": [
                 {
                     "title": "Shared Hosting",
-                    "href": "/",
+                    "href": "/shared-hosting",
                     "description": "Shared Hosting Starting at ₹ 39/-"
                 },
                 {
                     "title": "Business Hosting",
-                    "href": "/",
+                    "href": "/business-hosting",
                     "description": "Business Hosting Starting at ₹ 139/-"
                 },
                 {
                     "title": "Unlimited Hosting",
-                    "href": "/",
+                    "href": "/unlimited-hosting",
                     "description": "Unlimited Hosting Starting at ₹ 329/mo"
                 },
                 {
                     "title": "Mini Hosting",
-                    "href": "/",
+                    "href": "/mini-hosting",
                     "description": "Mini Hosting Starting at ₹ 29/-"
                 },
                 {
                     "title": "Indian Cloud Hosting",
-                    "href": "/",
+                    "href": "/indian-cloud-hosting",
                     "description": "Indian Cloud Hosting Starting at ₹ 69/-"
                 },
                 {
                     "title": "Reseller Hosting",
-                    "href": "/",
+                    "href": "/reseller-hosting",
                     "description": "Reseller Hosting Starting at ₹ 799/-"
                 }
             ]
@@ -47,17 +47,17 @@
             "options": [
                 {
                     "title": "Domain Registration",
-                    "href": "/",
+                    "href": "/domain-registration",
                     "description": "Register Your Domain Name"
                 },
                 {
                     "title": "Domain Transfer",
-                    "href": "/",
+                    "href": "/domain-transfer",
                     "description": "Transfer Your Domain Easily"
                 },
                 {
                     "title": "Domain Checker",
-                    "href": "/",
+                    "href": "/domain-checker",
                     "description": "Find the Your Perfect Domain Name"
                 }
             ]
@@ -68,18 +68,18 @@
             "options": [
                 {
                     "title": "VPS Server",
-                    "href": "/",
+                    "href": "/vps-server",
                     "description": "Get full control of your server"
                 },
                 {
                     "title": "Managed VPS Server",
-                    "href": "/",
+                    "href": "/manage-vps-server",
                     "description": "Managed VPS Server"
                 }
             ]
         },
         {
-            "href": "/",
+            "href": "/blog",
             "text": "Blog",
             "options": []
         },
@@ -89,12 +89,12 @@
             "options": [
                 {
                     "title": "Contact Us",
-                    "href": "/",
+                    "href": "/contact",
                     "description": "Face any problem contact us"
                 },
                 {
                     "title": "About Us Server",
-                    "href": "/",
+                    "href": "/about-us",
                     "description": "We are leading hosting company"
                 }
             ]

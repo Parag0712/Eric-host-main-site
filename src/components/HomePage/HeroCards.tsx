@@ -17,11 +17,11 @@ import { FaFacebook } from "react-icons/fa";
 import Container from "../General/Container";
 import { heroimg } from "@/assests/config";
 import Image from "next/image";
-
+import link from '../../data/Navbar/link.json'
 
 export const HeroCards = () => {
     return (
-        <Container className="px-1 lg:max-w-full xl:max-w-full  px-0  hidden lg:flex flex-row flex-wrap gap-8 relative  w-[400px] lg:w-[600px] xl:w-[700px] h-[500px]">
+        <Container className=" lg:max-w-full xl:max-w-full  px-0  hidden lg:flex flex-row flex-wrap gap-8 relative  w-[400px] lg:w-[600px] xl:w-[700px] h-[500px]">
             <Image 
                 src={heroimg}
                 alt=""
@@ -69,7 +69,7 @@ export const HeroCards = () => {
                     <div>
                         <a
                             rel="noreferrer noopener"
-                            href="https://github.com/leoMirandaa"
+                            href={link.facebook}
                             target="_blank"
                             className={buttonVariants({
                                 variant: "ghost",
@@ -81,7 +81,7 @@ export const HeroCards = () => {
                         </a>
                         <a
                             rel="noreferrer noopener"
-                            href="https://twitter.com/"
+                            href={link.twitter}
                             target="_blank"
                             className={buttonVariants({
                                 variant: "ghost",
@@ -102,7 +102,7 @@ export const HeroCards = () => {
 
                         <a
                             rel="noreferrer noopener"
-                            href="https://www.linkedin.com/company/erichost/?originalSubdomain=in"
+                            href={link.linkdin}
                             target="_blank"
                             className={buttonVariants({
                                 variant: "ghost",

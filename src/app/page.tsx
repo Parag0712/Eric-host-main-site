@@ -1,3 +1,4 @@
+import { Footer } from '@/components/Footer/Footer'
 import BusinessInfo from '@/components/HomePage/BusinessInfo'
 import { ChooseThePlans } from '@/components/HomePage/ChooseThePlans'
 import { Cta } from '@/components/HomePage/Cta'
@@ -18,7 +19,6 @@ const page = (props: Props) => {
       <Testimonials />
       <MapSection />
       <Cta />
-
       <FAQ />
     </section>
   )
