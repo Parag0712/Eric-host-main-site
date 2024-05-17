@@ -13,9 +13,8 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import Image from "next/image"
-import domainimage from '../../../public/HomePage/feature_new-1.svg'
-import { ServerImage } from "@/assests/config"
 import navData from "../../data/Navbar/data.json";
+import { navbarImage as domainimage } from "@/assests/config"
 
 const Hosting: { title: string; href: string; description: string }[] = [
     { "title": "Shared Hosting", "href": "/", "description": "Shared Hosting Starting at ₹ 39/-" },
@@ -51,7 +50,7 @@ export function NavigationLink() {
             <NavigationMenuList>
                 {/*  Menu  */}
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref className="">
+                    <Link href={navbar[0].href} legacyBehavior passHref className="">
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             <span className="text-[16px]">{navbar[0].text}</span>
                         </NavigationMenuLink>
@@ -83,9 +82,8 @@ export function NavigationLink() {
                         <ul className="grid w-[400px] p-4 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[1000px] ">
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
-                                    <a
+                                    <div
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                        href="/"
                                     >
                                         <div className="relative w-full h-full">
                                             <Image
@@ -96,7 +94,7 @@ export function NavigationLink() {
                                             />
                                         </div>
 
-                                    </a>
+                                    </div>
                                 </NavigationMenuLink>
                             </li>
 
@@ -120,9 +118,9 @@ export function NavigationLink() {
                         <ul className="grid w-[400px] p-4 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[1000px] ">
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
-                                    <a
+                                    <div
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                        href="/"
+
                                     >
                                         <div className="relative w-full h-full">
                                             <Image
@@ -133,7 +131,7 @@ export function NavigationLink() {
                                             />
                                         </div>
 
-                                    </a>
+                                    </div>
                                 </NavigationMenuLink>
                             </li>
 
@@ -151,7 +149,7 @@ export function NavigationLink() {
                 </NavigationMenuItem>
                 {/*  Menu  */}
                 <NavigationMenuItem>
-                    <Link href="/" legacyBehavior passHref className="">
+                    <Link href={navbar[4].href} legacyBehavior passHref className="">
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             <span className="text-[16px]">{navbar[4].text}</span>
                         </NavigationMenuLink>
@@ -164,9 +162,8 @@ export function NavigationLink() {
                         <ul className="grid w-[400px] p-4 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[1000px] ">
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
-                                    <a
+                                    <div
                                         className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                        href="/"
                                     >
                                         <div className="relative w-full h-full">
                                             <Image
@@ -177,10 +174,9 @@ export function NavigationLink() {
                                             />
                                         </div>
 
-                                    </a>
+                                    </div>
                                 </NavigationMenuLink>
                             </li>
-
                             {navbar[5].options.map((component) => (
                                 <ListItem
                                     key={component.title}
@@ -198,7 +194,6 @@ export function NavigationLink() {
         </NavigationMenu>
     )
 }
-
 const ListItem = React.forwardRef<
     React.ElementRef<"a">,
     React.ComponentPropsWithoutRef<"a">
@@ -206,19 +201,20 @@ const ListItem = React.forwardRef<
     return (
         <li>
             <NavigationMenuLink asChild>
-                <a
+                <Link
                     ref={ref}
                     className={cn(
                         "h-full flex flex-col gap-2 mb-2 justify-center select-none space-y-2 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                         className
                     )}
+                    href={""}
                     {...props}
                 >
                     <div className="text-md font-medium leading-none">{title}</div>
                     <p className="line-clamp-2 text-md leading-snug text-muted-foreground">
                         {children}
                     </p>
-                </a>
+                </Link>
             </NavigationMenuLink>
         </li>
     )

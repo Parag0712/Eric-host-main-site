@@ -58,12 +58,12 @@ export const Hero = ({
                         Hosting
                     </h1>{" "}
                     <h2 className="inline">
-                        <span className="inline bg-gradient-to-r from-primary via-[#686de2] to-[#575AC8] text-transparent bg-clip-text">
+                        <span className=" inline bg-gradient-to-r from-primary via-[#686de2] to-[#575AC8] text-transparent bg-clip-text">
                             {subtitle}
                         </span>{" "}
                     </h2>
 
-                    <p className="font-normal text-lg sm:text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+                    <p className="mt-2 font-normal text-lg sm:text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
                         {tagline}
                     </p>
                 </main>

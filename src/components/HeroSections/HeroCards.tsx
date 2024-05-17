@@ -10,7 +10,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { } from "@radix-ui/react-icons";
-import { Check, Linkedin, Router } from "lucide-react";
+import { Check, Linkedin } from "lucide-react";
 import Image from "next/image";
 import { FaFacebook } from "react-icons/fa";
 import link from '../../data/Navbar/link.json';

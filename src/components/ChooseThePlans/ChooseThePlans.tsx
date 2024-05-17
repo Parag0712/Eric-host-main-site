@@ -73,7 +73,7 @@ export const ChooseThePlans = () => {
             <Heading
                 headingContent={
                     <>
-                        We Provide You<br />
+                        We Provide You
                         <span className="pb-2 bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                             {" "}  World Class{" "}
                         </span> <br /> Best Hosting Features For You
