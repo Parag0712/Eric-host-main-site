@@ -1,18 +1,12 @@
 import { ChooseThePlans } from "@/components/ChooseThePlans/ChooseThePlans";
 import { Cta } from "@/components/Cta-logo/Cta";
 import { Hero } from "@/components/HeroSections/Hero";
-import MapSection from "@/components/MapSection/MapSection";
 import { Services } from "@/components/PlanCards/Service";
 import { Pricing } from "@/components/Pricing/Pricing";
-import Testimonials from "@/components/Testimonials/Testimonials";
 
-import { HomeSupport } from "@/components/Faq/HomeSupport";
-import SmallHeading from "@/components/Heading/SmallHeading";
-import DynamicInformation from "@/components/Information/DynamicInformation";
 import { FeaturedHosting } from "@/components/Service/FeaturedHosting";
-import dynamicInformationProps from '../data/HomePage/information.json';
+import { heroProps, servicesProps } from "@/data/HomePage/data";
 import data from "../data/HomePage/pricing.json";
-import { heroProps, servicesProps, support } from "@/data/HomePage/data";
 
 type Props = {};
 
