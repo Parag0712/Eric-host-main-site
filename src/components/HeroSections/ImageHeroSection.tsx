@@ -25,8 +25,8 @@ export const ImageHeroSection = ({
     heroImage,
 }: HeroDynamicProps) => {
     return (
-        <section className="container grid lg:grid-cols-2 place-items-center xl:gap-y-44 py-16 md:pb-32 lg:pb-24 xl:py-28 gap-10">
-            <div className="text-center lg:text-start space-y-5 col-span-2 lg:col-auto">
+        <section className="container grid lg:grid-cols-2 place-items-center xl:gap-y-44 justify-between py-16 md:pb-32 lg:py-12 xl:py-14 xl:mb-20 gap-10">
+            <div className="text-center lg:text-start space-y-5 col-span-2 lg:col-auto ">
                 <main className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold">
                     <div>
                         {badgeText && (
@@ -101,14 +101,14 @@ export const ImageHeroSection = ({
                 />
             </div>
 
-            <div className='w-full  hidden  col-span-2  sm:block'>
+            {/* <div className='w-full  hidden  col-span-2  sm:block'>
                 <Image
                     src={RaingImage}
                     layout='responsive'
                     alt='Rating Image '
                     className="w-full object-cover"
                 />
-            </div>
+            </div> */}
 
             <div className='right w-full  col-span-2 mx-auto lg:order-2 max-w-[80%] lg:hidden'>
                 <Image
@@ -119,7 +119,7 @@ export const ImageHeroSection = ({
                 />
             </div>
             {/* Rating Image */}
-            <div className='w-full max-w-[80%]  col-span-2 sm:max-w-[70%] m-auto sm:hidden'>
+            {/* <div className='w-full max-w-[80%]  col-span-2 sm:max-w-[70%] m-auto sm:hidden'>
                 <Image
                     src={RaingImage2}
                     height={100}
@@ -127,7 +127,7 @@ export const ImageHeroSection = ({
                     layout='responsive'
                     alt='Rating Image'
                 />
-            </div>
+            </div> */}
 
             {/* Shadow effect */}
             <div className="shadow hidden"></div>

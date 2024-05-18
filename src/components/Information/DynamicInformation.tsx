@@ -19,7 +19,7 @@ const DynamicInformation = ({ title, subtitle, paragraphs, buttonText,href }: Pr
     return (
         <Container
             id="pricing"
-            className="pb-24 sm:pb-[7rem] lg:mb-16 lg:py-[6rem] flex flex-col gap-6 md:gap-7 lg:gap-9"
+            className="pb-16 sm:pb-[6rem]  lg:pb-[7rem] flex flex-col gap-6 md:gap-7 lg:gap-9"
         >
             <SmallHeading
                 headingContent={
@@ -40,7 +40,7 @@ const DynamicInformation = ({ title, subtitle, paragraphs, buttonText,href }: Pr
             <div className="flex justify-center mt-2">
                 <Button 
                 onClick={()=>router.push(href)}
-                className="w-full my-6 py-6 text-[17px] max-w-[300px] mx-auto rounded-[4px] ">{buttonText}</Button>
+                className="w-full md:my-6 py-5 md:py-6 text-[16px] md:text-[17px] max-w-[200px] md:max-w-[300px] mx-auto rounded-[4px] ">{buttonText}</Button>
             </div>
         </Container>
     )

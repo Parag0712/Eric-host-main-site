@@ -3,8 +3,9 @@ import React from 'react'
 import Container from '@/components/Conatianers/Container'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { HeroImage, RaingImage, RaingImage2 } from '@/assests/config'
+import { RaingImage, RaingImage2 } from '@/assests/config'
 import { FaCheckCircle } from "react-icons/fa"
+import { MdSizeHeroImage } from '@/assests/HeroSection/assets'
 type Props = {}
 
 const HeroSection = (props: Props) => {
@@ -57,7 +58,7 @@ const HeroSection = (props: Props) => {
                 {/* Right Side */}
                 <div className='right w-full order-2  lg:order-2 lg:block lg:w-[53%] xl:w-[50%] mt-12 md:mt-0 '>
                     <Image
-                        src={HeroImage}
+                        src={MdSizeHeroImage}
                         height={100}
                         width={100}
                         layout='responsive'

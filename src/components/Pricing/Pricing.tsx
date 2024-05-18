@@ -3,26 +3,26 @@ import { useState } from "react";
 import PricingCard from "./PricingCard";
 import Heading from "../Heading/Heading";
 
-export const Pricing = ({data}:{data:any}) => {
+export const Pricing = ({ data }: { data: any }) => {
     const [isAnnual, setIsAnnual] = useState(true);
     return (
         <section
             id="pricing"
             className="container pb-24 sm:pb-32"
-        >   
+        >
             <h2 className=" text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem] font-bold  text-center">
             </h2>
 
             <Heading
-            classname="text-center"
+                classname="text-center"
                 headingContent={
                     <>
-                                    Choose the plans that’s
-                <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                    {" "}
-                    Plans{" "}
-                </span>
-                Access
+                        Choose the plans that’s
+                        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+                            {" "}
+                            Plans{" "}
+                        </span>
+                        Access
 
                     </>
                 }
@@ -36,12 +36,12 @@ export const Pricing = ({data}:{data:any}) => {
                     <button className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${isAnnual ? 'text-slate-500 dark:text-slate-400' : 'text-white'}`} onClick={() => setIsAnnual(false)} aria-pressed={!isAnnual}>Yearly </button>
                 </div>
             </div>
-            <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 ">
-                {data.plans.map((pricing:any, index:any) => (
+            <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-4 lg:gap-8 ">
+                {data.plans.map((pricing: any, index: any) => (
                     <PricingCard
                         pricing={""}
                         plan={data.plans[index]}
-                        isAnnual ={!isAnnual}
+                        isAnnual={!isAnnual}
                     />
 
                 ))}

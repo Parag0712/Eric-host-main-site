@@ -44,24 +44,24 @@ const features: FeatureProps[] = [
         description:
             "WordPress Included in Every cPanel. WP is free in every cPanel. WordPress is a softaculous application and all the softaculous applications are installed in few clicks.",
     },
-    {
-        icon: <ServerIcon />,
-        title: "FREE Migration",
-        description:
-            "A dedicated server, is a type of Internet hosting in which the client leases an entire server not shared with anyone else.",
-    },
-    {
-        icon: <SecureIcon />,
-        title: "Unmatched Security Measures",
-        description:
-            "Security is not an afterthought; it’s our top priority. We employ state-of-the-art security protocols, including firewalls, regular malware scans, and SSL certificates, to safeguard your website and customer data.",
-    },
-    {
-        icon: <ThumIcon />,
-        title: "Reliability at Its Best",
-        description:
-            "We pride ourselves on providing rock-solid reliability. With a 99.9% uptime guarantee, you can trust us to keep your website up and running, ensuring your visitors never face downtime.",
-    },
+    // {
+    //     icon: <ServerIcon />,
+    //     title: "FREE Migration",
+    //     description:
+    //         "A dedicated server, is a type of Internet hosting in which the client leases an entire server not shared with anyone else.",
+    // },
+    // {
+    //     icon: <SecureIcon />,
+    //     title: "Unmatched Security Measures",
+    //     description:
+    //         "Security is not an afterthought; it’s our top priority. We employ state-of-the-art security protocols, including firewalls, regular malware scans, and SSL certificates, to safeguard your website and customer data.",
+    // },
+    // {
+    //     icon: <ThumIcon />,
+    //     title: "Reliability at Its Best",
+    //     description:
+    //         "We pride ourselves on providing rock-solid reliability. With a 99.9% uptime guarantee, you can trust us to keep your website up and running, ensuring your visitors never face downtime.",
+    // },
 ];
 
 export const ChooseThePlans = () => {

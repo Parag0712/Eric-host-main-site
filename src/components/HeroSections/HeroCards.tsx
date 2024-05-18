@@ -1,5 +1,5 @@
 "use client"
-import { heroimg } from "@/assests/config";
+MdSizeHeroImage
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
     Card,
@@ -18,6 +18,7 @@ import Container from "../Conatianers/Container";
 import { Badge } from "../ui/badge";
 import { CloudIcon, LightBulbIcon } from "../Cta-logo/Logo";
 import { useRouter } from "next/navigation";
+import { MdSizeHeroImage } from "@/assests/HeroSection/assets";
 
 type PricingData = {
     name: string;
@@ -34,7 +35,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
     return (
         <Container className=" lg:max-w-full xl:max-w-full  px-0  hidden lg:flex flex-row flex-wrap gap-8 relative  w-[400px] lg:w-[600px] xl:w-[700px] h-[500px]">
             <Image
-                src={heroimg}
+                src={MdSizeHeroImage}
                 alt=""
                 layout="responsive"
                 className="xl:hidden object-cover bg-left"
