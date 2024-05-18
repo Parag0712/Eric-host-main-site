@@ -1,74 +1,81 @@
-import { HeroSection,BusinessCentric,DedicatedSupport,RobustSecurity,ScalabilityforGrowth,UnrivaledPerformance } from "@/assests/BusinessHosting/assets";
+import { EasytoUse, HeroSection, HighPerformance, ProfitableBusiness, ReliableTechnical, WhiteLabel, YourBrand } from "@/assests/ResellerHosting/assets";
 
 export const servicesProps = [
     {
-        title: "Unrivaled Performance, Uninterrupted Operations",
-        subtitle: "Customised Servers at your Fingertip",
+        title: "Your Brand, Our Infrastructure",
+        subtitle: "Hard to Hack!",
         description: [
-            "Every second counts in the fast-paced business environment. With Business Hosting at EricHost, you’re not just getting a hosting solution but also you’re securing an unwavering commitment to performance. Our servers optimized for speed and efficiency which ensure that your website loads instantly and provide visitors with a seamless and responsive experience. Say hello to a hosting environment engineered for excellence and Say goodbye to slow-loading pages.",
+            "With our Reseller Hosting plans, you can build your web hosting brand effortlessly. You get to customize the hosting packages, set your pricing, and create a unique identity for your hosting business. Meanwhile, you can rely on our state-of-the-art infrastructure, ensuring high uptime, reliable performance, and exceptional security for your clients.",
         ],
         buttonText: "Explore Plans",
         buttonLink: "/",
-        imageSrc: UnrivaledPerformance,
+        imageSrc: YourBrand,
         reversecard: false,
         imageAlt: "Card Image",
+        textwhite: true,
     },
     {
-        title: "Robust Security, Fortified Defenses",
+        title: "Profitable Business Opportunity",
+        subtitle: "Transfer Websites hassel-free",
+        description: [
+            "Reseller Hosting offers an excellent business opportunity with significant profit margins. By leveraging our infrastructure and support, you can focus on growing your customer base and maximizing your revenue. With our competitive pricing and scalable plans, you have the flexibility to tailor your services to meet your clients’ diverse needs.",
+        ],
+        buttonText: "Explore Plans",
+        buttonLink: "/plans",
+        imageSrc: ProfitableBusiness,
+        imageAlt: "Card Image",
+        reversecard: true,
+
+    },
+    {
+        title: "White-Label Hosting Solutions",
+        subtitle: "30-Day Money-Back Guarantee",
+        description: [
+            "We understand the importance of branding. Our Reseller Hosting solutions are entirely white-label, meaning your clients won’t see our branding anywhere. You can showcase your company name, logo, and branding elements, creating a professional image that instills trust and confidence in your customers.",
+        ],
+        buttonText: "Explore Plans",
+        buttonLink: "/plans",
+        imageSrc: WhiteLabel,
+        imageAlt: "Card Image",
+        reversecard: false,
+        textwhite: true,
+    },
+    {
+        title: "Reliable Technical Support",
         subtitle: "Hard to Hack!",
         description: [
-            "For our Business Hosting solutions, Privacy is the cornerstone. We empathize the critical importance of safeguarding your customer information and business data that’s why we have employed advanced security measures, including DDoS protection, malware scanning, firewalls, and SSL certificates. Our multi-layered security system fortifies your website, ensuring your business operations remain secure and uninterrupted and shielding it from cyber threats.",
+            "As a reseller, you’re not alone in your business journey. Our dedicated support team is available 24/7 to assist you with any technical issues, answer your queries, and provide guidance whenever you need it. With our reliable technical support, you can confidently offer top-notch assistance to your clients, fostering lasting relationships.",
         ],
         buttonText: "Explore Plans",
         buttonLink: "/plans",
-        imageSrc: RobustSecurity,
+        imageSrc: ReliableTechnical,
         imageAlt: "Card Image",
         reversecard: true,
-        textwhite: true,
-    },
-
-    {
-        title: "Scalability for Growth, Flexibility for Expansion",
-        subtitle: "Expand Servers with a Click",
-        description: [
-            "our business isn’t static, and nor should be your hosting solution. You’re empowered with scalability to blend with your ambitions whether you’re planning to expand your online portfolio or expecting a surge in website traffic due to a new product launch, our hosting solutions scale effortlessly. Your business grows with your website, ensuring your hosting environment evolves with your requirements.",
-        ],
-        buttonText: "Explore Plans",
-        buttonLink: "/plans",
-        imageSrc: ScalabilityforGrowth,
-        imageAlt: "Card Image",
-        reversecard: false,
     },
     {
-        title: "Dedicated Support, Your Success Partner",
-        subtitle: "24/7 Customer Support",
+        title: "Easy-to-Use Control Panel",
+        subtitle: "Welcome to Eric Host",
         description: [
-            "Your success is our priority. Our experienced support team comprises dedicated professionals passionate about helping your business throughout the journey. We offer 24/7 customer support, ensuring you receive regular assistance for any technical queries, configurations, or troubleshooting requirements. Think of us as your definitive partner, committed to ensuring your Business Hosting experience is swift and stress-free.",
-        ],
-        buttonText: "Explore Plans",
-        buttonLink: "/plans",
-        imageSrc: DedicatedSupport,
-        imageAlt: "Card Image",
-        reversecard: true,
-        textwhite: true,
-        offertitle: "Up to 75% off Hosting",
-        offers: [
-            "Free Domain",
-            "Free Website Migration",
-            "24/7 Customer Support"
-        ]
-    },
-    {
-        title: "Business-Centric Features, Competitive Edge",
-        subtitle: "Personalised Servers",
-        description: [
-            "Our Business Hosting Plans are loaded with features designed specifically for business operations. From advanced e-commerce integration and email solutions to robust analytics tools, we provide a wide range of comprehensive suite of business oriented features. These tools allow you to make data-driven decisions, streamline your online operations and enhance customer engagement. Experience the incredible blend of cutting-edge technology and business intelligence with EricHost.",
+            "Managing your hosting business is a breeze with our intuitive and user-friendly control panel. You can easily create, modify, and manage hosting accounts for your clients, monitor server performance, and access essential tools to streamline your operations. Our control panel is designed to simplify your tasks and enhance your productivity.",
         ],
         buttonText: "Get Started",
         buttonLink: "/plans",
-        imageSrc: BusinessCentric,
+        imageSrc: EasytoUse,
         imageAlt: "Card Image",
         reversecard: false,
+        textwhite: true,
+    },
+    {
+        title: "High Performance and Scalability",
+        subtitle: "Transfer Websites hassel-free",
+        description: [
+            "Our Reseller Hosting servers are optimized for high performance and scalability. You can offer your clients fast-loading websites, responsive applications, and seamless user experiences. As your hosting business grows, you can easily upgrade your resources, ensuring your clients always receive top-tier performance.",
+        ],
+        buttonText: "Get Started",
+        buttonLink: "/plans",
+        imageSrc: HighPerformance,
+        imageAlt: "Card Image",
+        reversecard: true,
     }
 ];
 
@@ -88,18 +95,18 @@ export const bronzePricing = {
 };
 
 export const heroProps = {
-    title: "Business",
+    title: "Reseller",
     subtitle: "Solutions!",
-    tagline: "Elevate Your Business with Our Cutting-Edge Hosting Solutions",
+    tagline: "Unleash Your Entrepreneurial Spirit with",
     badgeText: "30-Day Money-Back Guarantee",
     features: [
-      "Premium Servers",
-      "Free Website Migration",
-      "24/7 Customer Support",
-      "99.9% uptime guarantee",
+        "Premium Servers",
+        "Free Website Migration",
+        "24/7 Customer Support",
+        "99.9% uptime guarantee",
     ],
     price: "₹2.99",
     buttonText: "Explore Plans",
     planhref: "",
     heroImage: HeroSection
-  };
+};

@@ -1,4 +1,4 @@
-export { default as HeroSection } from '../../../public/Creatives/32.png';
+export { default as HeroSection } from '../../../public/Creatives/57.png';
 
 export { default as DedicatedSecured } from '../../../public/Creatives/39.png';
 

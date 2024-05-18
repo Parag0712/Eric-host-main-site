@@ -1,4 +1,4 @@
-export { default as HeroSection } from '../../../public/Creatives/10.png';
+export { default as HeroSection } from '../../../public/Creatives/58.png';
 
 export { default as YourBrand } from '../../../public/Creatives/15.png';
 

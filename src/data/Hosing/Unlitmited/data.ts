@@ -12,7 +12,7 @@ export const servicesProps = [
         imageSrc: InfiniteResources,
         imageAlt: "Card Image",
         reversecard: false,
-        textwhite: true,
+        textwhite: false,
     },
     {
         title: "Optimal Performance, Minimal Restrictions",
@@ -24,6 +24,7 @@ export const servicesProps = [
         buttonLink: "/",
         imageSrc: OptimalPerformance,
         reversecard: true,
+        textwhite: true,
         imageAlt: "Card Image",
     },
     {
@@ -37,7 +38,7 @@ export const servicesProps = [
         imageSrc: SeamlessScalability,
         imageAlt: "Card Image",
         reversecard: false,
-        textwhite: true,
+        textwhite: false,
     },
 
     {
@@ -51,6 +52,7 @@ export const servicesProps = [
         imageSrc:UnmatchedReliability,
         imageAlt: "Card Image",
         reversecard: true,
+        textwhite: true
     },
     {
         title: "Dedicated Support, Your Personal Success Partner",
@@ -75,6 +77,7 @@ export const servicesProps = [
         imageSrc:UserFriendly,
         imageAlt: "Card Image",
         reversecard: true,
+        textwhite: true,
     },
     {
         title: "Enhanced Security, Total Peace of Mind",
@@ -92,7 +95,7 @@ export const servicesProps = [
 
 export const heroProps = {
     title: "Unlimited ",
-    subtitle: "",
+    subtitle: "Solutions!",
     tagline: "Where Unlimited Possibilities Meet ",
     badgeText: "30-Day Money-Back Guarantee",
     features: [

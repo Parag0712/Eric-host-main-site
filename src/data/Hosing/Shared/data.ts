@@ -65,7 +65,7 @@ export const servicesProps = [
 
 export const heroProps = {
     title: "Shared ",
-    subtitle: "",
+    subtitle: "Solutions!",
     tagline: "Your Gateway to Affordable and Reliable",
     badgeText: "30-Day Money-Back Guarantee",
     features: [

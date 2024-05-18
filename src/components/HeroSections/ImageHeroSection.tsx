@@ -92,12 +92,12 @@ export const ImageHeroSection = ({
             </div>
 
             {/* Hero cards sections */}
-            <div className="z-10 w-full hidden lg:block">
+            <div className="z-10 w-full hidden lg:block ">
                 <Image
                     src={heroImage}
                     layout="responsive"
                     alt="HeroImage"
-                    className="h-auto  sm:max-h-[400px] object-contain lg:max-h-[100%]"
+                    className="h-auto  sm:max-h-[400px] object-contain lg:max-h-[460px]"
                 />
             </div>
 
