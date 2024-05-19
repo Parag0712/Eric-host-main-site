@@ -40,7 +40,7 @@ const DynamicInformation = ({ title, subtitle, paragraphs, buttonText,href }: Pr
             <div className="flex justify-center mt-2">
                 <Button 
                 onClick={()=>router.push(href)}
-                className="w-full md:my-6 py-5 md:py-6 text-[16px] md:text-[17px] max-w-[200px] md:max-w-[300px] mx-auto rounded-[4px] ">{buttonText}</Button>
+                className=" md:my-6 py-5 md:py-6 text-[16px] md:text-[17px] md:max-w-[300px] mx-auto rounded-[4px] ">{buttonText}</Button>
             </div>
         </Container>
     )

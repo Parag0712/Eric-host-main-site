@@ -7,6 +7,8 @@ import { Pricing } from "@/components/Pricing/Pricing";
 import { FeaturedHosting } from "@/components/Service/FeaturedHosting";
 import { heroProps, servicesProps } from "@/data/HomePage/data";
 import data from "../data/HomePage/pricing.json";
+import MapSection from "@/components/MapSection/MapSection";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 type Props = {};
 
@@ -40,6 +42,8 @@ const page = (props: Props) => {
         />
       </section>
       <ChooseThePlans />
+      <Testimonials />
+      <MapSection />
       <Cta />
       <Services
         {...servicesProps[servicesProps.length - 1]}

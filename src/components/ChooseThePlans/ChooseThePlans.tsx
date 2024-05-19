@@ -68,7 +68,7 @@ export const ChooseThePlans = () => {
     return (
         <section
             id="howItWorks"
-            className="container text-center pb-24 sm:pb-[7rem] lg:sm:py-[7rem]"
+            className="container text-center pt-[4rem] sm:pt-[4rem] md:py-[7rem] lg:sm:py-[6rem]"
         >
             <Heading
                 headingContent={

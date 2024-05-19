@@ -27,7 +27,7 @@ const vpserver = (props: Props) => {
     <DynamicInformation {...dynamicInformationProps} />
     
     {servicesProps.map((service, index) => (
-      <div key={index} className={index % 2 === 0 ? "bg-[#4346C2]" : ""}>
+      <div key={index} className={index % 2 !== 0 ? "bg-[#4346C2]" : ""}>
         <Services {...service} />
       </div>
     ))}

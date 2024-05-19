@@ -11,13 +11,12 @@ const MapSection = (props: Props) => {
     return (
         <Container
             id="pricing"
-            className=" py-24 sm:pt-[7rem] sm:pb-0 sm:py-[8rem]  lg:pt-[7rem] lg:pb-0 flex flex-col gap-6 md:gap-7 lg:gap-9"
+            className=" py-[3rem] sm:pt-[4rem] md:pt-[5rem] lg:pt-[6rem] flex flex-col gap-6 md:gap-7 lg:gap-9"
         >
             <div>
                 <SmallHeading
                     headingContent={
                         <>
-
                             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                                 Data Centers
                                 {" "}

@@ -70,7 +70,7 @@ export const FeaturedHosting = () => {
     return (
         <section
             id="howItWorks"
-            className="container text-center pb-24 sm:pb-[7rem] lg:sm:py-[7rem] "
+            className="container text-center  pt-[4rem] sm:pt-[4rem] md:py-[7rem] lg:sm:py-[6rem]"
         >
             {/* Which Type of Hosting is Right for You? */}
             <Heading
@@ -86,7 +86,7 @@ export const FeaturedHosting = () => {
                 description="EricHost provides 99%+ uptime with top-notch speed at the affordable price."
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:mt-10 place-items-start">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:mt-10 place-items-start">
                 {hosting.map(({ type, description, explore_link, link, ratings, starting_price }: FeatureProps, idx) => (
                     <Card
                         key={type}

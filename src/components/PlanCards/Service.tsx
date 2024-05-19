@@ -35,8 +35,8 @@ export const Services: FC<ServicesProps> = ({
     const router = useRouter();
     return (
         <section className="container py-16 sm:py-16">
-            <div className={`grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center ${textwhite ? "text-white" : ""}`} >
-                <div className={`order-2 ${reversecard ? "" : "lg:order-1"}`}>
+            <div className={`grid md:grid-cols-[1fr,1fr] gap-8 place-items-center ${textwhite ? "text-white" : ""}`} >
+                <div className={`order-2 ${reversecard ? "" : "md:order-1"}`}>
                     <p className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text  md:text-lg mb-2 ${textwhite ? "text-white" : ""}`}>
                         {subtitle}
                     </p>
@@ -82,7 +82,7 @@ export const Services: FC<ServicesProps> = ({
                     src={imageSrc}
                     alt={imageAlt}
                     layout="responsive"
-                    className={`order-1  rounded-2xl lg:order-1 md:max-w-[80%] lg:max-w-[85%]`}
+                    className={`order-1 max-h-[300px] md:max-h-[250px] lg:max-h-full object-contain rounded-2xl md:order-1 md:max-w-[80%] lg:max-w-[85%]`}
                 />
             </div>
         </section>
