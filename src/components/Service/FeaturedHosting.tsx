@@ -14,6 +14,7 @@ interface FeatureProps {
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
+import Container from "../Conatianers/Container";
 
 const hosting: FeatureProps[] = [
     {
@@ -68,9 +69,9 @@ const hosting: FeatureProps[] = [
 export const FeaturedHosting = () => {
     const router = useRouter();
     return (
-        <section
+        <Container
             id="howItWorks"
-            className="container text-center  pt-[4rem] sm:pt-[4rem] md:py-[7rem] lg:sm:py-[6rem]"
+            className="text-center  pt-[4rem] sm:pt-[4rem] md:py-[7rem] lg:sm:py-[6rem]"
         >
             {/* Which Type of Hosting is Right for You? */}
             <Heading
@@ -128,6 +129,6 @@ export const FeaturedHosting = () => {
                 ))}
 
             </div>
-        </section>
+        </Container>
     );
 };

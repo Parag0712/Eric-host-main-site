@@ -6,6 +6,7 @@ import { Badge } from "../ui/badge";
 import { Button, buttonVariants } from "../ui/button";
 import { HeroCards } from "./HeroCards";
 import { useRouter } from "next/navigation";
+import Container from "../Conatianers/Container";
 
 type PricingData = {
     name: string;
@@ -43,9 +44,9 @@ export const Hero = ({
 }: HeroDynamicProps) => {
     const router = useRouter();
     return (
-        <section className="container grid lg:grid-cols-2 place-items-center xl:gap-y-44 py-16 md:pb-32 lg:pb-20 xl:py-14 xl:mb-20 gap-10">
-            <div className="text-center lg:text-start space-y-5 col-span-2 lg:col-auto">
-                <main className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold">
+        <Container className="container grid md:grid-cols-[1.4fr,1fr]  lg:grid-cols-2 place-items-center xl:gap-y-44 py-16 md:pb-32 lg:pb-20 xl:py-14 xl:mb-20 gap-10">
+            <div className="text-center lg:text-start space-y-5 col-span-2  md:col-auto">
+                <main className="text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
                     <div>
                         {badgeText && (
                             <Badge className="bg-green-500 mb-2">{badgeText}</Badge>
@@ -101,7 +102,7 @@ export const Hero = ({
                         href={planhref}
                         target="_blank"
                         className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-[4px]  py-5 sm:py-6 px-4 ${buttonVariants({
-                            variant: "outline",
+                            variant: "outline", 
                         })}`}
                     >
                         02:30:17:20
@@ -110,7 +111,7 @@ export const Hero = ({
             </div>
 
             {/* Hero cards sections */}
-            <div className="z-10">
+            <div className="z-10 ">
                 <HeroCards pricingData={bronzePricing} />
             </div>
 
@@ -122,12 +123,12 @@ export const Hero = ({
                     className="w-full object-cover"
                 />
             </div> */}
-            <div className='right w-full  col-span-2 mx-auto lg:order-2 max-w-[80%] lg:hidden'>
+            <div className='right w-full  col-span-2 mx-auto lg:order-2 max-w-[80%] md:hidden'>
                 <Image
                     src={heroImage}
                     layout='responsive'
                     alt='HeroImage'
-                    className='h-auto mx-auto sm:max-h-[400px] object-contain lg:max-h-[100%]'
+                    className='h-auto mxq-auto sm:max-h-[400px] object-contain lg:max-h-[100%]'
                 />
             </div>
             {/* <div className='w-full max-w-[80%]  col-span-2 sm:max-w-[70%] m-auto sm:hidden'>
@@ -142,6 +143,6 @@ export const Hero = ({
 
             {/* Shadow effect */}
             <div className="shadow hidden"></div>
-        </section>
+        </Container>
     );
 };

@@ -2,6 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle, } from "../ui/card";
 import { CloudIcon, LightingIcon, LockIcon, SecureIcon, ServerIcon, ThumIcon, WordPressIcon } from "../Cta-logo/Logo";
 import Heading from "../Heading/Heading";
+import Container from "../Conatianers/Container";
 
 interface FeatureProps {
     icon: JSX.Element;
@@ -66,9 +67,9 @@ const features: FeatureProps[] = [
 
 export const ChooseThePlans = () => {
     return (
-        <section
+        <Container
             id="howItWorks"
-            className="container text-center pt-[4rem] sm:pt-[4rem] md:py-[7rem] lg:sm:py-[6rem]"
+            className=" text-center py-[3rem] sm:py-[4rem] md:py-[7rem] lg:py-[6rem]"
         >
             <Heading
                 headingContent={
@@ -86,8 +87,8 @@ export const ChooseThePlans = () => {
                 {features.map(({ icon, title, description }: FeatureProps) => (
                     <Card
                         key={title}
-                        className="bg-muted/50 py-[2.5rem] justify-center flex flex-col gap-3
-                        
+                        className="shadow-xl py-[4rem] justify-center flex flex-col gap-3
+                        mt-3
                         border-[1px] transition-all duration-150 capitalize hover:shadow-xl  hover:scale-[1.01]
                         "
                     >
@@ -103,6 +104,6 @@ export const ChooseThePlans = () => {
                     </Card>
                 ))}
             </div>
-        </section>
+        </Container>
     );
 };

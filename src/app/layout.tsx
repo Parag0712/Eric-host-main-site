@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={cn("scroll-smooth font-poppins ", inter.className, {
         "debug-screens": process.env.NODE_ENV === "development",
       })}>
-        <header>
+        <header className="sticky-navbar">
           <Navbar />
         </header>
         <main>

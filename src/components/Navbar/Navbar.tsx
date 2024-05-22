@@ -155,7 +155,7 @@ export const Navbar = () => {
                                 <div className="flex flex-col justify-center items-center gap-2 mt-4 w-full">
                                     <a
                                         rel="noreferrer noopener"
-                                        href="/login"
+                                        href="https://clients.erichost.com/login"
                                         target="_blank"
                                         className={`w-full border ${buttonVariants({
                                             variant: "secondary",
@@ -172,7 +172,7 @@ export const Navbar = () => {
                     <div className="hidden lg:flex gap-2">
                         <a
                             rel="noreferrer noopener"
-                            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+                            href="https://clients.erichost.com/login"
                             target="_blank"
                             className={`border ${buttonVariants({ variant: "secondary" })}`}
                         >

@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { FC, ReactNode } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Button } from "../ui/button";
+import Container from "../Conatianers/Container";
 
 interface ServicesProps {
     title: ReactNode;
@@ -17,6 +18,7 @@ interface ServicesProps {
     textwhite?: boolean;
     offers?: any[];
     offertitle?: string;
+    customElements?:ReactNode;
 }
 
 export const Services: FC<ServicesProps> = ({
@@ -30,20 +32,21 @@ export const Services: FC<ServicesProps> = ({
     reversecard = false,
     textwhite = false,
     offers,
-    offertitle
+    offertitle,
+    customElements
 }) => {
     const router = useRouter();
     return (
-        <section className="container py-16 sm:py-16">
-            <div className={`grid md:grid-cols-[1fr,1fr] gap-8 place-items-center ${textwhite ? "text-white" : ""}`} >
-                <div className={`order-2 ${reversecard ? "" : "md:order-1"}`}>
-                    <p className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text  md:text-lg mb-2 ${textwhite ? "text-white" : ""}`}>
+        <Container className=" py-16 sm:py-16">
+            <div className={`grid ${reversecard?"lg:grid-cols-[1fr,1.2fr]":"lg:grid-cols-[1.2fr,1fr]"}   gap-8 place-items-center ${textwhite ? "text-white" : ""}`} >
+                <div className={`order-2 ${reversecard ? "" : "lg:order-1"}`}>
+                    <p className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text  md:text-[20px] mb-2 ${textwhite ? "text-white" : ""}`}>
                         {subtitle}
                     </p>
-                    <h2 className={`text-2xl  text-black md:text-4xl font-bold mb-1 ${textwhite ? "text-white" : ""}`}>
+                    <h2 className={`text-2xl font-poppins text-black md:text-4xl font-[600] mb-1 ${textwhite ? "text-white" : ""}`}>
                         {title}
                     </h2>
-                    <div className="flex flex-col gap-3 mt-1">
+                    <div className="flex flex-col gap-3 mt-2">
                         {
                             description.map((data, idx) => (
                                 <p key={idx} className="text-sm md:text-md lg:text-[1rem] lg:leading-[1.4rem] mt-2">
@@ -70,6 +73,10 @@ export const Services: FC<ServicesProps> = ({
                             </div>
                         )
                     }
+
+                    <div className="mt-3">
+                        {customElements}
+                    </div>
                     <div>
                         <Button
                             onClick={() => router.push(buttonLink)}
@@ -82,9 +89,10 @@ export const Services: FC<ServicesProps> = ({
                     src={imageSrc}
                     alt={imageAlt}
                     layout="responsive"
-                    className={`order-1 max-h-[300px] md:max-h-[250px] lg:max-h-full object-contain rounded-2xl md:order-1 md:max-w-[80%] lg:max-w-[85%]`}
+                    className={`order-1 max-h-[300px] md:max-h-[250px] lg:max-h-[] object-contain rounded-2xl md:order-1  xl:max-w-[85%] xl:min-h-[450px] xl:max-h-[450px]`}
+
                 />
             </div>
-        </section>
+        </Container>
     );
 };

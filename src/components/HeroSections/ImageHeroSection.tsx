@@ -3,6 +3,7 @@ import Image, { StaticImageData } from "next/image";
 import { Button, buttonVariants } from "../ui/button";
 import { Badge } from "../ui/badge";
 import { RaingImage, RaingImage2 } from "@/assests/config";
+import Container from "../Conatianers/Container";
 
 export interface HeroDynamicProps {
     title: string;
@@ -25,7 +26,7 @@ export const ImageHeroSection = ({
     heroImage,
 }: HeroDynamicProps) => {
     return (
-        <section className="container grid lg:grid-cols-2 place-items-center xl:gap-y-44 justify-between py-16 md:pb-32 lg:py-12 xl:py-14 xl:mb-20 gap-10">
+        <Container className=" grid lg:grid-cols-2 place-items-center xl:gap-y-44 justify-between py-16 md:pb-32 lg:py-12 xl:py-14 xl:mb-20 gap-10">
             <div className="text-center lg:text-start space-y-5 col-span-2 lg:col-auto ">
                 <main className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold">
                     <div>
@@ -131,7 +132,7 @@ export const ImageHeroSection = ({
 
             {/* Shadow effect */}
             <div className="shadow hidden"></div>
-        </section>
+        </Container>
     );
 };
 

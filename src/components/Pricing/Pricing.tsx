@@ -2,13 +2,14 @@
 import { useState } from "react";
 import PricingCard from "./PricingCard";
 import Heading from "../Heading/Heading";
+import Container from "../Conatianers/Container";
 
 export const Pricing = ({ data }: { data: any }) => {
     const [isAnnual, setIsAnnual] = useState(true);
     return (
-        <section
+        <Container
             id="pricing"
-            className="container pb-24 sm:pb-32"
+            className=" pb-12 md:pb-24"
         >
             <h2 className=" text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem] font-bold  text-center">
             </h2>
@@ -46,6 +47,6 @@ export const Pricing = ({ data }: { data: any }) => {
 
                 ))}
             </div>
-        </section>
+        </Container>
     );
 };

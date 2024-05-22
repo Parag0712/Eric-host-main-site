@@ -18,7 +18,7 @@ import Container from "../Conatianers/Container";
 import { Badge } from "../ui/badge";
 import { CloudIcon, LightBulbIcon } from "../Cta-logo/Logo";
 import { useRouter } from "next/navigation";
-import { MdSizeHeroImage } from "@/assests/HeroSection/assets";
+import { MdSizeHeroImage, SmSizeHeroImage } from "@/assests/HeroSection/assets";
 
 type PricingData = {
     name: string;
@@ -33,15 +33,20 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
     
     const router = useRouter();
     return (
-        <Container className=" lg:max-w-full xl:max-w-full  px-0  hidden lg:flex flex-row flex-wrap gap-8 relative  w-[400px] lg:w-[600px] xl:w-[700px] h-[500px]">
+        <section className="container lg:max-w-full xl:max-w-full  px-0  hidden md:flex flex-row flex-wrap gap-8 relative  w-[300px] lg:w-[600px] xl:w-[700px] h-[500px]">
             <Image
                 src={MdSizeHeroImage}
                 alt=""
                 layout="responsive"
-                className="xl:hidden object-cover bg-left"
-            >
+                className="md:hidden lg:block xl:hidden lg:object-cover bg-left object-cover object-[100%]"
+            />
+            <Image
+                src={SmSizeHeroImage}
+                alt=""
+                layout="responsive"
+                className="lg:hidden w-full bg-right object-cover  object-right"
+            />
 
-            </Image>
             {/* Testimonial */}
             <Card className="hidden  xl:block absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="flex flex-row items-center gap-2 pb-2 ">
@@ -129,7 +134,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
             </Card>
 
             {/* LG CARD */}
-            <Card className="xl:hidden absolute bottom-0 left-[00px] w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+            <Card className="md:hidden lg:block xl:hidden absolute bottom-0 left-[00px] w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="mt-8 flex justify-center items-center pb-2">
                     {/* <img
                         src="/logo.svg"
@@ -252,6 +257,6 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
                     </div>
                 </CardHeader>
             </Card>
-        </Container>
+        </section>
     );
 };
