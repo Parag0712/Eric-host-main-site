@@ -51,7 +51,7 @@ const hosting: FeatureProps[] = [
     },
     {
         type: "Reseller Hosting",
-        description: "Start Your Journey to Become A Hosting Reseller With Our Reliable And Flexible Reseller Hosting Plans. Offer Hosting Services To Your Clients While Enjoying the Benefits Of Our Robust Infrastructure, Expert Support, and Unlimited Growth Potential.",
+        description: "Start Your Journey To Become A Hosting Reseller With Our Reliable And Flexible Reseller Hosting Plans. Offer Hosting Services To Clients While Enjoying The Benefits Of Our Robust Infrastructure, Support, And Unlimited Growth Potential.",
         ratings: "5/5",
         starting_price: "Rs.159/month",
         explore_link: "Explore Solution",
@@ -91,16 +91,13 @@ export const FeaturedHosting = () => {
                 {hosting.map(({ type, description, explore_link, link, ratings, starting_price }: FeatureProps, idx) => (
                     <Card
                         key={type}
-                        className="bg-muted/50 pt-[2rem]  flex flex-col 
-                        
-                        border-[1px] transition-all duration-150 capitalize hover:shadow-xl  hover:scale-[1.01]
+                        className="bg-muted/50 pt-[2rem] min-h-[380px] flex flex-col justify-between border-[1px] transition-all duration-150 capitalize hover:shadow-xl   hover:scale-[1.01]
                         "
                     >
                         <CardHeader className="py-0 ">
                             <CardTitle className="text-primary pb-0 text-[20px] grid gap-4  place-items-start">
                                 {idx + 1}{". "}{type}
                             </CardTitle>
-
                         </CardHeader>
                         <CardContent className=" text-[16px]  mt-0 text-left    ">
                             {description}

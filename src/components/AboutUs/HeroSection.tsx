@@ -1,7 +1,3 @@
-import React from 'react'
-import { Button } from '../ui/button'
-import { FaCheckCircle } from 'react-icons/fa'
-import { Statistics } from './Stattistics'
 
 type Props = {}
 
@@ -16,12 +12,10 @@ const HeroAboutSection = (props: Props) => {
                     </h1>
                     <p className=" lg:max-w-2xl mx-auto text-center text-[15px] md:text-base font-poppins leading-7 mb-9">
                     ERIC WEB SOLUTIONS PRIVATE LIMITED is India's leading web hosting provider. Since 2019, ERIC WEB SOLUTIONS PRIVATE LIMITED has been offering reliable hosting services at the most competitive rates.
-                  </p>
+                </p>
                 </div>
-            </section>
-
+            </section>  
         </section>
-
     )
 }
 

@@ -18,8 +18,8 @@ const PricingCard = ({ plan, isAnnual }: any) => {
             key={plan.title}
             className={
                 plan.popular === PopularPlanType.YES
-                    ? "drop-shadow-2xl shadow-top shadow-black/10 capitalize dark:shadow-white/10 border-[1px] transition-all duration-150  hover:shadow-xl  hover:lg:scale-[1.04] border-none lg:scale-[1.03]"
-                    : "drop-shadow-2xl shadow-top shadow-black/10 capitalize transition-all duration-150 border-none hover:shadow-xl  hover:lg:scale-[1.01] "
+                    ? "drop-shadow-2xl shadow-top shadow-black/10 capitalize dark:shadow-white/10 border-[1px] bg-[#F8FAFC] transition-all duration-150  hover:shadow-xl  hover:lg:scale-[1.04] border-none lg:scale-[1.03]"
+                    : "drop-shadow-2xl shadow-top shadow-black/10 capitalize transition-all duration-150 border-none bg-[#F8FAFC] hover:shadow-xl  hover:lg:scale-[1.01] "
             }
         >
             <CardHeader>
@@ -63,7 +63,7 @@ const PricingCard = ({ plan, isAnnual }: any) => {
                         </span>
                     ))}
                 </div>
-                <Button className="w-full my-6 py-5 rounded-[4px] ">Security</Button>
+                <Button className="w-full my-6 py-3 rounded-[4px] ">Security</Button>
 
                 <div className="space-y-1 md:space-y-3">
                     {plan.security.map((benefit: any) => (
@@ -76,7 +76,7 @@ const PricingCard = ({ plan, isAnnual }: any) => {
                         </span>
                     ))}
                 </div>
-                <Button className="w-full my-6 py-5 rounded-[4px] ">Support</Button>
+                <Button className="w-full my-6 py-3 rounded-[4px] ">Support</Button>
 
 
                 <div className="space-y-1 md:space-y-3">
@@ -91,7 +91,7 @@ const PricingCard = ({ plan, isAnnual }: any) => {
                     ))}
                 </div>
                 <Button
-                    className="w-full my-6 py-5 rounded-[4px] ">Resources</Button>
+                    className="w-full my-6 py-3 rounded-[4px] ">Resources</Button>
 
                 <div className="space-y-1 md:space-y-3">
                     {plan.resources.map((benefit: any, index: any) => (
@@ -105,6 +105,10 @@ const PricingCard = ({ plan, isAnnual }: any) => {
                     ))}
 
                 </div>
+                <Button
+                    onClick={() => router.push(plan.href)}
+                    className={`rounded-[4px] my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
+        
             </CardFooter>
 
         </Card>

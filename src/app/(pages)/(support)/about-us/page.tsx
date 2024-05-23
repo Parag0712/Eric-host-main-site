@@ -68,7 +68,6 @@ const aboutus = (props: Props) => {
         />
       </div>
 
-
       {servicesProps.slice(1).map((service, index) => (
         <div key={index} className={index % 2 !== 0 ? "bg-[#4346C2]" : ""}>
           <Services {...service} />
