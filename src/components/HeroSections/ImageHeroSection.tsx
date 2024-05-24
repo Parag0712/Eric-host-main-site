@@ -26,12 +26,16 @@ export const ImageHeroSection = ({
     heroImage,
 }: HeroDynamicProps) => {
     return (
-        <Container className=" grid lg:grid-cols-2 place-items-center xl:gap-y-44 justify-between py-16 md:pb-32 lg:py-12 xl:py-14 xl:mb-20 gap-10">
-            <div className="text-center lg:text-start space-y-5 col-span-2 lg:col-auto ">
+        <Container className="relative grid lg:grid-cols-2 place-items-center xl:gap-y-44 justify-between py-16 md:pb-32 lg:py-12 xl:py-14 xl:mb-20 gap-10">
+            <div aria-hidden="true" className="flex  absolute -top-96 start-1/2 transform -translate-x-1/2">
+                <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] "></div>
+                <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem]"></div>
+            </div>
+            <div className="text-center lg:text-start z-50 space-y-5 col-span-2 lg:col-auto ">
                 <main className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold">
                     <div>
                         {badgeText && (
-                            <Badge className="bg-green-500 mb-2">{badgeText}</Badge>
+                            <Badge className="bg-green-500 mb-2 hover:bg-green-500">{badgeText}</Badge>
                         )}
                     </div>
                     <h1 className="inline">

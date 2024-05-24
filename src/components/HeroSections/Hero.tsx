@@ -1,5 +1,5 @@
 "use client"
-import {  RaingImage, RaingImage2 } from "@/assests/config";
+import { RaingImage, RaingImage2 } from "@/assests/config";
 import Image, { StaticImageData } from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
 import { Badge } from "../ui/badge";
@@ -15,7 +15,7 @@ type PricingData = {
     description: string;
     buttonText: string;
     features: string[];
-    href:string;
+    href: string;
 };
 interface HeroDynamicProps {
     title: string;
@@ -27,7 +27,7 @@ interface HeroDynamicProps {
     buttonText: string;
     heroImage: StaticImageData;
     bronzePricing: PricingData;
-    planhref:string;
+    planhref: string;
 }
 
 export const Hero = ({
@@ -44,12 +44,17 @@ export const Hero = ({
 }: HeroDynamicProps) => {
     const router = useRouter();
     return (
-        <Container className="container grid md:grid-cols-[1.4fr,1fr]  lg:grid-cols-2 place-items-center xl:gap-y-44 py-16 md:pb-32 lg:pb-20 xl:py-14 xl:mb-20 gap-10">
-            <div className="text-center lg:text-start space-y-5 col-span-2  md:col-auto">
-                <main className="text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
+        <Container className="relative container  grid md:grid-cols-[1.4fr,1fr]  lg:grid-cols-2 place-items-center xl:gap-y-44 py-16 md:pb-32 lg:pb-20 xl:py-14 xl:mb-20 gap-10">
+            <div aria-hidden="true" className="flex  absolute -top-96 start-1/2 transform -translate-x-1/2">
+                <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] "></div>
+                <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem]"></div>
+            </div>
+            <div className="text-center lg:text-start z-50 space-y-5 col-span-2  md:col-auto">
+
+                <main className="text-4xl sm:text-5xl z-50 md:text-4xl lg:text-5xl xl:text-6xl font-bold">
                     <div>
                         {badgeText && (
-                            <Badge className="bg-green-500 mb-2">{badgeText}</Badge>
+                            <Badge className="bg-green-500 mb-2 hover:bg-green-500">{badgeText}</Badge>
                         )}
                     </div>
                     <h1 className="inline">
@@ -94,7 +99,7 @@ export const Hero = ({
                 </div>
 
                 <div className="space-y-4 md:space-y-0 sm:space-x-4">
-                    <Button onClick={()=>router.push(planhref)} className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
+                    <Button onClick={() => router.push(planhref)} className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
                         {buttonText}
                     </Button>
                     <a
@@ -102,7 +107,7 @@ export const Hero = ({
                         href={planhref}
                         target="_blank"
                         className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-[4px]  py-5 sm:py-6 px-4 ${buttonVariants({
-                            variant: "outline", 
+                            variant: "outline",
                         })}`}
                     >
                         02:30:17:20

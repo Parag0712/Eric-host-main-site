@@ -3,7 +3,7 @@ import React from 'react';
 
 type Props = {
   headingContent: React.ReactNode;
-  description?: string;
+  description?: string | React.ReactNode;
   classname?:string
 };
 
