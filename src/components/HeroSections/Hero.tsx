@@ -44,10 +44,12 @@ export const Hero = ({
 }: HeroDynamicProps) => {
     const router = useRouter();
     return (
-        <Container className="relative container  grid md:grid-cols-[1.4fr,1fr]  lg:grid-cols-2 place-items-center xl:gap-y-44 py-16 md:pb-32 lg:pb-20 xl:py-14 xl:mb-20 gap-10">
+        <section className="relative overflow-hidden">
+
+        <Container className="container  grid md:grid-cols-[1.4fr,1fr]  lg:grid-cols-2 place-items-center xl:gap-y-44 py-16 md:pb-32 lg:pb-20 xl:py-14 xl:mb-20 gap-10">
             <div aria-hidden="true" className="flex  absolute -top-96 start-1/2 transform -translate-x-1/2">
-                <div className="bg-gradient-to-r from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] "></div>
-                <div className="bg-gradient-to-tl from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem]"></div>
+                <div className="bg-gradient-to-r  from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] "></div>
+                <div className="bg-gradient-to-tl  from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem]"></div>
             </div>
             <div className="text-center lg:text-start z-50 space-y-5 col-span-2  md:col-auto">
 
@@ -149,5 +151,6 @@ export const Hero = ({
             {/* Shadow effect */}
             <div className="shadow hidden"></div>
         </Container>
+        </section>
     );
 };

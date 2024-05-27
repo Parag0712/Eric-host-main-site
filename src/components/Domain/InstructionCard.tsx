@@ -16,12 +16,12 @@ interface ServicesProps {
     imageAlt: string;
     reversecard?: boolean;
     textwhite?: boolean;
-    offers?: any[];
-    offertitle?: string;
+    instruction?: any[];
+    instructionNumber?: boolean;
     customElements?: ReactNode;
 }
 
-export const Services: FC<ServicesProps> = ({
+export const InstructionCard: FC<ServicesProps> = ({
     title,
     subtitle,
     description,
@@ -31,41 +31,38 @@ export const Services: FC<ServicesProps> = ({
     imageAlt,
     reversecard = false,
     textwhite = false,
-    offers,
-    offertitle,
+    instruction,
+    instructionNumber,
     customElements
 }) => {
     const router = useRouter();
     return (
         <Container className=" py-16 sm:py-16">
-            <div className={`grid ${reversecard ? "lg:grid-cols-[1fr,1.2fr]" : "lg:grid-cols-[1.2fr,1fr]"}   gap-8 place-items-center ${textwhite ? "text-white" : ""}`} >
+            <div className={`grid ${reversecard ? "md:grid-cols-[1fr,1.2fr]" : "lg:grid-cols-[1.2fr,1fr]"}  lg:grid-cols-2  gap-8 place-items-center ${textwhite ? "text-white" : ""}`} >
                 <div className={`order-2 ${reversecard ? "" : "lg:order-1"}`}>
                     <p className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text  md:text-[20px] mb-2 ${textwhite ? "text-white" : ""}`}>
                         {subtitle}
                     </p>
-                    <h2 className={`text-2xl font-poppins text-black md:text-4xl font-[600] mb-1 ${textwhite ? "text-white" : ""}`}>
+                    <h2 className={`text-3xl font-poppins text-black md:text-4xl font-[600] mb-1 ${textwhite ? "text-white" : ""}`}>
                         {title}
                     </h2>
                     <div className="flex flex-col gap-3 mt-2">
                         {
                             description.map((data, idx) => (
-                                <p key={idx} className="text-sm md:text-md lg:text-[1rem] lg:leading-[1.4rem] mt-2">
+                                <p key={idx} className="text-sm md:text-md lg:text-[1.1rem] lg:leading-[1.5rem] mt-2">
                                     {data}
                                 </p>
                             ))
                         }
                     </div>
                     {
-                        offertitle && (
+                        instruction && (
                             <div className="mt-3">
-                                <h3 className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text text-lg md:text-xl ${textwhite ? "text-white" : ""}`}>
-                                    {offertitle}
-                                </h3>
-                                <ul className="pl-2 mt-1" style={{ listStyleType: "disc" }}>
-                                    {offers?.map((offer, index) => (
-                                        <li className="flex items-center gap-2">
-                                            <FaCheckCircle className="text-green-500  text-lg" />
-                                            {offer}
+                                <ul className="mt-1" style={{ listStyleType: "disc" }}>
+                                    {instruction?.map((inst, index) => (
+                                        <li className="text-lg flex items-center gap-2 ">
+                                            {instructionNumber ? <span className="font-semibold p-0 mr-1">{index + 1}.</span> : <FaCheckCircle className="text-green-500  text-lg" />}
+                                            {inst}
                                         </li>
                                     ))
                                     }

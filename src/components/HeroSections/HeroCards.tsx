@@ -38,7 +38,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
                 src={MdSizeHeroImage}
                 alt=""
                 layout="responsive"
-                className="md:hidden lg:block xl:hidden lg:object-cover bg-left object-cover object-[100%]"
+                className="md:hidden lg:block 2xl:hidden lg:object-cover bg-left object-cover object-[100%]"
             />
             <Image
                 src={SmSizeHeroImage}
@@ -48,7 +48,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
             />
 
             {/* Testimonial */}
-            <Card className="hidden  xl:block absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+            <Card className="hidden  2xl:block absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="flex flex-row items-center gap-2 pb-2 ">
                     <div className="flex flex-col">
                         <CardTitle className="text-lg">Ben James</CardTitle>
@@ -62,7 +62,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
 
             {/* XL CARD */}
             {/* Team */}
-            <Card className="hidden absolute xl:right-[20px] xl:top-4 w-80 xl:flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+            <Card className="hidden absolute 2xl:right-[20px] 2xl:top-4 w-80 2xl:flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="mt-8 flex justify-center items-center pb-2">
 
                     <div
@@ -134,7 +134,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
             </Card>
 
             {/* LG CARD */}
-            <Card className="md:hidden lg:block xl:hidden absolute bottom-0 left-[00px] w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+            <Card className="md:hidden lg:block 2xl:hidden absolute bottom-0 left-[00px] w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="mt-8 flex justify-center items-center pb-2">
                     {/* <img
                         src="/logo.svg"
@@ -210,7 +210,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
             </Card>
 
             {/* Pricing */}
-            <Card className="hidden xl:block absolute top-[160px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+            <Card className="hidden 2xl:block absolute top-[160px] left-[50px] w-72 drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader>
                     <CardTitle className="flex item-center justify-between">
                         {pricingData.name}
@@ -245,7 +245,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
                 </CardFooter>
             </Card>
             {/* Service */}
-            <Card className="hidden xl:block absolute w-[350px] -right-[10px] bottom-[45px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
+            <Card className="hidden 2xl:block absolute w-[350px] -right-[10px] bottom-[45px]  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
                 <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
                     <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
                         <LightBulbIcon />

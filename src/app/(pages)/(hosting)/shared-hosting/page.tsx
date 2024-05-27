@@ -15,6 +15,7 @@ import { heroProps, servicesProps } from "@/data/Hosing/Shared/data";
 import faq from '../../../../data/Hosing/Shared/faq.json';
 import dynamicInformationProps from '../../../../data/Hosing/Shared/information.json';
 import priceing from "../../../../data/Hosing/Shared/pricing.json";
+import DynamicInfo2 from "@/components/Information/DynamicInfo2";
 
 type Props = {}
 
@@ -26,7 +27,7 @@ const sharedhosting = (props: Props) => {
     <Pricing data={priceing} />
     <ChooseThePlans />
     <DynamicInformation {...dynamicInformationProps} />
-    
+    <DynamicInfo2 {...dynamicInformationProps} />
     {servicesProps.map((service, index) => (
       <div key={index} className={index % 2 === 0 ? "bg-[#4346C2]" : ""}>
         <Services {...service} />

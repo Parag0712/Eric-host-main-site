@@ -10,7 +10,7 @@ type Props = {
 const SmallHeading = ({ headingContent, description,classname }: Props) => {
   return (
     <>
-      <h2 className={cn("text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.7rem] font-bold  text-center",classname)}>
+      <h2 className={cn("text-3xl md:text-4xl lg:text-[3rem] lg:leading-[3.5rem] font-bold  text-center",classname)}>
         {headingContent}
       </h2>
       {

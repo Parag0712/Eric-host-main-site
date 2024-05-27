@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { ChartIcon, WalletIcon, MagnifierIcon } from './Logo';
+import { Availability, Ddos, Dedicated, Ipv6, SdIcon } from './logo';
 import { Card, CardDescription, CardHeader, CardTitle } from '../ui/card';
 import Container from '../Conatianers/Container';
 import Heading from '../Heading/Heading';
@@ -15,43 +15,43 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
     {
-        title: "Code Collaboration",
+        title: "SSD Disk Drives",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <ChartIcon />,
+            "You can never go wrong with our own top-notch dedicated servers loaded Credibly network leading-edge services vis-a-vis world-class niches. Seamlessly visualize end-to-end web-readiness",
+        icon: <SdIcon />,
     },
     {
-        title: "Project Management",
+        title: "100 Mb/s Network",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <WalletIcon />,
+            "We can guarantee an excellent experience and loading time for your successful Energistically synthesize just in time paradigms after resource-leveling e-business plagiarize cross-unit information",
+        icon: <SdIcon />,
     },
     {
-        title: "Task Automation",
+        title: "DDoS Protection",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <MagnifierIcon />,
+            "With full root access you will be able to take full control of your server very easy Holisticly repurpose granular models and go forward schemas. Professionally scale magnetic portals before",
+        icon: <Ddos />,
     },
     {
-        title: "Project Management",
+        title: "Dedicated IP",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <WalletIcon />,
+            "One of many premium features is a dedicated IP cheapest VPS hosting plan Authoritatively formulate user-centric sources without emerging best practices. Monotonectally morph an expanded",
+        icon: <Dedicated />,
     },
     {
-        title: "Project Management",
+        title: "IPv6 Support",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <WalletIcon />,
+            "Our VPS hosting plan is fully packed with dedicated IPv6 Internet protocol IP Progressively maximize standardized catalysts for change via diverse initiatives. Monotonectally underwhelm",
+        icon: <Ipv6 />,
     },
     {
-        title: "Project Management",
+        title: "Availability",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-        icon: <WalletIcon />,
+            "Our VPS solutions are perfect for hosting business applications in a production or pre-production environment. Our infrastructure offers minimal latency for your services, and hardware availability guaranteed by an SLA.",
+        icon: <Availability  />,
     }
 ];
-const Service = (props: Props) => {
+const VpsFeatured = (props: Props) => {
     return (
         <div className='bg-[#4346C2] '>
             <Container className="py-16 lg:py-28 ">
@@ -72,12 +72,12 @@ const Service = (props: Props) => {
                             {serviceList.map(({ icon, title, description }: ServiceProps) => (
                                 <Card key={title}>
                                     <CardHeader className="space-y-1 flex lg:flex-row justify-start items-center lg:items-start gap-4">
-                                        <div className="mt-1 bg-primary/20 p-1 rounded-2xl">
+                                        <div className=""> 
                                             {icon}
                                         </div>
                                         <div className='text-center lg:text-left'>
                                             <CardTitle>{title}</CardTitle>
-                                            <CardDescription className="text-md mt-2">
+                                            <CardDescription className="text-[15px] mt-2">
                                                 {description}
                                             </CardDescription>
                                         </div>
@@ -93,4 +93,4 @@ const Service = (props: Props) => {
     )
 }
 
-export default Service
+export default VpsFeatured

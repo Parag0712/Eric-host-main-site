@@ -106,8 +106,8 @@ export const Navbar = () => {
     };
 
     return (
-        <header className="sticky border-b-[1px] top-0 z-40 w-full dark:border-b-slate-700 dark:bg-background py-2">
-            <NavigationMenu className="mx-auto">
+        <header className="sticky  border-b-[1px] top-0 z-1 w-full lg:py-2">
+            <NavigationMenu className=" mx-auto">
                 <NavigationMenuList className="container lg:max-w-[1440px] h-14 px-4 w-screen flex justify-between ">
                     <NavigationMenuItem className="font-bold flex">
                         <Link href="/" className="flex items-center">
@@ -121,7 +121,7 @@ export const Navbar = () => {
                             open={isOpen}
                             onOpenChange={setIsOpen}
                         >
-                            <SheetTrigger className="px-2">
+                            <SheetTrigger className="px-2 ">
                                 <Menu
                                     className="flex lg:hidden h-5 w-5"
                                     onClick={() => setIsOpen(true)}
@@ -129,7 +129,7 @@ export const Navbar = () => {
                                 </Menu>
                             </SheetTrigger>
 
-                            <SheetContent side={"left"} className="flex flex-col items-stretch justify-between">
+                            <SheetContent side={"left"} className="flex  flex-col items-stretch justify-between">
                                 <div>
                                     <SheetHeader>
                                         <SheetTitle className="font-bold text-xl">

@@ -54,11 +54,6 @@
                     "title": "Domain Transfer",
                     "href": "/domain-transfer",
                     "description": "Transfer Your Domain Easily"
-                },
-                {
-                    "title": "Domain Checker",
-                    "href": "/domain-checker",
-                    "description": "Find the Your Perfect Domain Name"
                 }
             ]
         },
@@ -79,7 +74,7 @@
             ]
         },
         {
-            "href": "/blog",
+            "href": "http://blog.erichost.com",
             "text": "Blog",
             "options": []
         },
@@ -93,7 +88,7 @@
                     "description": "Face any problem contact us"
                 },
                 {
-                    "title": "About Us Server",
+                    "title": "About Us",
                     "href": "/about-us",
                     "description": "We are leading hosting company"
                 }
