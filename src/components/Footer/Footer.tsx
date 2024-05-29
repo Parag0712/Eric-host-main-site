@@ -65,20 +65,23 @@ export const Footer = () => {
                     }
 
                     <div className="flex flex-col gap-2 mt-5">
-                        <h3 className="font-bold text-lg">Company</h3>
-                        {
-                            navbar[5].options.map((data) => (
-                                <div>
-                                    <a
-                                        rel="noreferrer noopener"
-                                        href={data.href}
-                                        className="opacity-100 hover:text-primary"
-                                    >
-                                        {data.title}
-                                    </a>
-                                </div>
-                            ))
-                        }
+                        <h3 className="font-bold text-lg">Navigation</h3>
+                        <div>
+                            <a
+                                rel="noreferrer noopener"
+                                href="/affiliatesprogram"
+                                className="opacity-100 hover:text-primary"
+                            >Affiliates
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                rel="noreferrer noopener"
+                                href="/term&condtions"
+                                className="opacity-100 hover:text-primary"
+                            >Term Condtions
+                            </a>
+                        </div>
 
                     </div>
                 </div>
@@ -156,8 +159,7 @@ export const Footer = () => {
                     &copy; 2024 Eric Web Solutions Private Limited{" "}
                     <a
                         rel="noreferrer noopener"
-                        target="_blank"
-                        href="/"
+                        href="/about-us"
                         className="text-primary transition-all border-primary hover:border-b-2"
                     >
                         All Rights Reserved.

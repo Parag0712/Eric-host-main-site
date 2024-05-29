@@ -1,6 +1,9 @@
+"use client"
+import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 
 export const Cta = () => {
+    const router = useRouter();;
     return (
         <section
             id="cta"
@@ -16,6 +19,7 @@ export const Cta = () => {
                     </p>
                 </div>
                 <Button
+                onClick={() => router.push("https://clients.erichost.com/affiliates.php")}
                     variant="outline"
                     className=" text-[18px] text-black py-6 px-8 w-full md:w-auto max-w-[200px]"
                 >Login Now

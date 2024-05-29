@@ -16,7 +16,7 @@ const affiliatesprogram = (props: Props) => {
                 title="Our Hosting Affiliate Program"
                 description="We offer nice commissions, however most of our affiliates endorse US for a unique reason the standard of service. If you would like to advocate a number that will not fail your customers, readers, be part of our affiliate program!"
                 label="Login Here"
-                href='/'
+                href='https://clients.erichost.com/affiliates.php'
             />
             <InstructionCard
                 {...servicesProps[0]}

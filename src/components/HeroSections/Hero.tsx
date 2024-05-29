@@ -7,6 +7,7 @@ import { Button, buttonVariants } from "../ui/button";
 import { HeroCards } from "./HeroCards";
 import { useRouter } from "next/navigation";
 import Container from "../Conatianers/Container";
+import { sendGAEvent } from "@next/third-parties/google";
 
 type PricingData = {
     name: string;
@@ -101,7 +102,11 @@ export const Hero = ({
                     </div>
 
                     <div className="space-y-4 md:space-y-0 sm:space-x-4">
-                        <Button onClick={() => router.push('#pricing')} className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
+                        <Button onClick={() => {
+                            router.push('#pricing')
+                            sendGAEvent({event:"HeroButtonClicked",value:"xyz"})
+
+                        }} className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
                             {buttonText}
                         </Button>
                         <a

@@ -156,7 +156,6 @@ export const Navbar = () => {
                                         <a
                                             rel="noreferrer noopener"
                                             href="https://clients.erichost.com/login"
-                                            target="_blank"
                                             className={`w-full border ${buttonVariants({
                                                 variant: "secondary",
                                             })}`}

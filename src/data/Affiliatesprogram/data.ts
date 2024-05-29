@@ -8,8 +8,8 @@ export const servicesProps = [
         description: [
             "Globally parallel task granular alignments through excellent intellectual capital. Globally deploy vertical leadership.",
         ],
-        buttonText: "Get Domain",
-        buttonLink: "/plans",
+        buttonText: "Join Affiliate Program",
+        buttonLink: "https://clients.erichost.com/affiliates.php",
         imageSrc: teamstronger,
         imageAlt: "Card Image",
         reversecard: false,
@@ -26,8 +26,8 @@ export const servicesProps = [
         description: [
             "Simply put, affiliate marketing involves referring a product or service by sharing it on a blog, social media platforms, or website.",
         ],
-        buttonText: "Get Domain",
-        buttonLink: "/plans",
+        buttonText: "Join Affiliate Program",
+        buttonLink: "https://clients.erichost.com/affiliates.php",
         imageSrc: teamstronger,
         imageAlt: "Card Image",
         reversecard: true,
@@ -42,17 +42,6 @@ export const servicesProps = [
     },
 ];
 
-export const support = {
-    title: "24/7 Expert Hosting Support Our Customers Love",
-    subtitle: "Welcome to Eric Host",
-    description: [
-        "With Erichost hosting you will get quality support for all your server related issues !"
-    ],
-    buttonText: "We're Here to Help You",
-    buttonLink: "/",
-    imageSrc: Faq,
-    imageAlt: "Card Image",
-}
 
 export const termandcondition = [
     "Accounts with fraudulent, abusive, or illegal activities will not be considered referrals and will not be paid.",
