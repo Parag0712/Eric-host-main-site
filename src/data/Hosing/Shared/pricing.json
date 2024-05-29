@@ -1,32 +1,252 @@
 {
     "plans": [
         {
-            "title": "bronze",
-            "monthly": 199,
-            "annually": 159,
-            "description": "essential features for small businesses",
-            "popular": 0,
-            "href":"",
+            "title": "Basic",
+            "monthly": 59,
+            "annually": 49,
+            "biannually": 44,
+            "triannually": 39,
+            "description": "Ideal for small websites",
+            "popular": false,
+            "href": "https://clients.erichost.com/cart.php?a=add&pid=33",
+            "features": [
+                {
+                    "website": 1,
+                    "description": "1 website"
+                },
+                {
+                    "disk space": "10 GB",
+                    "description": "10 GB disk space"
+                },
+                {
+                    "bandwidth": "50 GB",
+                    "description": "50 GB bandwidth"
+                },
+                {
+                    "email": 3,
+                    "description": "3 email accounts"
+                },
+                {
+                    "sub-domain": 3,
+                    "description": "3 sub-domains"
+                },
+                {
+                    "ftp accounts": 3,
+                    "description": "3 FTP accounts"
+                },
+                {
+                    "database": 3,
+                    "description": "3 databases"
+                },
+                {
+                    "cpu core": "1 Core",
+                    "description": "1 CPU core"
+                },
+                {
+                    "ram": "512 MB",
+                    "description": "512 MB RAM"
+                },
+                {
+                    "concurrent connections (EP)": 10,
+                    "description": "10 concurrent connections (EP)"
+                },
+                {
+                    "number of processes (nPROC)": 30,
+                    "description": "30 number of processes (nPROC)"
+                },
+                {
+                    "IO limit": "2 MBPS",
+                    "description": "2 MBPS IO limit"
+                },
+                {
+                    "file (node) limit": 50000,
+                    "description": "50000 file (node) limit"
+                }
+            ],
+            "security": [
+                {
+                    "standard ddos protection": true,
+                    "description": "standard DDoS protection"
+                },
+                {
+                    "web application firewall": true,
+                    "description": "web application firewall"
+                },
+                {
+                    "malware scanner": true,
+                    "description": "malware scanner"
+                },
+                {
+                    "secure access manager": true,
+                    "description": "secure access manager"
+                }
+            ],
+            "support": [
+                {
+                    "30-day money-back guarantee": true,
+                    "description": "30-day money-back guarantee"
+                },
+                {
+                    "99.9% uptime": true,
+                    "description": "99.9% uptime"
+                },
+                {
+                    "24/7 customer support": true,
+                    "description": "24/7 customer support"
+                },
+                {
+                    "instant setup": true,
+                    "description": "instant setup"
+                }
+            ],"resources": [
+                {
+                    "Easy Website Builder": true,
+                    "description": "Easy Website Builder"
+                },
+                {
+                    "Weekly Backups": true,
+                    "description": "Weekly Backups"
+                },
+                {
+                    "Free SSL Certificate": true,
+                    "description": "Free SSL Certificate"
+                }
+            ]
+        },
+        {
+            "title": "Medium",
+            "monthly": 99,
+            "annually": 79,
+            "biannually": 74,
+            "triannually": 69,
+            "description": "Suitable for growing websites",
+            "popular": false,
+            "href": "https://clients.erichost.com/cart.php?a=add&pid=3",
             "features": [
                 {
                     "website": 5,
-                    "description": "free 5 websites"
+                    "description": "5 websites"
                 },
                 {
-                    "disk space": 50,
-                    "description": "50 gb disk space"
+                    "disk space": "20 GB",
+                    "description": "20 GB disk space"
                 },
                 {
-                    "weekly backups": "yes",
-                    "description": "weekly backups"
+                    "bandwidth": "100 GB",
+                    "description": "100 GB bandwidth"
                 },
                 {
-                    "free ssl certificate": "yes",
-                    "description": "free ssl certificate"
+                    "email": 5,
+                    "description": "5 email accounts"
                 },
                 {
-                    "bandwidth": "unlimited",
-                    "description": "unlimited bandwidth"
+                    "sub-domain": 5,
+                    "description": "5 sub-domains"
+                },
+                {
+                    "ftp accounts": 5,
+                    "description": "5 FTP accounts"
+                },
+                {
+                    "database": 5,
+                    "description": "5 databases"
+                },
+                {
+                    "cpu core": "1 Core",
+                    "description": "1 CPU core"
+                },
+                {
+                    "ram": "1 GB",
+                    "description": "1 GB RAM"
+                },
+                {
+                    "concurrent connections (EP)": 10,
+                    "description": "10 concurrent connections (EP)"
+                },
+                {
+                    "number of processes (nPROC)": 40,
+                    "description": "40 number of processes (nPROC)"
+                },
+                {
+                    "IO limit": "2 MBPS",
+                    "description": "2 MBPS IO limit"
+                },
+                {
+                    "file (node) limit": 100000,
+                    "description": "100000 file (node) limit"
+                }
+            ],
+            "security": [
+                {
+                    "standard ddos protection": true,
+                    "description": "standard DDoS protection"
+                },
+                {
+                    "web application firewall": true,
+                    "description": "web application firewall"
+                },
+                {
+                    "malware scanner": true,
+                    "description": "malware scanner"
+                },
+                {
+                    "secure access manager": true,
+                    "description": "secure access manager"
+                }
+            ],
+            "support": [
+                {
+                    "30-day money-back guarantee": true,
+                    "description": "30-day money-back guarantee"
+                },
+                {
+                    "99.9% uptime": true,
+                    "description": "99.9% uptime"
+                },
+                {
+                    "24/7 customer support": true,
+                    "description": "24/7 customer support"
+                },
+                {
+                    "instant setup": true,
+                    "description": "instant setup"
+                }
+            ],"resources": [
+                {
+                    "Easy Website Builder": true,
+                    "description": "Easy Website Builder"
+                },
+                {
+                    "Weekly Backups": true,
+                    "description": "Weekly Backups"
+                },
+                {
+                    "Free SSL Certificate": true,
+                    "description": "Free SSL Certificate"
+                }
+            ]
+        },
+        {
+            "title": "Pro",
+            "monthly": 159,
+            "annually": 129,
+            "biannually": 119,
+            "triannually": 109,
+            "description": "For high-traffic websites",
+            "popular": true,
+            "href": "https://clients.erichost.com/cart.php?a=add&pid=4",
+            "features": [
+                {
+                    "website": 10,
+                    "description": "10 websites"
+                },
+                {
+                    "disk space": "40 GB",
+                    "description": "40 GB disk space"
+                },
+                {
+                    "bandwidth": "160 GB",
+                    "description": "160 GB bandwidth"
                 },
                 {
                     "email": 10,
@@ -38,316 +258,86 @@
                 },
                 {
                     "ftp accounts": 10,
-                    "description": "10 ftp accounts"
-                },
-                {
-                    "easy website builder": "yes",
-                    "description": "easy website builder"
+                    "description": "10 FTP accounts"
                 },
                 {
                     "database": 10,
                     "description": "10 databases"
                 },
                 {
-                    "terminal": "yes",
-                    "description": "terminal access"
+                    "cpu core": "1 Core",
+                    "description": "1 CPU core"
+                },
+                {
+                    "ram": "1 GB",
+                    "description": "1 GB RAM"
+                },
+                {
+                    "concurrent connections (EP)": 10,
+                    "description": "10 concurrent connections (EP)"
+                },
+                {
+                    "number of processes (nPROC)": 50,
+                    "description": "50 number of processes (nPROC)"
+                },
+                {
+                    "IO limit": "5 MBPS",
+                    "description": "5 MBPS IO limit"
+                },
+                {
+                    "file (node) limit": 150000,
+                    "description": "150000 file (node) limit"
                 }
             ],
             "security": [
                 {
-                    "standard ddos protection": "yes",
-                    "description": "standard ddos protection"
+                    "standard ddos protection": true,
+                    "description": "standard DDoS protection"
                 },
                 {
-                    "web application firewall": "yes",
+                    "web application firewall": true,
                     "description": "web application firewall"
                 },
                 {
-                    "malware scanner": "yes",
+                    "malware scanner": true,
                     "description": "malware scanner"
                 },
                 {
-                    "secure access manager": "yes",
+                    "secure access manager": true,
                     "description": "secure access manager"
                 }
             ],
             "support": [
                 {
-                    "30-day money-back guarantee": "yes",
+                    "30-day money-back guarantee": true,
                     "description": "30-day money-back guarantee"
                 },
                 {
-                    "99.9% uptime": "yes",
+                    "99.9% uptime": true,
                     "description": "99.9% uptime"
                 },
                 {
-                    "24/7 customer support": "yes",
+                    "24/7 customer support": true,
                     "description": "24/7 customer support"
                 },
                 {
-                    "instant setup": "yes",
+                    "instant setup": true,
                     "description": "instant setup"
                 }
-            ],
-            "resources": [
+            ], "resources": [
                 {
-                    "cpu core": "2 core",
-                    "description": "2 cpu cores"
+                    "Easy Website Builder": true,
+                    "description": "Easy Website Builder"
                 },
                 {
-                    "ram": "2 gb",
-                    "description": "2 gb ram"
+                    "Weekly Backups": true,
+                    "description": "Weekly Backups"
                 },
                 {
-                    "concurrent connections (ep)": 10,
-                    "description": "10 concurrent connections (ep)"
-                },
-                {
-                    "number of processes (nproc)": 75,
-                    "description": "75 number of processes (nproc)"
-                },
-                {
-                    "io limit": "5 mbps",
-                    "description": "5 mbps io limit"
-                },
-                {
-                    "file (node) limit": 500000,
-                    "description": "500000 file (node) limit"
-                }
-            ]
-        },
-        {
-            "title": "silver",
-            "monthly": 549,
-            "annually": 399,
-            "description": "enhanced capabilities for growing businesses",
-            "popular": 1,
-            "href":"",
-            "features": [
-                {
-                    "website": 100,
-                    "description": "100 websites"
-                },
-                {
-                    "disk space": 100,
-                    "description": "100 gb disk space"
-                },
-                {
-                    "weekly backups": "yes",
-                    "description": "weekly backups"
-                },
-                {
-                    "free ssl certificate": "yes",
-                    "description": "free ssl certificate"
-                },
-                {
-                    "bandwidth": "unlimited",
-                    "description": "unlimited bandwidth"
-                },
-                {
-                    "email": 50,
-                    "description": "50 email accounts"
-                },
-                {
-                    "sub-domain": 50,
-                    "description": "50 sub-domains"
-                },
-                {
-                    "ftp accounts": 50,
-                    "description": "50 ftp accounts"
-                },
-                {
-                    "easy website builder": "yes",
-                    "description": "easy website builder"
-                },
-                {
-                    "database": 50,
-                    "description": "50 databases"
-                },
-                {
-                    "terminal": "yes",
-                    "description": "terminal access"
-                }
-            ],
-            "security": [
-                {
-                    "standard ddos protection": "yes",
-                    "description": "standard ddos protection"
-                },
-                {
-                    "web application firewall": "yes",
-                    "description": "web application firewall"
-                },
-                {
-                    "malware scanner": "yes",
-                    "description": "malware scanner"
-                },
-                {
-                    "secure access manager": "yes",
-                    "description": "secure access manager"
-                }
-            ],
-            "support": [
-                {
-                    "30-day money-back guarantee": "yes",
-                    "description": "30-day money-back guarantee"
-                },
-                {
-                    "99.9% uptime": "yes",
-                    "description": "99.9% uptime"
-                },
-                {
-                    "24/7 customer support": "yes",
-                    "description": "24/7 customer support"
-                },
-                {
-                    "instant setup": "yes",
-                    "description": "instant setup"
-                }
-            ],
-            "resources": [
-                {
-                    "cpu core": "2 core",
-                    "description": "2 cpu cores"
-                },
-                {
-                    "ram": "3 gb",
-                    "description": "3 gb ram"
-                },
-                {
-                    "concurrent connections (ep)": 10,
-                    "description": "10 concurrent connections (ep)"
-                },
-                {
-                    "number of processes (nproc)": 100,
-                    "description": "100 number of processes (nproc)"
-                },
-                {
-                    "io limit": "10 mbps",
-                    "description": "10 mbps io limit"
-                },
-                {
-                    "file (node) limit": 1000000,
-                    "description": "1000000 file (node) limit"
-                }
-            ]
-        },
-        {
-            "title": "gold",
-            "monthly": 1199,
-            "annually": 999,
-            "description": "premium resources for large enterprises",
-            "popular": 0,
-            "href":"",
-            "features": [
-                {
-                    "website": 100,
-                    "description": "100 websites"
-                },
-                {
-                    "disk space": 200,
-                    "description": "200 gb disk space"
-                },
-                {
-                    "weekly backups": "yes",
-                    "description": "weekly backups"
-                },
-                {
-                    "free ssl certificate": "yes",
-                    "description": "free ssl certificate"
-                },
-                {
-                    "bandwidth": "unlimited",
-                    "description": "unlimited bandwidth"
-                },
-                {
-                    "email": 100,
-                    "description": "100 email accounts"
-                },
-                {
-                    "sub-domain": 100,
-                    "description": "100 sub-domains"
-                },
-                {
-                    "ftp accounts": 100,
-                    "description": "100 ftp accounts"
-                },
-                {
-                    "easy website builder": "yes",
-                    "description": "easy website builder"
-                },
-                {
-                    "database": 100,
-                    "description": "100 databases"
-                },
-                {
-                    "terminal": "yes",
-                    "description": "terminal access"
-                }
-            ],
-            "security": [
-                {
-                    "standard ddos protection": "yes",
-                    "description": "standard ddos protection"
-                },
-                {
-                    "web application firewall": "yes",
-                    "description": "web application firewall"
-                },
-                {
-                    "malware scanner": "yes",
-                    "description": "malware scanner"
-                },
-                {
-                    "secure access manager": "yes",
-                    "description": "secure access manager"
-                }
-            ],
-            "support": [
-                {
-                    "30-day money-back guarantee": "yes",
-                    "description": "30-day money-back guarantee"
-                },
-                {
-                    "99.9% uptime": "yes",
-                    "description": "99.9% uptime"
-                },
-                {
-                    "24/7 customer support": "yes",
-                    "description": "24/7 customer support"
-                },
-                {
-                    "instant setup": "yes",
-                    "description": "instant setup"
-                }
-            ],
-            "resources": [
-                {
-                    "cpu core": "2 core",
-                    "description": "2 cpu cores"
-                },
-                {
-                    "ram": "4 gb",
-                    "description": "4 gb ram"
-                },
-                {
-                    "concurrent connections (ep)": 10,
-                    "description": "10 concurrent connections (ep)"
-                },
-                {
-                    "number of processes (nproc)": 200,
-                    "description": "200 number of processes (nproc)"
-                },
-                {
-                    "io limit": "50 mbps",
-                    "description": "50 mbps io limit"
-                },
-                {
-                    "file (node) limit": 2000000,
-                    "description": "2000000 file (node) limit"
+                    "Free SSL Certificate": true,
+                    "description": "Free SSL Certificate"
                 }
             ]
         }
     ]
 }
-

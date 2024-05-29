@@ -24,7 +24,7 @@ const businesshosting = (props: Props) => {
     <section>
       <ImageHeroSection {...heroProps
       } />
-      <Pricing data={priceing} />
+      <Pricing data={priceing} title="Business" />
       <ChooseThePlans />
       <DynamicInformation {...dynamicInformationProps} />
 

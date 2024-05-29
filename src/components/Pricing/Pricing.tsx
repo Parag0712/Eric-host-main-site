@@ -4,7 +4,7 @@ import PricingCard from "./PricingCard";
 import Heading from "../Heading/Heading";
 import Container from "../Conatianers/Container";
 
-export const Pricing = ({ data }: { data: any }) => {
+export const Pricing = ({ data, title }: { data: any, title: string }) => {
     const [isAnnual, setIsAnnual] = useState(true);
     return (
         <Container
@@ -18,13 +18,16 @@ export const Pricing = ({ data }: { data: any }) => {
                 classname="text-center"
                 headingContent={
                     <>
-                        Choose the plans that’s
+                    Best 
                         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                             {" "}
-                            Plans{" "}
+                            {title}
+                            {" "}
+                            
+                            {" "}
                         </span>
-                        Access
-
+                        Hosting
+                        Plans
                     </>
                 }
             />

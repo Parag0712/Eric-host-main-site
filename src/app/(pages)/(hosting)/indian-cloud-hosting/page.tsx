@@ -25,10 +25,10 @@ const indianhosting = (props: Props) => {
     <section>
       <ImageHeroSection {...heroProps
       } />
-      <Pricing data={priceing} />
+      <Pricing data={priceing} title="Cloud" />
       <ChooseThePlans />
       <DynamicInformation {...dynamicInformationProps} />
-      
+
       {servicesProps.map((service, index) => {
         const shouldBePurple = index % 3 !== 2;
         return (

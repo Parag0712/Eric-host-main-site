@@ -24,7 +24,7 @@ const minihosting = (props: Props) => {
     <section>
       <ImageHeroSection {...heroProps
       } />
-      <Pricing data={priceing} />
+      <Pricing data={priceing} title="Mini"/>
       <ChooseThePlans />
       <DynamicInformation {...dynamicInformationProps} />
 

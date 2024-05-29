@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 const PricingCard = ({ plan, isAnnual }: any) => {
     const currency = "₹"
     const year = isAnnual;
-    const PlanPrice = year ? plan.monthly : plan.annually;
+    const PlanPrice = year ? plan.annually : plan.monthly;
     enum PopularPlanType {
         NO = 0,
         YES = 1,
@@ -63,52 +63,65 @@ const PricingCard = ({ plan, isAnnual }: any) => {
                         </span>
                     ))}
                 </div>
-                <Button className="w-full my-6 py-3 rounded-[4px] ">Security</Button>
 
-                <div className="space-y-1 md:space-y-3">
-                    {plan.security.map((benefit: any) => (
-                        <span
-                            key={benefit}
-                            className="flex"
-                        >
-                            <Check className="text-green-500" />{" "}
-                            <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
-                        </span>
-                    ))}
-                </div>
-                <Button className="w-full my-6 py-3 rounded-[4px] ">Support</Button>
+                {/* Security */}
+                {plan?.security?.length > 0 && (
+                    <>
+                        <Button className="w-full my-6 py-3 rounded-[4px] ">Security</Button>
+                        <div className="space-y-1 md:space-y-3">
+                            {plan.security.map((benefit: any) => (
+                                <span
+                                    key={benefit}
+                                    className="flex"
+                                >
+                                    <Check className="text-green-500" />{" "}
+                                    <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
+                                </span>
+                            ))}
+                        </div>
+                    </>
+                )}
 
+                {/* Support */}
+                {
+                    plan?.support?.length  > 0 && (
+                        <>
+                            <Button className="w-full my-6 py-3 rounded-[4px] ">Support</Button>
+                            <div className="space-y-1 md:space-y-3">
+                                {plan.support.map((benefit: any, index: any) => (
+                                    <span
+                                        key={index}
+                                        className="flex"
+                                    >
+                                        <Check className="text-green-500" />{" "}
+                                        <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
+                                    </span>
+                                ))}
+                            </div></>
+                    )
+                }
 
-                <div className="space-y-1 md:space-y-3">
-                    {plan.security.map((benefit: any, index: any) => (
-                        <span
-                            key={index}
-                            className="flex"
-                        >
-                            <Check className="text-green-500" />{" "}
-                            <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
-                        </span>
-                    ))}
-                </div>
-                <Button
-                    className="w-full my-6 py-3 rounded-[4px] ">Resources</Button>
-
-                <div className="space-y-1 md:space-y-3">
-                    {plan.resources.map((benefit: any, index: any) => (
-                        <span
-                            key={index}
-                            className="flex"
-                        >
-                            <Check className="text-green-500" />{" "}
-                            <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
-                        </span>
-                    ))}
-
-                </div>
+                {
+                    plan?.resources?.length > 0 && (
+                        <>
+                            <Button className="w-full my-6 py-3 rounded-[4px] ">Resources</Button>
+                            <div className="space-y-1 md:space-y-3">
+                                {plan.resources.map((benefit: any, index: any) => (
+                                    <span
+                                        key={index}
+                                        className="flex"
+                                    >
+                                        <Check className="text-green-500" />{" "}
+                                        <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
+                                    </span>
+                                ))}
+                            </div></>
+                    )
+                }
                 <Button
                     onClick={() => router.push(plan.href)}
                     className={`rounded-[4px] my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
-        
+
             </CardFooter>
 
         </Card>

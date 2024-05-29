@@ -16,7 +16,7 @@ const page = (props: Props) => {
   return (
     <section>
       <Hero {...heroProps} />
-      <Pricing data={data} />
+      <Pricing data={data} title="Business" />
       <section className="bg-[#F2F3FF]">
         <Services
           {...servicesProps[0]}

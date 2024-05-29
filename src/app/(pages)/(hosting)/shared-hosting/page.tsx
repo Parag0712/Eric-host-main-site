@@ -25,7 +25,7 @@ const sharedhosting = (props: Props) => {
     <section>
     <ImageHeroSection {...heroProps
     } />
-    <Pricing data={priceing} />
+    <Pricing data={priceing} title="Shared" />
     <ChooseThePlans />
     <DynamicInformation {...dynamicInformationProps} />
     {servicesProps.map((service, index) => (

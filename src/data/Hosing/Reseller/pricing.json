@@ -1,353 +1,230 @@
 {
     "plans": [
         {
-            "title": "bronze",
-            "monthly": 199,
-            "annually": 159,
-            "description": "essential features for small businesses",
-            "popular": 0,
-            "href":"",
-            "features": [
-                {
-                    "website": 5,
-                    "description": "free 5 websites"
-                },
-                {
-                    "disk space": 50,
-                    "description": "50 gb disk space"
-                },
-                {
-                    "weekly backups": "yes",
-                    "description": "weekly backups"
-                },
-                {
-                    "free ssl certificate": "yes",
-                    "description": "free ssl certificate"
-                },
-                {
-                    "bandwidth": "unlimited",
-                    "description": "unlimited bandwidth"
-                },
-                {
-                    "email": 10,
-                    "description": "10 email accounts"
-                },
-                {
-                    "sub-domain": 10,
-                    "description": "10 sub-domains"
-                },
-                {
-                    "ftp accounts": 10,
-                    "description": "10 ftp accounts"
-                },
-                {
-                    "easy website builder": "yes",
-                    "description": "easy website builder"
-                },
-                {
-                    "database": 10,
-                    "description": "10 databases"
-                },
-                {
-                    "terminal": "yes",
-                    "description": "terminal access"
-                }
-            ],
-            "security": [
-                {
-                    "standard ddos protection": "yes",
-                    "description": "standard ddos protection"
-                },
-                {
-                    "web application firewall": "yes",
-                    "description": "web application firewall"
-                },
-                {
-                    "malware scanner": "yes",
-                    "description": "malware scanner"
-                },
-                {
-                    "secure access manager": "yes",
-                    "description": "secure access manager"
-                }
-            ],
-            "support": [
-                {
-                    "30-day money-back guarantee": "yes",
-                    "description": "30-day money-back guarantee"
-                },
-                {
-                    "99.9% uptime": "yes",
-                    "description": "99.9% uptime"
-                },
-                {
-                    "24/7 customer support": "yes",
-                    "description": "24/7 customer support"
-                },
-                {
-                    "instant setup": "yes",
-                    "description": "instant setup"
-                }
-            ],
-            "resources": [
-                {
-                    "cpu core": "2 core",
-                    "description": "2 cpu cores"
-                },
-                {
-                    "ram": "2 gb",
-                    "description": "2 gb ram"
-                },
-                {
-                    "concurrent connections (ep)": 10,
-                    "description": "10 concurrent connections (ep)"
-                },
-                {
-                    "number of processes (nproc)": 75,
-                    "description": "75 number of processes (nproc)"
-                },
-                {
-                    "io limit": "5 mbps",
-                    "description": "5 mbps io limit"
-                },
-                {
-                    "file (node) limit": 500000,
-                    "description": "500000 file (node) limit"
-                }
-            ]
-        },
-        {
-            "title": "silver",
-            "monthly": 549,
-            "annually": 399,
-            "description": "enhanced capabilities for growing businesses",
-            "popular": 1,
-            "href":"",
-            "features": [
-                {
-                    "website": 100,
-                    "description": "100 websites"
-                },
-                {
-                    "disk space": 100,
-                    "description": "100 gb disk space"
-                },
-                {
-                    "weekly backups": "yes",
-                    "description": "weekly backups"
-                },
-                {
-                    "free ssl certificate": "yes",
-                    "description": "free ssl certificate"
-                },
-                {
-                    "bandwidth": "unlimited",
-                    "description": "unlimited bandwidth"
-                },
-                {
-                    "email": 50,
-                    "description": "50 email accounts"
-                },
-                {
-                    "sub-domain": 50,
-                    "description": "50 sub-domains"
-                },
-                {
-                    "ftp accounts": 50,
-                    "description": "50 ftp accounts"
-                },
-                {
-                    "easy website builder": "yes",
-                    "description": "easy website builder"
-                },
-                {
-                    "database": 50,
-                    "description": "50 databases"
-                },
-                {
-                    "terminal": "yes",
-                    "description": "terminal access"
-                }
-            ],
-            "security": [
-                {
-                    "standard ddos protection": "yes",
-                    "description": "standard ddos protection"
-                },
-                {
-                    "web application firewall": "yes",
-                    "description": "web application firewall"
-                },
-                {
-                    "malware scanner": "yes",
-                    "description": "malware scanner"
-                },
-                {
-                    "secure access manager": "yes",
-                    "description": "secure access manager"
-                }
-            ],
-            "support": [
-                {
-                    "30-day money-back guarantee": "yes",
-                    "description": "30-day money-back guarantee"
-                },
-                {
-                    "99.9% uptime": "yes",
-                    "description": "99.9% uptime"
-                },
-                {
-                    "24/7 customer support": "yes",
-                    "description": "24/7 customer support"
-                },
-                {
-                    "instant setup": "yes",
-                    "description": "instant setup"
-                }
-            ],
-            "resources": [
-                {
-                    "cpu core": "2 core",
-                    "description": "2 cpu cores"
-                },
-                {
-                    "ram": "3 gb",
-                    "description": "3 gb ram"
-                },
-                {
-                    "concurrent connections (ep)": 10,
-                    "description": "10 concurrent connections (ep)"
-                },
-                {
-                    "number of processes (nproc)": 100,
-                    "description": "100 number of processes (nproc)"
-                },
-                {
-                    "io limit": "10 mbps",
-                    "description": "10 mbps io limit"
-                },
-                {
-                    "file (node) limit": 1000000,
-                    "description": "1000000 file (node) limit"
-                }
-            ]
-        },
-        {
-            "title": "gold",
+            "title": "RH-20",
             "monthly": 1199,
-            "annually": 999,
-            "description": "premium resources for large enterprises",
-            "popular": 0,
-            "href":"",
+            "annually": 11499,
+            "biannually": 19999,
+            "triannually": 24999,
+            "description": "20 cPanel Accounts with essential features",
+            "href":"https://clients.erichost.com/cart.php?a=add&pid=31",
             "features": [
                 {
-                    "website": 100,
-                    "description": "100 websites"
+                    "cPanel Accounts": 20,
+                    "description": "20 cPanel Accounts"
                 },
                 {
-                    "disk space": 200,
-                    "description": "200 gb disk space"
+                    "dedicated IP": "Dedicated IP",
+                    "description": "Dedicated IP"
                 },
                 {
-                    "weekly backups": "yes",
-                    "description": "weekly backups"
+                    "disk space": "50GB NVMe SSD",
+                    "description": "50GB NVMe SSD disk space"
                 },
                 {
-                    "free ssl certificate": "yes",
-                    "description": "free ssl certificate"
+                    "bandwidth": "Unlimited",
+                    "description": "Unlimited Bandwidth"
                 },
                 {
-                    "bandwidth": "unlimited",
-                    "description": "unlimited bandwidth"
+                    "LVE RAM per cPanel": "2GB",
+                    "description": "2GB LVE RAM per cPanel"
                 },
                 {
-                    "email": 100,
-                    "description": "100 email accounts"
+                    "tech support": "24/7",
+                    "description": "24/7 Tech Support"
                 },
                 {
-                    "sub-domain": 100,
-                    "description": "100 sub-domains"
+                    "free SSL certificates": "Yes",
+                    "description": "Free SSL Certificates"
                 },
                 {
-                    "ftp accounts": 100,
-                    "description": "100 ftp accounts"
+                    "unlimited migrations": "Yes",
+                    "description": "Unlimited Free Migrations"
                 },
                 {
-                    "easy website builder": "yes",
-                    "description": "easy website builder"
+                    "custom nameservers": "Yes",
+                    "description": "Custom Nameservers"
                 },
                 {
-                    "database": 100,
-                    "description": "100 databases"
+                    "LiteSpeed Webserver": "Yes",
+                    "description": "LiteSpeed Webserver"
                 },
                 {
-                    "terminal": "yes",
-                    "description": "terminal access"
+                    "whitelabel servers": "Yes",
+                    "description": "Whitelabel Servers"
+                },
+                {
+                    "WHM Control Panel": "Yes",
+                    "description": "WHM Control Panel"
+                },
+                {
+                    "vCPU per cPanel": "2",
+                    "description": "2 vCPU per cPanel"
+                },
+                {
+                    "Softaculous Autoinstaller": "Yes",
+                    "description": "Softaculous Autoinstaller"
+                },
+                {
+                    "moneyback guarantee": "30 days",
+                    "description": "30 day moneyback guarantee"
+                },
+                {
+                    "malware protection": "Yes",
+                    "description": "Malware Protection"
                 }
-            ],
-            "security": [
+            ]
+        },
+        {
+            "title": "RH-50",
+            "monthly": 2999,
+            "annually": 28499,
+            "biannually": 49999,
+            "triannually": 64499,
+            
+            "href":"https://clients.erichost.com/cart.php?a=add&pid=30",
+            "description": "50 cPanel Accounts with enhanced capabilities",
+            "features": [
                 {
-                    "standard ddos protection": "yes",
-                    "description": "standard ddos protection"
+                    "cPanel Accounts": 50,
+                    "description": "50 cPanel Accounts"
                 },
                 {
-                    "web application firewall": "yes",
-                    "description": "web application firewall"
+                    "dedicated IP": "Dedicated IP",
+                    "description": "Dedicated IP"
                 },
                 {
-                    "malware scanner": "yes",
-                    "description": "malware scanner"
+                    "disk space": "250GB NVMe SSD",
+                    "description": "250GB NVMe SSD disk space"
                 },
                 {
-                    "secure access manager": "yes",
-                    "description": "secure access manager"
+                    "bandwidth": "Unlimited",
+                    "description": "Unlimited Bandwidth"
+                },
+                {
+                    "LVE RAM per cPanel": "2GB",
+                    "description": "2GB LVE RAM per cPanel"
+                },
+                {
+                    "tech support": "24/7",
+                    "description": "24/7 Tech Support"
+                },
+                {
+                    "free SSL certificates": "Yes",
+                    "description": "Free SSL Certificates"
+                },
+                {
+                    "unlimited migrations": "Yes",
+                    "description": "Unlimited Free Migrations"
+                },
+                {
+                    "custom nameservers": "Yes",
+                    "description": "Custom Nameservers"
+                },
+                {
+                    "LiteSpeed Webserver": "Yes",
+                    "description": "LiteSpeed Webserver"
+                },
+                {
+                    "whitelabel servers": "Yes",
+                    "description": "Whitelabel Servers"
+                },
+                {
+                    "WHM Control Panel": "Yes",
+                    "description": "WHM Control Panel"
+                },
+                {
+                    "vCPU per cPanel": "2",
+                    "description": "2 vCPU per cPanel"
+                },
+                {
+                    "Softaculous Autoinstaller": "Yes",
+                    "description": "Softaculous Autoinstaller"
+                },
+                {
+                    "moneyback guarantee": "30 days",
+                    "description": "30 day moneyback guarantee"
+                },
+                {
+                    "malware protection": "Yes",
+                    "description": "Malware Protection"
                 }
-            ],
-            "support": [
+            ]
+        },
+        {
+            "title": "RH-100",
+            "monthly": 5999,
+            "annually": 57499,
+            "biannually": 99999,
+            "triannually": 129499,
+            "description": "100 cPanel Accounts with premium resources",
+            "features": [
                 {
-                    "30-day money-back guarantee": "yes",
-                    "description": "30-day money-back guarantee"
+                    "cPanel Accounts": 100,
+                    "description": "100 cPanel Accounts"
                 },
                 {
-                    "99.9% uptime": "yes",
-                    "description": "99.9% uptime"
+                    "dedicated IP": "Dedicated IP",
+                    "description": "Dedicated IP"
                 },
                 {
-                    "24/7 customer support": "yes",
-                    "description": "24/7 customer support"
+                    "disk space": "500GB NVMe SSD",
+                    "description": "500 GB NVMe SSD disk space"
                 },
                 {
-                    "instant setup": "yes",
-                    "description": "instant setup"
-                }
-            ],
-            "resources": [
-                {
-                    "cpu core": "2 core",
-                    "description": "2 cpu cores"
+                    "bandwidth": "Unlimited",
+                    "description": "Unlimited Bandwidth"
                 },
                 {
-                    "ram": "4 gb",
-                    "description": "4 gb ram"
+                    "LVE RAM per cPanel": "2GB",
+                    "description": "2GB LVE RAM per cPanel"
                 },
                 {
-                    "concurrent connections (ep)": 10,
-                    "description": "10 concurrent connections (ep)"
+                    "tech support": "24/7",
+                    "description": "24/7 Tech Support"
                 },
                 {
-                    "number of processes (nproc)": 200,
-                    "description": "200 number of processes (nproc)"
+                    "free SSL certificates": "Yes",
+                    "description": "Free SSL Certificates"
                 },
                 {
-                    "io limit": "50 mbps",
-                    "description": "50 mbps io limit"
+                    "unlimited migrations": "Yes",
+                    "description":
+                    "Unlimited Free Migrations"
                 },
                 {
-                    "file (node) limit": 2000000,
-                    "description": "2000000 file (node) limit"
+                    "custom nameservers": "Yes",
+                    "description": "Custom Nameservers"
+                },
+                {
+                    "LiteSpeed Webserver": "Yes",
+                    "description": "LiteSpeed Webserver"
+                },
+                {
+                    "whitelabel servers": "Yes",
+                    "description": "Whitelabel Servers"
+                },
+                {
+                    "WHM Control Panel": "Yes",
+                    "description": "WHM Control Panel"
+                },
+                {
+                    "vCPU per cPanel": "2",
+                    "description": "2 vCPU per cPanel"
+                },
+                {
+                    "Softaculous Autoinstaller": "Yes",
+                    "description": "Softaculous Autoinstaller"
+                },
+                {
+                    "moneyback guarantee": "30 days",
+                    "description": "30 day moneyback guarantee"
+                },
+                {
+                    "malware protection": "Yes",
+                    "description": "Malware Protection"
                 }
             ]
         }
     ]
 }
-

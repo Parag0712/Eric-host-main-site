@@ -23,7 +23,7 @@ const resellerhosting = (props: Props) => {
     <section>
       <ImageHeroSection {...heroProps
       } />
-      <Pricing data={priceing} />
+      <Pricing data={priceing} title="Reseller" />
       <ChooseThePlans />
       <DynamicInformation {...dynamicInformationProps} />
       {servicesProps.map((service, index) => {

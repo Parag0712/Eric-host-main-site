@@ -25,7 +25,7 @@ const unlimitedhosting = (props: Props) => {
     <section>
       <ImageHeroSection {...heroProps
       } />
-      <Pricing data={priceing} />
+      <Pricing data={priceing} title="Unlimited" />
       <ChooseThePlans />
       <DynamicInformation {...dynamicInformationProps} />
 
