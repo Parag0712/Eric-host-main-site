@@ -8,37 +8,57 @@
         {
             "value": "item-2",
             "question": "How is Business Hosting Different from Shared Hosting?",
-            "answer": "Shared hosting involves mutually sharing server resources with various users, potentially leads to slower performance. In contrast, Business Hosting provides dedicated resources, ensuring faster loading time and authentic reliability. Business Hosting also inclusive of advanced security features and priority support."
+            "answer": "Shared hosting involves mutually sharing server resources with various users, potentially leading to slower performance. In contrast, Business Hosting provides dedicated resources, ensuring faster loading times and authentic reliability. Business Hosting also includes advanced security features and priority support."
         },
         {
             "value": "item-3",
             "question": "Who Should Consider Business Hosting?",
-            "answer": "Business Hosting is appropriate for small to large businesses, startups, e-commerce websites, and organizations with exclusive hosting requirements. It's an excellent choice for businesses that need higher performance, security, and support than what shared hosting plans offer."
+            "answer": "Business Hosting is appropriate for small to large businesses, startups, e-commerce websites, and organizations with exclusive hosting requirements. It’s a brilliant choice for businesses that need higher performance, security, and support than what shared hosting plans offer."
         },
         {
             "value": "item-4",
+            "question": "What are the Key Features of Business Hosting?",
+            "answer": "Key features of Business Hosting mostly include dedicated resources such as CPU, RAM, storage, enhanced security measures (firewalls, malware scanning, SSL certificates), advanced email solutions, e-commerce integration, priority customer support, and high-quality performance with optimized tools."
+        },
+        {
+            "value": "item-5",
             "question": "Is Business Hosting Scalable?",
             "answer": "Yes, Business Hosting plans are designed to be scalable and flexible. Businesses can easily upgrade their hosting resources as their website traffic demands growth. Scalability ensures that the hosting environment can easily adapt to the changing needs of the business without any repercussions."
         },
         {
-            "value": "item-5",
-            "question": "What are the Key Features of Business Hosting  ?",
-            "answer": "Key features of our Business Hosting includes dedicated resources such as CPU, RAM, storage, enhanced security measures (firewalls, malware scanning, SSL certificates), advanced email solutions, e-commerce integration, priority customer support, and high-quality performance with optimized tools."
-        },
-        {
             "value": "item-6",
-            "question": "Can I Host Multiple Websites on Business Hosting?",
-            "answer": "Yes, Our Business Hosting plans allows users to host several websites. Businesses can manage several domains, subdomains, and websites within a single hosting account, making it pocket friendly and expedient for businesses with multiple online properties."
+            "question": "Does Business Hosting Include Email Hosting?",
+            "answer": "Yes, most Business Hosting plans are inclusive of modern email hosting features. This frequently includes professional email addresses (e.g., yourname@yourbusiness.com), spam protection, email forwarding, and integration with email clients like Microsoft Outlook and also webmail services."
         },
         {
             "value": "item-7",
-            "question": "What Security Measures are Included in Business Hosting?",
-            "answer": "Our Business Hosting plans include strong security measures such as firewalls, regular malware scanning, DDoS protection and SSL/TLS certificates for encrypted data transmission. These features guards the website and customer data from several cyber threats."
+            "question": "Can I Host multiple websites on business hosting?",
+            "answer": "Yes, Business Hosting plans typically allow users to host several websites. Businesses can manage several domains, subdomains, and websites within a single hosting account, making it pocket-friendly and expedient for businesses with multiple online properties."
         },
         {
             "value": "item-8",
-            "question": "Is Business Hosting Managed or Unmanaged?",
-            "answer": "Erichost offers Managed Business Hosting. Managed Business Hosting plans include server management services such as security patches, regular backups, software updates and technical support."
+            "question": "What Security Measures are Included in Business Hosting?",
+            "answer": "Business Hosting plans include strong security measures such as firewalls, regular malware scanning, DDoS protection, and SSL/TLS certificates for encrypted data transmission. These features guard the website and customer data from several cyber threats."
+        },
+        {
+            "value": "item-9",
+            "question": "Is Business Hosting Managed service or Unmanaged service?",
+            "answer": "Erichost offers both Managed Business Hosting and Unmanaged Business Hosting. Managed Business Hosting plans include server management services such as security patches, regular backups, software updates, and technical support. Unmanaged plans provide full control to users who want to take responsibility for server management tasks."
+        },
+        {
+            "value": "item-10",
+            "question": "How Does Business Hosting Impact SEO?",
+            "answer": "Business Hosting can firmly impact SEO (Search Engine Optimization) by offering faster loading time, which is a ranking factor for search engines such as Google. Additionally, secure websites (with SSL certificates) and authentic hosting contribute to a positive user experience, which indirectly influences SEO rankings."
+        },
+        {
+            "value": "item-11",
+            "question": "What Support Options are Available with Business Hosting?",
+            "answer": "Business Hosting plans give preference to priority customer support, available 24/7 via various channels such as email, live chat, and phone calls. An experienced support team will be there to assist businesses with technical queries, troubleshooting, server configurations, and other hosting-related issues."
+        },
+        {
+            "value": "item-12",
+            "question": "Can Business Hosting Handle High-Traffic Websites?",
+            "answer": "Yes, Business Hosting plans are equipped to handle high-traffic websites efficiently. These hosting plans ensure that websites remain responsive and accessible even during traffic spikes, providing a seamless user experience with dedicated resources and optimized server configurations."
         }
     ]
 }

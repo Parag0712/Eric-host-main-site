@@ -105,16 +105,16 @@ export const support = {
 export const bronzePricing = {
     name: "Bronze",
     popular: true,
-    price: "₹399",
+    price: "₹299",
     description: "Enhanced Capabilities For Growing Businesses",
     buttonText: "Buy Now",
     features: [
-        "100 Websites",
-        "100 Gb Disk Space",
+        "300 Websites",
+        "150 Gb NvMe",
         "Free Ssl Certificate",
-        "50 Sub-Domains",
+        "100 Sub-Domains",
     ],
-    href: "/plan"
+    href: "https://clients.erichost.com/cart.php?a=add&pid=8"
 };
 
 export const heroProps = {
@@ -127,10 +127,9 @@ export const heroProps = {
         "Premium Servers",
         "Free Website Migration",
         "24/7 Customer Support",
-        "99.9% uptime guarantee",
     ],
-    price: "₹2.99",
+    price: "₹149",
     buttonText: "Explore Plans",
-    planhref: "",
+    planhref: "#pricing",
     heroImage: HeroSection
 };

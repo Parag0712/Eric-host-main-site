@@ -2,43 +2,28 @@
     "faq": [
         {
             "value": "item-1",
-            "question": "What is Business Hosting?",
-            "answer": "Business Hosting is a particular web hosting service designed to meet the specific requirements of businesses and organizations. It offers advanced performance, security, and support in comparison to standard hosting plans, making it an ideal choice for hosting business websites, e-commerce platforms, and applications."
+            "question": "What is Domain Registration?",
+            "answer": "Domain registration is the process of securing a unique web address (e.g., www.yourbusiness.com) for your website or online presence. It involves registering a chosen domain name with a domain registrar, which then reserves the domain for your use. Domain registration is essential for establishing an online identity and ensuring that your website is accessible to visitors."
         },
         {
             "value": "item-2",
-            "question": "How is Business Hosting Different from Shared Hosting?",
-            "answer": "Shared hosting involves mutually sharing server resources with various users, potentially leads to slower performance. In contrast, Business Hosting provides dedicated resources, ensuring faster loading time and authentic reliability. Business Hosting also inclusive of advanced security features and priority support."
+            "question": "Why is Domain Registration Important?",
+            "answer": "Domain registration is important for several reasons. Firstly, it allows you to create a memorable and professional web address for your business or organization, which helps establish credibility and trust with your audience. Additionally, registering your domain prevents others from using the same web address, protecting your brand identity and online reputation. Furthermore, domain registration ensures that your website can be found and accessed by users on the internet, enabling you to reach your target audience effectively."
         },
         {
             "value": "item-3",
-            "question": "Who Should Consider Business Hosting?",
-            "answer": "Business Hosting is appropriate for small to large businesses, startups, e-commerce websites, and organizations with exclusive hosting requirements. It's an excellent choice for businesses that need higher performance, security, and support than what shared hosting plans offer."
+            "question": "How Do I Register a Domain?",
+            "answer": "To register a domain, you need to choose a domain name that reflects your brand or business and check its availability using a domain registrar's website. Once you find an available domain name, you can proceed to register it by providing your contact information and completing the registration process. Typically, you'll need to pay a registration fee to secure the domain for a specific period, usually one year or more. After registration, you'll have exclusive rights to use the domain for your website and online activities."
         },
         {
             "value": "item-4",
-            "question": "Is Business Hosting Scalable?",
-            "answer": "Yes, Business Hosting plans are designed to be scalable and flexible. Businesses can easily upgrade their hosting resources as their website traffic demands growth. Scalability ensures that the hosting environment can easily adapt to the changing needs of the business without any repercussions."
+            "question": "Can I Transfer My Domain to Another Registrar?",
+            "answer": "Yes, you can transfer your domain from one registrar to another. The process involves unlocking your domain at your current registrar, obtaining an authorization code (if required), and initiating the transfer with your new registrar. Both registrars must support domain transfers, and there may be fees associated with the transfer process. Additionally, ensure that your domain is eligible for transfer and that you meet any requirements set by the respective registrars."
         },
         {
             "value": "item-5",
-            "question": "What are the Key Features of Business Hosting  ?",
-            "answer": "Key features of our Business Hosting includes dedicated resources such as CPU, RAM, storage, enhanced security measures (firewalls, malware scanning, SSL certificates), advanced email solutions, e-commerce integration, priority customer support, and high-quality performance with optimized tools."
-        },
-        {
-            "value": "item-6",
-            "question": "Can I Host Multiple Websites on Business Hosting?",
-            "answer": "Yes, Our Business Hosting plans allows users to host several websites. Businesses can manage several domains, subdomains, and websites within a single hosting account, making it pocket friendly and expedient for businesses with multiple online properties."
-        },
-        {
-            "value": "item-7",
-            "question": "What Security Measures are Included in Business Hosting?",
-            "answer": "Our Business Hosting plans include strong security measures such as firewalls, regular malware scanning, DDoS protection and SSL/TLS certificates for encrypted data transmission. These features guards the website and customer data from several cyber threats."
-        },
-        {
-            "value": "item-8",
-            "question": "Is Business Hosting Managed or Unmanaged?",
-            "answer": "Erichost offers Managed Business Hosting. Managed Business Hosting plans include server management services such as security patches, regular backups, software updates and technical support."
+            "question": "What is WHOIS Privacy Protection?",
+            "answer": "WHOIS privacy protection, also known as domain privacy or WHOIS masking, is a service offered by some domain registrars to protect the privacy of domain owners. When you register a domain, your contact information, including name, address, email, and phone number, is typically made publicly available in the WHOIS database. WHOIS privacy protection replaces your personal information with generic contact details provided by the registrar, shielding your identity from spammers, marketers, and other third parties who may misuse your information. It helps reduce unwanted solicitations and spam while maintaining your privacy online."
         }
     ]
 }

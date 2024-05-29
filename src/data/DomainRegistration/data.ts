@@ -1,4 +1,4 @@
-import { cloudhosting_about, managemnet, teamstronger } from "@/assests/AboutUs/assets";
+import { cloudhosting_about, managemnet, teamstronger } from "@/assests/Domain/assets";
 import { Faq } from "@/assests/HomePage/assets";
 
 export const servicesProps = [
@@ -8,8 +8,8 @@ export const servicesProps = [
         description: [
             "Once you have everything you need, perform these 4 simple steps, to Register .",
         ],
-        buttonText: "Get Domain",
-        buttonLink: "/plans",
+        buttonText: "Register Domain",
+        buttonLink: "https://clients.erichost.com/cart.php?a=add&domain=register",
         imageSrc: teamstronger,
         imageAlt: "Card Image",
         reversecard: false,
@@ -27,8 +27,8 @@ export const servicesProps = [
         description: [
             "Transform your online presence with our streamlined domain registration process. Register your domains quickly and securely with minimal effort. Benefit from our high success rate and top-notch support."
         ],
-        buttonText: "Register Your Domain",
-        buttonLink: "/register",
+        buttonText: "Register Domain",
+        buttonLink: "https://clients.erichost.com/cart.php?a=add&domain=register",
         imageSrc: cloudhosting_about,
         reversecard: true,
         imageAlt: "Domain Registration Success"
@@ -39,8 +39,8 @@ export const servicesProps = [
         description: [
             "Manage your domains effortlessly with our user-friendly interfaces. Benefit from superior tools designed for easy domain management and registration. Experience high standards in domain services with our platform."
         ],
-        buttonText: "Manage Your Domain",
-        buttonLink: "/manage",
+        buttonText: "Register Domain",
+        buttonLink: "https://clients.erichost.com/cart.php?a=add&domain=register",
         imageSrc: managemnet,
         imageAlt: "Domain Management"
     }
@@ -56,4 +56,13 @@ export const support = {
     buttonLink: "/",
     imageSrc: Faq,
     imageAlt: "Card Image",
+}
+
+export const heroSectionContent = {
+
+    title:"Register Your Domain Name Get 24/7 Support.",
+    description:"Web hosting made easy & affordable, choose a fine-tuned web hosting services solution for successful personal and business websites.",
+    label:"Search article",
+    placeholder:"Register your Domain",
+    redirectBaseUrl:"https://clients.erichost.com/cart.php?a=add&domain=register",
 }

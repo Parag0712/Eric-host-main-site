@@ -60,7 +60,7 @@ export const InstructionCard: FC<ServicesProps> = ({
                             <div className="mt-3">
                                 <ul className="mt-1" style={{ listStyleType: "disc" }}>
                                     {instruction?.map((inst, index) => (
-                                        <li className="text-lg flex items-center gap-2 ">
+                                        <li key={index} className="text-lg flex items-center gap-2 ">
                                             {instructionNumber ? <span className="font-semibold p-0 mr-1">{index + 1}.</span> : <FaCheckCircle className="text-green-500  text-lg" />}
                                             {inst}
                                         </li>

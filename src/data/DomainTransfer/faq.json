@@ -2,43 +2,28 @@
     "faq": [
         {
             "value": "item-1",
-            "question": "What is Business Hosting?",
-            "answer": "Business Hosting is a particular web hosting service designed to meet the specific requirements of businesses and organizations. It offers advanced performance, security, and support in comparison to standard hosting plans, making it an ideal choice for hosting business websites, e-commerce platforms, and applications."
+            "question": "What is Domain Transfer?",
+            "answer": "Domain transfer refers to the process of moving a domain name from one domain registrar to another. It allows you to switch your domain management services from your current registrar to a new one while retaining ownership and control of your domain. Domain transfers are commonly done for various reasons, such as better pricing, improved customer service, or additional features offered by the new registrar."
         },
         {
             "value": "item-2",
-            "question": "How is Business Hosting Different from Shared Hosting?",
-            "answer": "Shared hosting involves mutually sharing server resources with various users, potentially leads to slower performance. In contrast, Business Hosting provides dedicated resources, ensuring faster loading time and authentic reliability. Business Hosting also inclusive of advanced security features and priority support."
+            "question": "Why Transfer a Domain?",
+            "answer": "There are several reasons why you might consider transferring your domain to a different registrar. These reasons may include dissatisfaction with your current registrar's services, such as poor customer support, high renewal fees, or limited features. Additionally, transferring your domain to a new registrar may offer you better pricing, promotional offers, or additional services that better suit your needs. Ultimately, transferring your domain allows you to choose a registrar that best meets your requirements and preferences."
         },
         {
             "value": "item-3",
-            "question": "Who Should Consider Business Hosting?",
-            "answer": "Business Hosting is appropriate for small to large businesses, startups, e-commerce websites, and organizations with exclusive hosting requirements. It's an excellent choice for businesses that need higher performance, security, and support than what shared hosting plans offer."
+            "question": "How Do I Transfer My Domain?",
+            "answer": "To transfer your domain to a new registrar, you'll need to follow a few steps. First, ensure that your domain is eligible for transfer and meets any requirements set by the new registrar, such as being unlocked and not expired. Next, obtain an authorization code (also known as an EPP code) from your current registrar, which you'll need to provide to the new registrar to initiate the transfer. Then, initiate the transfer process with the new registrar by providing your domain name and authorization code, along with any other required information. Once initiated, both registrars will communicate to complete the transfer, which typically takes a few days to complete."
         },
         {
             "value": "item-4",
-            "question": "Is Business Hosting Scalable?",
-            "answer": "Yes, Business Hosting plans are designed to be scalable and flexible. Businesses can easily upgrade their hosting resources as their website traffic demands growth. Scalability ensures that the hosting environment can easily adapt to the changing needs of the business without any repercussions."
+            "question": "Are There Any Costs Associated with Domain Transfer?",
+            "answer": "Yes, there may be costs associated with transferring your domain to a new registrar. These costs can vary depending on the registrar and the domain extension (TLD) you're transferring. Typically, you'll need to pay a transfer fee to the new registrar, which may include an extension of your domain's registration period. Additionally, consider any potential downtime or service interruptions during the transfer process, especially if your website or email services rely on the domain being transferred."
         },
         {
             "value": "item-5",
-            "question": "What are the Key Features of Business Hosting  ?",
-            "answer": "Key features of our Business Hosting includes dedicated resources such as CPU, RAM, storage, enhanced security measures (firewalls, malware scanning, SSL certificates), advanced email solutions, e-commerce integration, priority customer support, and high-quality performance with optimized tools."
-        },
-        {
-            "value": "item-6",
-            "question": "Can I Host Multiple Websites on Business Hosting?",
-            "answer": "Yes, Our Business Hosting plans allows users to host several websites. Businesses can manage several domains, subdomains, and websites within a single hosting account, making it pocket friendly and expedient for businesses with multiple online properties."
-        },
-        {
-            "value": "item-7",
-            "question": "What Security Measures are Included in Business Hosting?",
-            "answer": "Our Business Hosting plans include strong security measures such as firewalls, regular malware scanning, DDoS protection and SSL/TLS certificates for encrypted data transmission. These features guards the website and customer data from several cyber threats."
-        },
-        {
-            "value": "item-8",
-            "question": "Is Business Hosting Managed or Unmanaged?",
-            "answer": "Erichost offers Managed Business Hosting. Managed Business Hosting plans include server management services such as security patches, regular backups, software updates and technical support."
+            "question": "Can I Transfer a Domain That Has Recently Been Registered or Renewed?",
+            "answer": "In most cases, domain registrars impose a transfer lock or waiting period on newly registered or renewed domains to prevent fraudulent transfers. This transfer lock period typically lasts for a certain number of days after registration or renewal, during which the domain cannot be transferred to another registrar. Once this transfer lock period expires, you'll be able to initiate a transfer to a new registrar following the standard transfer process."
         }
     ]
 }

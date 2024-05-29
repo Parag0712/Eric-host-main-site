@@ -31,18 +31,6 @@ const domainregistration = (props: Props) => {
 
       <FeaturedDomain />
 
-      <section className="">
-        <Services
-          {...servicesProps[2]}
-        />
-      </section>
-
-
-      <section className="bg-[#F2F3FF]">
-        <Services
-          {...servicesProps[3]}
-        />
-      </section>
       <Testimonials />
       <MapSection />
       <FAQ faq={faq} />

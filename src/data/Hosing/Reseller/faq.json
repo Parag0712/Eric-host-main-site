@@ -2,43 +2,33 @@
     "faq": [
         {
             "value": "item-1",
-            "question": "What is Business Hosting?",
-            "answer": "Business Hosting is a particular web hosting service designed to meet the specific requirements of businesses and organizations. It offers advanced performance, security, and support in comparison to standard hosting plans, making it an ideal choice for hosting business websites, e-commerce platforms, and applications."
+            "question": "What is Reseller Hosting?",
+            "answer": "Reseller Hosting is a type of web hosting service where individuals or companies purchase hosting resources from a hosting provider and resell them to their own clients. Essentially, resellers act as intermediaries between the hosting provider and end-users, offering hosting services under their own brand."
         },
         {
             "value": "item-2",
-            "question": "How is Business Hosting Different from Shared Hosting?",
-            "answer": "Shared hosting involves mutually sharing server resources with various users, potentially leads to slower performance. In contrast, Business Hosting provides dedicated resources, ensuring faster loading time and authentic reliability. Business Hosting also inclusive of advanced security features and priority support."
+            "question": "How does Reseller Hosting work?",
+            "answer": "Reseller Hosting works by allowing individuals or companies to purchase hosting resources, such as disk space, bandwidth, and server resources, from a hosting provider at a wholesale price. Resellers can then create their own hosting plans and packages, set their own prices, and sell them to their clients."
         },
         {
             "value": "item-3",
-            "question": "Who Should Consider Business Hosting?",
-            "answer": "Business Hosting is appropriate for small to large businesses, startups, e-commerce websites, and organizations with exclusive hosting requirements. It's an excellent choice for businesses that need higher performance, security, and support than what shared hosting plans offer."
+            "question": "What are the advantages of Reseller Hosting?",
+            "answer": "1. Revenue Generation: Reseller Hosting allows individuals or companies to generate revenue by selling hosting services to their clients under their own brand.\n2. Scalability: Resellers can easily scale their hosting business by adding or removing resources as needed to accommodate growth.\n3. Branding Control: Reseller Hosting provides resellers with the opportunity to build their own brand and reputation in the hosting industry."
         },
         {
             "value": "item-4",
-            "question": "Is Business Hosting Scalable?",
-            "answer": "Yes, Business Hosting plans are designed to be scalable and flexible. Businesses can easily upgrade their hosting resources as their website traffic demands growth. Scalability ensures that the hosting environment can easily adapt to the changing needs of the business without any repercussions."
+            "question": "Who can benefit from Reseller Hosting?",
+            "answer": "Reseller Hosting is ideal for web designers, developers, small hosting companies, and entrepreneurs looking to start their own hosting business without the need for infrastructure investment. It allows them to offer hosting services to their clients without the hassle of managing servers or technical support."
         },
         {
             "value": "item-5",
-            "question": "What are the Key Features of Business Hosting  ?",
-            "answer": "Key features of our Business Hosting includes dedicated resources such as CPU, RAM, storage, enhanced security measures (firewalls, malware scanning, SSL certificates), advanced email solutions, e-commerce integration, priority customer support, and high-quality performance with optimized tools."
+            "question": "What are the key features of Reseller Hosting?",
+            "answer": "Key features of Reseller Hosting typically include white-label branding, customizable hosting plans, client management tools, billing and invoicing systems, and technical support from the hosting provider. These features allow resellers to offer a seamless hosting experience to their clients under their own brand."
         },
         {
             "value": "item-6",
-            "question": "Can I Host Multiple Websites on Business Hosting?",
-            "answer": "Yes, Our Business Hosting plans allows users to host several websites. Businesses can manage several domains, subdomains, and websites within a single hosting account, making it pocket friendly and expedient for businesses with multiple online properties."
-        },
-        {
-            "value": "item-7",
-            "question": "What Security Measures are Included in Business Hosting?",
-            "answer": "Our Business Hosting plans include strong security measures such as firewalls, regular malware scanning, DDoS protection and SSL/TLS certificates for encrypted data transmission. These features guards the website and customer data from several cyber threats."
-        },
-        {
-            "value": "item-8",
-            "question": "Is Business Hosting Managed or Unmanaged?",
-            "answer": "Erichost offers Managed Business Hosting. Managed Business Hosting plans include server management services such as security patches, regular backups, software updates and technical support."
+            "question": "What are some popular Reseller Hosting providers?",
+            "answer": "Some popular Reseller Hosting providers include ResellerClub, HostGator, Bluehost, and SiteGround. These providers offer a range of reseller plans and packages with various features and pricing options to meet the needs of different resellers."
         }
     ]
 }

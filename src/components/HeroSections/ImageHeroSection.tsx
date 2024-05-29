@@ -1,9 +1,10 @@
-import { FaCheckCircle } from "react-icons/fa";
+"use client"
 import Image, { StaticImageData } from "next/image";
-import { Button, buttonVariants } from "../ui/button";
-import { Badge } from "../ui/badge";
-import { RaingImage, RaingImage2 } from "@/assests/config";
+import { useRouter } from "next/navigation";
+import { FaCheckCircle } from "react-icons/fa";
 import Container from "../Conatianers/Container";
+import { Badge } from "../ui/badge";
+import { Button, buttonVariants } from "../ui/button";
 
 export interface HeroDynamicProps {
     title: string;
@@ -25,6 +26,7 @@ export const ImageHeroSection = ({
     buttonText,
     heroImage,
 }: HeroDynamicProps) => {
+    const router = useRouter();
     return (
 
         <section className="relative overflow-hidden">
@@ -78,17 +80,16 @@ export const ImageHeroSection = ({
                             </span>
                             /month
                         </div>
-                        <div className="text-md leading-[20px] sm:text-lg">+3 Months Free</div>
+                        <div className="text-md leading-[20px] sm:text-lg">Buy & Renew at same cost</div>
                     </div>
 
                     <div className="space-y-4 md:space-y-0 sm:space-x-4">
-                        <Button className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
+                        <Button onClick={() => router.push('#pricing')}  className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
                             {buttonText}
                         </Button>
                         <a
                             rel="noreferrer noopener"
-                            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-                            target="_blank"
+                            href="#pricing"
                             className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-[4px]  py-5 sm:py-6 px-4 ${buttonVariants({
                                 variant: "outline",
                             })}`}

@@ -1,61 +1,59 @@
 "use client"
-import { useRouter } from "next/navigation";
-import Heading from "../Heading/Heading";
-import { Button } from "../ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card";
-import { Rating } from '@smastrom/react-rating';
-import Container from "../Conatianers/Container";
-import { info, com, in as in_, net, org, xyz } from "@/assests/Domain/assets";
+import { com, in as in_, info, net, org, xyz } from "@/assests/Domain/assets";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import Container from "../Conatianers/Container";
+import Heading from "../Heading/Heading";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "../ui/card";
 
 const domain = [
     {
         "type": "com",
-        "renewal_transfer": { "inr": 849.00, "usd": 11.00 },
-        "registration": { "inr": 849.00, "usd": 11.00 },
+        "renewal_transfer": { "inr": 949.00, "usd": 11.00 },
+        "registration": { "inr": 899.00, "usd": 11.00 },
         "img": com,
-        "registerurl":"/",
-        "transferurl":"/"
+        "registerurl":"https://clients.erichost.com/cart.php?a=add&domain=register",
+        "transferurl":"https://clients.erichost.com/cart.php?a=add&domain=transfer"
     },
     {
         "type": "in",
-        "renewal_transfer": { "inr": 999.00, "usd": 13.00 },
-        "registration": { "inr": 199.00, "usd": 2.50 },
+        "renewal_transfer": { "inr": 699.00, "usd": 13.00 },
+        "registration": { "inr": 699.00, "usd": 2.50 },
         "img": in_,
-        "registerurl":"/",
-        "transferurl":"/"
+        "registerurl":"https://clients.erichost.com/cart.php?a=add&domain=register",
+        "transferurl":"https://clients.erichost.com/cart.php?a=add&domain=transfer"
     },
     {
         "type": "info",
-        "renewal_transfer": { "inr": 699.00, "usd": 9.00 },
-        "registration": { "inr": 699.00, "usd": 9.00 },
+        "renewal_transfer": { "inr": 1549.00, "usd": 9.00 },
+        "registration": { "inr":  499.00, "usd": 9.00 },
         "img": info,
-        "registerurl":"/",
-        "transferurl":"/"
+        "registerurl":"https://clients.erichost.com/cart.php?a=add&domain=register",
+        "transferurl":"https://clients.erichost.com/cart.php?a=add&domain=transfer"
     },
     {
         "type": "net",
-        "renewal_transfer": { "inr": 999.00, "usd": 13.00 },
-        "registration": { "inr": 999.00, "usd": 13.00 },
+        "renewal_transfer": { "inr": 1199.00, "usd": 13.00 },
+        "registration": { "inr": 1199.00, "usd": 13.00 },
         "img": net,
-        "registerurl":"/",
-        "transferurl":"/"
+        "registerurl":"https://clients.erichost.com/cart.php?a=add&domain=register",
+        "transferurl":"https://clients.erichost.com/cart.php?a=add&domain=transfer"
     },
     {
         "type": "org",
-        "renewal_transfer": { "inr": 799.00, "usd": 10.50 },
-        "registration": { "inr": 1199.00, "usd": 16.00 },
+        "renewal_transfer": { "inr": 549.00, "usd": 10.50 },
+        "registration": { "inr": 549.00, "usd": 16.00 },
         "img": org,
-        "registerurl":"/",
-        "transferurl":"/"
+        "registerurl":"https://clients.erichost.com/cart.php?a=add&domain=register",
+        "transferurl":"https://clients.erichost.com/cart.php?a=add&domain=transfer"
     },
     {
         "type": "xyz",
-        "renewal_transfer": { "inr": 499.00, "usd": 6.50 },
-        "registration": { "inr": 1549.00, "usd": 20.50 },
+        "renewal_transfer": { "inr": 1199.00, "usd": 6.50 },
+        "registration": { "inr": 1199.00, "usd": 20.50 },
         "img": xyz,
-        "registerurl":"/",
-        "transferurl":"/"
+        "registerurl":"https://clients.erichost.com/cart.php?a=add&domain=register",
+        "transferurl":"https://clients.erichost.com/cart.php?a=add&domain=transfer"
     }
 ];
 

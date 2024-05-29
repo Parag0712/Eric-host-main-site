@@ -1,0 +1,13 @@
+ {/* <div className="w-full md:max-w-[200px] md:border-r md:border-gray-200" >
+                {/* Left sidebar content */}
+              {/* <ul className="tab-nav w-full flex text-wrap flex-col md:items-start  items-center lg:gap-10 gap-6"> */} */}
+              {/* Sidebar items */}
+              {/* {
+                    keys.map((data)=>(
+                      <li className='w-full'>
+                      <a href={data} className="font-medium w-full text-wrap text-base leading-7  whitespace-normal truncate text-indigo-600">{data}</a>
+                    </li>
+                    ))
+                  } */}
+              {/* </ul>
+              </div> */}

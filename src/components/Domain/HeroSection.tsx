@@ -45,15 +45,15 @@ const HeroSection = ({ title, description, label, placeholder, redirectBaseUrl }
               </div>
               {/* <!-- Buttons --> */}
               <div className="mt-8 gap-3">
-                <form className="w-[80%] md:w-[60%] mx-auto" onSubmit={handleSearch}>
-                  <div className="relative z-10 flex space-x-3 p-1 md:p-3 bg-white border rounded-lg shadow-lg dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-gray-900/20">
+                <form className="w-[80%] md:w-[60%] mx-auto" action={redirectBaseUrl}  method="post">
+                  <div className="relative z-10 flex space-x-3 p-1 md:p-2 bg-white border rounded-lg shadow-lg dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-gray-900/20">
                     <div className="flex-[1_0_0%]">
                       <label htmlFor="hs-search-article-1" className="block text-sm text-gray-700 font-medium dark:text-white">
                         <span className="sr-only">{label}</span>
                       </label>
                       <input
                         type="text"
-                        name="hs-search-article-1"
+                        name="query"  
                         id="hs-search-article-1"
                         className="py-2.5 px-4 block focus:border-none focus:outline-none w-full border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-neutral-900 dark:border-transparent dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                         placeholder={placeholder}

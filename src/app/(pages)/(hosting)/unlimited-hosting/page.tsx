@@ -18,24 +18,30 @@ import priceing from "../../../../data/Hosing/Unlitmited/pricing.json";
 type Props = {}
 
 const unlimitedhosting = (props: Props) => {
+
+  const colors = ["bg-[#FFFFFF] ", "bg-[#F2F3FF]", "bg-[#4346C2] text-white"];
+
   return (
     <section>
-    <ImageHeroSection {...heroProps
-    } />
-    <Pricing data={priceing} />
-    <ChooseThePlans />
-    <DynamicInformation {...dynamicInformationProps} />
-    
-    {servicesProps.map((service, index) => (
-      <div key={index} className={index % 2 !== 0 ? "bg-[#4346C2]" : ""}>
-        <Services {...service} />
-      </div>
-    ))}
-    <Testimonials />
-    <MapSection />
-    <Cta />
-    <FAQ faq={faq} />
-  </section>
+      <ImageHeroSection {...heroProps
+      } />
+      <Pricing data={priceing} />
+      <ChooseThePlans />
+      <DynamicInformation {...dynamicInformationProps} />
+
+      {servicesProps.map((service, index) => {
+        const shouldBePurple = index % 3 !== 2;
+        return (
+          <div key={index} className={colors[index % 3]}>
+            <Services {...service} shouldBePurple={shouldBePurple} />
+          </div>
+        );
+      })}
+      <Testimonials />
+      <MapSection />
+      <Cta />
+      <FAQ faq={faq} />
+    </section>
   )
 }
 

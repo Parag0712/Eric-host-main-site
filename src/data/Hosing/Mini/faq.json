@@ -2,43 +2,33 @@
     "faq": [
         {
             "value": "item-1",
-            "question": "What is Business Hosting?",
-            "answer": "Business Hosting is a particular web hosting service designed to meet the specific requirements of businesses and organizations. It offers advanced performance, security, and support in comparison to standard hosting plans, making it an ideal choice for hosting business websites, e-commerce platforms, and applications."
+            "question": "What Is Mini Hosting?",
+            "answer": "Mini Hosting is a type of web hosting service that offers limited resources compared to traditional hosting plans. It is suitable for small-scale websites or personal projects that do not require extensive resources."
         },
         {
             "value": "item-2",
-            "question": "How is Business Hosting Different from Shared Hosting?",
-            "answer": "Shared hosting involves mutually sharing server resources with various users, potentially leads to slower performance. In contrast, Business Hosting provides dedicated resources, ensuring faster loading time and authentic reliability. Business Hosting also inclusive of advanced security features and priority support."
+            "question": "What are the typical features of Mini Hosting?",
+            "answer": "Mini Hosting plans usually include limited disk space, bandwidth, and email accounts. They may also offer basic website management tools and a simplified control panel for easy administration."
         },
         {
             "value": "item-3",
-            "question": "Who Should Consider Business Hosting?",
-            "answer": "Business Hosting is appropriate for small to large businesses, startups, e-commerce websites, and organizations with exclusive hosting requirements. It's an excellent choice for businesses that need higher performance, security, and support than what shared hosting plans offer."
+            "question": "Who is Mini Hosting suitable for?",
+            "answer": "Mini Hosting is ideal for individuals or small businesses with simple websites or minimal resource requirements. It is suitable for personal blogs, portfolio websites, or small-scale e-commerce sites with low to moderate traffic."
         },
         {
             "value": "item-4",
-            "question": "Is Business Hosting Scalable?",
-            "answer": "Yes, Business Hosting plans are designed to be scalable and flexible. Businesses can easily upgrade their hosting resources as their website traffic demands growth. Scalability ensures that the hosting environment can easily adapt to the changing needs of the business without any repercussions."
+            "question": "Can I upgrade from Mini Hosting to a higher-tier plan?",
+            "answer": "Yes, most hosting providers offer the option to upgrade from Mini Hosting to higher-tier plans as your website grows and requires more resources. This allows you to seamlessly scale your hosting plan to accommodate increased traffic or additional features."
         },
         {
             "value": "item-5",
-            "question": "What are the Key Features of Business Hosting  ?",
-            "answer": "Key features of our Business Hosting includes dedicated resources such as CPU, RAM, storage, enhanced security measures (firewalls, malware scanning, SSL certificates), advanced email solutions, e-commerce integration, priority customer support, and high-quality performance with optimized tools."
+            "question": "What are the limitations of Mini Hosting?",
+            "answer": "Mini Hosting plans typically have limitations on disk space, bandwidth, and email accounts compared to higher-tier hosting plans. Additionally, they may lack advanced features or scalability options, making them less suitable for large or high-traffic websites."
         },
         {
             "value": "item-6",
-            "question": "Can I Host Multiple Websites on Business Hosting?",
-            "answer": "Yes, Our Business Hosting plans allows users to host several websites. Businesses can manage several domains, subdomains, and websites within a single hosting account, making it pocket friendly and expedient for businesses with multiple online properties."
-        },
-        {
-            "value": "item-7",
-            "question": "What Security Measures are Included in Business Hosting?",
-            "answer": "Our Business Hosting plans include strong security measures such as firewalls, regular malware scanning, DDoS protection and SSL/TLS certificates for encrypted data transmission. These features guards the website and customer data from several cyber threats."
-        },
-        {
-            "value": "item-8",
-            "question": "Is Business Hosting Managed or Unmanaged?",
-            "answer": "Erichost offers Managed Business Hosting. Managed Business Hosting plans include server management services such as security patches, regular backups, software updates and technical support."
+            "question": "Is Mini Hosting suitable for hosting multiple websites?",
+            "answer": "Mini Hosting plans are designed for hosting a single website. While some providers may offer the option to host multiple domains, the limited resources of Mini Hosting may not be sufficient to support multiple websites effectively."
         }
     ]
 }

@@ -2,43 +2,33 @@
     "faq": [
         {
             "value": "item-1",
-            "question": "What is Business Hosting?",
-            "answer": "Business Hosting is a particular web hosting service designed to meet the specific requirements of businesses and organizations. It offers advanced performance, security, and support in comparison to standard hosting plans, making it an ideal choice for hosting business websites, e-commerce platforms, and applications."
+            "question": "What is Cloud Hosting?",
+            "answer": "Cloud Hosting is a type of web hosting service that utilizes a network of virtual servers to host websites. Instead of relying on a single physical server, cloud hosting distributes resources across multiple servers, providing greater scalability, reliability, and flexibility."
         },
         {
             "value": "item-2",
-            "question": "How is Business Hosting Different from Shared Hosting?",
-            "answer": "Shared hosting involves mutually sharing server resources with various users, potentially leads to slower performance. In contrast, Business Hosting provides dedicated resources, ensuring faster loading time and authentic reliability. Business Hosting also inclusive of advanced security features and priority support."
+            "question": "How does Cloud Hosting work?",
+            "answer": "Cloud Hosting works by distributing the load of hosting a website across multiple virtual servers, often referred to as a cloud infrastructure. This allows resources such as processing power, storage, and bandwidth to be dynamically allocated based on demand, ensuring optimal performance and uptime."
         },
         {
             "value": "item-3",
-            "question": "Who Should Consider Business Hosting?",
-            "answer": "Business Hosting is appropriate for small to large businesses, startups, e-commerce websites, and organizations with exclusive hosting requirements. It's an excellent choice for businesses that need higher performance, security, and support than what shared hosting plans offer."
+            "question": "What are the advantages of Cloud Hosting?",
+            "answer": "1. Scalability: Cloud Hosting allows you to easily scale resources up or down based on your website's needs, ensuring you only pay for what you use.\n2. Reliability: With resources distributed across multiple servers, Cloud Hosting offers high levels of redundancy and uptime.\n3. Flexibility: Cloud Hosting provides the flexibility to customize your hosting environment and easily add or remove resources as needed."
         },
         {
             "value": "item-4",
-            "question": "Is Business Hosting Scalable?",
-            "answer": "Yes, Business Hosting plans are designed to be scalable and flexible. Businesses can easily upgrade their hosting resources as their website traffic demands growth. Scalability ensures that the hosting environment can easily adapt to the changing needs of the business without any repercussions."
+            "question": "Who is Cloud Hosting suitable for?",
+            "answer": "Cloud Hosting is suitable for a wide range of websites, from small blogs to large enterprise applications. It is particularly well-suited for websites with fluctuating traffic levels or seasonal spikes in demand, as well as businesses that require high levels of reliability and scalability."
         },
         {
             "value": "item-5",
-            "question": "What are the Key Features of Business Hosting  ?",
-            "answer": "Key features of our Business Hosting includes dedicated resources such as CPU, RAM, storage, enhanced security measures (firewalls, malware scanning, SSL certificates), advanced email solutions, e-commerce integration, priority customer support, and high-quality performance with optimized tools."
+            "question": "What are some popular Cloud Hosting providers?",
+            "answer": "Some popular Cloud Hosting providers include Amazon Web Services (AWS), Google Cloud Platform (GCP), Microsoft Azure, and DigitalOcean. These providers offer a range of services and pricing options to meet the needs of different businesses and budgets."
         },
         {
             "value": "item-6",
-            "question": "Can I Host Multiple Websites on Business Hosting?",
-            "answer": "Yes, Our Business Hosting plans allows users to host several websites. Businesses can manage several domains, subdomains, and websites within a single hosting account, making it pocket friendly and expedient for businesses with multiple online properties."
-        },
-        {
-            "value": "item-7",
-            "question": "What Security Measures are Included in Business Hosting?",
-            "answer": "Our Business Hosting plans include strong security measures such as firewalls, regular malware scanning, DDoS protection and SSL/TLS certificates for encrypted data transmission. These features guards the website and customer data from several cyber threats."
-        },
-        {
-            "value": "item-8",
-            "question": "Is Business Hosting Managed or Unmanaged?",
-            "answer": "Erichost offers Managed Business Hosting. Managed Business Hosting plans include server management services such as security patches, regular backups, software updates and technical support."
+            "question": "What are the potential drawbacks of Cloud Hosting?",
+            "answer": "While Cloud Hosting offers many benefits, it may not be suitable for every website or budget. Potential drawbacks include potential security concerns, complex pricing structures, and the need for technical expertise to manage and optimize cloud resources effectively."
         }
     ]
 }

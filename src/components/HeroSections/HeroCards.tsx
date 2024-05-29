@@ -235,7 +235,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
                 <hr className="w-4/5 m-auto mb-4" />
 
                 <CardFooter className="flex">
-                    <div className="space-y-4">
+                    <div className="space-y-2">
                         {pricingData.features.map((feature) => (
                             <span key={feature} className="flex">
                                 <Check className="text-green-500" /> <h3 className="ml-2">{feature}</h3>

@@ -1,5 +1,4 @@
 import { ChooseThePlans } from "@/components/ChooseThePlans/ChooseThePlans";
-import { Cta } from "@/components/Cta-logo/Cta";
 import { FAQ } from "@/components/Faq/Faq";
 import MapSection from "@/components/MapSection/MapSection";
 import { Services } from "@/components/PlanCards/Service";
@@ -18,6 +17,8 @@ import priceing from "../../../../data/Hosing/Reseller/pricing.json";
 type Props = {}
 
 const resellerhosting = (props: Props) => {
+  
+  const colors = ["bg-[#FFFFFF] ", "bg-[#F2F3FF]", "bg-[#4346C2] text-white"];
   return (
     <section>
       <ImageHeroSection {...heroProps
@@ -25,15 +26,16 @@ const resellerhosting = (props: Props) => {
       <Pricing data={priceing} />
       <ChooseThePlans />
       <DynamicInformation {...dynamicInformationProps} />
-
-      {servicesProps.map((service, index) => (
-        <div key={index} className={index % 2 === 0 ? "bg-[#4346C2]" : ""}>
-          <Services {...service} />
-        </div>
-      ))}
+      {servicesProps.map((service, index) => {
+        const shouldBePurple = index % 3 !== 2;
+        return (
+          <div key={index} className={colors[index % 3]}>
+            <Services {...service} shouldBePurple={shouldBePurple} />
+          </div>
+        );
+      })}
+      <MapSection />      
       <Testimonials />
-      <MapSection />
-      <Cta />
       <FAQ faq={faq} />
     </section>
   )
