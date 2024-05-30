@@ -229,7 +229,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
                 </CardHeader>
 
                 <CardContent>
-                    <Button onClick={()=>router.push(pricingData.href)}  className="w-full rounded-[4px] ">{pricingData.buttonText}</Button>
+                    <Button onClick={()=>router.push(pricingData.href)}  className="w-full rounded-lg ">{pricingData.buttonText}</Button>
                 </CardContent>
 
                 <hr className="w-4/5 m-auto mb-4" />

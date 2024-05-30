@@ -9,6 +9,7 @@ import { heroProps, servicesProps } from "@/data/HomePage/data";
 import data from "../data/HomePage/pricing.json";
 import MapSection from "@/components/MapSection/MapSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import Testimonial from "@/components/Testimonials/Testimonial";
 
 type Props = {};
 

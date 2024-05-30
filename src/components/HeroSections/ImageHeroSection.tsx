@@ -5,6 +5,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import Container from "../Conatianers/Container";
 import { Badge } from "../ui/badge";
 import { Button, buttonVariants } from "../ui/button";
+import CountdownTimer from "./CountdownTimer";
 
 export interface HeroDynamicProps {
     title: string;
@@ -84,17 +85,17 @@ export const ImageHeroSection = ({
                     </div>
 
                     <div className="space-y-4 md:space-y-0 sm:space-x-4">
-                        <Button onClick={() => router.push('#pricing')}  className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
+                        <Button onClick={() => router.push('#pricing')}  className="w-9/12 rounded-lg  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
                             {buttonText}
                         </Button>
                         <a
                             rel="noreferrer noopener"
                             href="#pricing"
-                            className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-[4px]  py-5 sm:py-6 px-4 ${buttonVariants({
+                            className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-lg  py-5 sm:py-6 px-4 ${buttonVariants({
                                 variant: "outline",
                             })}`}
                         >
-                            02:30:17:20
+                            <CountdownTimer />
                         </a>
                     </div>
                 </div>

@@ -119,8 +119,8 @@ export const bronzePricing = {
 
 export const heroProps = {
     bronzePricing: bronzePricing,
-    title: "75% OFF on All",
-    subtitle: "Plans.",
+    title: "Erichost - Your Budget",
+    subtitle: "Partner.",
     tagline: "Elevate Your Online Presence with Seamless Hosting Solutions!",
     badgeText: "30-Day Money-Back Guarantee",
     features: [

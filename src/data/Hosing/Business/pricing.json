@@ -1,7 +1,7 @@
 {
     "plans": [
         {
-            "title": "bronze",
+            "title": "business bronze",
             "monthly": 399,
             "annually": 259,
             "biannually": 199,
@@ -119,7 +119,7 @@
             ]
         },
         {
-            "title": "silver",
+            "title": "business silver",
             "monthly": 549,
             "annually": 399,
             "biannually": 319,
@@ -237,7 +237,7 @@
             ]
         },
         {
-            "title": "gold",
+            "title": "business gold",
             "monthly": 1199,
             "annually": 999,
             "biannually": 749,
@@ -269,7 +269,6 @@
                 {
                     "email": 100,
                     "description": "100 email accounts"
-               
                 },
                 {
                     "sub-domain": 100,

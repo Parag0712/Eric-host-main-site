@@ -3,8 +3,19 @@ import { useState } from "react";
 import PricingCard from "./PricingCard";
 import Heading from "../Heading/Heading";
 import Container from "../Conatianers/Container";
+import { useRouter } from "next/navigation";
 
 export const Pricing = ({ data, title }: { data: any, title: string }) => {
+
+    const [showMore, setShowMore] = useState(false);
+    const router = useRouter();
+    const handleShowMore = () => {
+        setShowMore(!showMore);
+        if (showMore) {
+            router.push("#pricing");
+        }
+    };
+
     const [isAnnual, setIsAnnual] = useState(true);
     return (
         <Container
@@ -18,12 +29,12 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
                 classname="text-center"
                 headingContent={
                     <>
-                    Best 
+                        Best
                         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                             {" "}
                             {title}
                             {" "}
-                            
+
                             {" "}
                         </span>
                         Hosting
@@ -32,24 +43,67 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
                 }
             />
             <div className="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16 mt-8">
-                <div className="relative flex w-full p-1 bg-white dark:bg-slate-900 rounded-full">
-                    <span className="absolute inset-0 m-1 pointer-events-none" aria-hidden="true">
-                        <span className={`absolute inset-0 w-1/2 bg-indigo-500 rounded-full shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out ${isAnnual ? 'translate-x-0' : 'translate-x-full'}`}></span>
-                    </span>
-                    <button className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${isAnnual ? 'text-white' : 'text-slate-500 dark:text-slate-400'}`} onClick={() => setIsAnnual(true)} aria-pressed={isAnnual}>Monthly </button>
-                    <button className={`relative flex-1 text-sm font-medium h-8 rounded-full focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 dark:focus-visible:ring-slate-600 transition-colors duration-150 ease-in-out ${isAnnual ? 'text-slate-500 dark:text-slate-400' : 'text-white'}`} onClick={() => setIsAnnual(false)} aria-pressed={!isAnnual}>Yearly </button>
+
+                <div className="relative self-center bg-primary rounded-lg p-0.5 flex">
+                    <button
+                        type="button"
+                        className={`px-[10px] relative w-1/2 rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 ${isAnnual
+                            ? 'bg-slate-50 border-slate-50 text-slate-900'
+                            : 'border rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 border-transparent text-white shadow-sm'
+                            }`}
+                        onClick={() => setIsAnnual(true)}
+                    >
+                        Monthly Plan
+                    </button>
+                    <button
+                        type="button"
+                        className={`px-[10px] ml-0.5 relative w-1/2 border rounded-md py-2 text-sm font-medium whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 ${isAnnual
+                            ? 'border-transparent text-white'
+                            : 'bg-slate-50 border-slate-50 text-slate-900 shadow-sm '
+                            }`}
+                        onClick={() => setIsAnnual(false)}
+                    >
+                        Yearly Plan
+                    </button>
+
                 </div>
             </div>
-            <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-4 lg:gap-8 ">
+            <div className={`  grid md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-4 lg:gap-8 mx-auto place-content-center`}>
                 {data.plans.map((pricing: any, index: any) => (
                     <PricingCard
                         pricing={""}
+                        showMore={showMore}
+                        handleShowMore={handleShowMore}
                         plan={data.plans[index]}
                         isAnnual={!isAnnual}
+                        className={data.plans.length <= 1 ? "col-start-2 " : ""}
                     />
 
                 ))}
             </div>
+
+            {/* <div className="w-full overflow-hidden">
+    <Slider
+        dots={false}
+        infinite={true}
+        speed={500}
+        slidesToShow={3} // Adjust as needed
+        slidesToScroll={1}
+        className="flex gap-4"
+    >
+        {data.plans.map((pricing: any, index: any) => (
+            <PricingCard
+                key={index}
+                pricing={""}
+                showMore={showMore}
+                handleShowMore={handleShowMore}
+                plan={data.plans[index]}
+                isAnnual={!isAnnual}
+                className={"w-full min-w-[320px]"}
+            />
+        ))}
+    </Slider>
+</div> */}
         </Container>
     );
 };

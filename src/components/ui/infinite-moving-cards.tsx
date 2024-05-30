@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 export const InfiniteMovingCards = ({
     items,
@@ -19,13 +19,14 @@ export const InfiniteMovingCards = ({
     pauseOnHover?: boolean;
     className?: string;
 }) => {
-    const containerRef = React.useRef<HTMLDivElement>(null);
-    const scrollerRef = React.useRef<HTMLUListElement>(null);
+    const containerRef = useRef<HTMLDivElement>(null);
+    const scrollerRef = useRef<HTMLUListElement>(null);
+    const [start, setStart] = useState(false);
 
     useEffect(() => {
         addAnimation();
     }, []);
-    const [start, setStart] = useState(false);
+
     function addAnimation() {
         if (containerRef.current && scrollerRef.current) {
             const scrollerContent = Array.from(scrollerRef.current.children);
@@ -42,6 +43,7 @@ export const InfiniteMovingCards = ({
             setStart(true);
         }
     }
+
     const getDirection = () => {
         if (containerRef.current) {
             if (direction === "left") {
@@ -57,6 +59,7 @@ export const InfiniteMovingCards = ({
             }
         }
     };
+
     const getSpeed = () => {
         if (containerRef.current) {
             if (speed === "fast") {
@@ -68,12 +71,46 @@ export const InfiniteMovingCards = ({
             }
         }
     };
+
+    let touchStartX: number | null = null;
+
+    const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+        touchStartX = e.touches[0].clientX;
+    };
+
+    const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+        if (!touchStartX) return;
+        const touchEndX = e.touches[0].clientX;
+        const swipeDistance = touchEndX - touchStartX;
+        const threshold = 50; // Adjust this threshold according to your needs
+        if (Math.abs(swipeDistance) >= threshold) {
+            if (swipeDistance > 0) {
+                handleSwipeRight();
+            } else {
+                handleSwipeLeft();
+            }
+            touchStartX = null;
+        }
+    };
+
+    const handleSwipeLeft = () => {
+        // Handle swipe left action
+        console.log("Swiped left");
+    };
+
+    const handleSwipeRight = () => {
+        // Handle swipe right action
+        console.log("Swiped right");
+    };
+
     return (
         <div
             ref={containerRef}
             className={cn(
                 className
             )}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
         >
             <ul
                 ref={scrollerRef}
