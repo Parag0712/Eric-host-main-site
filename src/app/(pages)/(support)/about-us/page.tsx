@@ -10,10 +10,11 @@ const aboutus = (props: Props) => {
     <section>
       <HeroAboutSection />
       <AboutEricHost />
-      <div className='bg-[#4346C2]'>
+      <div className='bg-[#4346C2] text-white'>
 
         <Services
           {...servicesProps[0]}
+          textwhite={true}
           customElements={
             <ul className="pl-2 mt-1 flex gap-7" style={{ listStyleType: "disc" }}>
               <div>
