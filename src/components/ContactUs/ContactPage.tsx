@@ -1,11 +1,11 @@
 'use client'
 
-import Container from "../Conatianers/Container"
-import { Button } from "../ui/button"
-import { address, email, phone, facebook, instagram, linkdin, twitter, youtube } from '../../data/Navbar/link.json'
-import { useState } from "react";
-import axios from "axios";
 import { sendGAEvent } from "@next/third-parties/google";
+import axios from "axios";
+import { useState } from "react";
+import { address, email, facebook, instagram, linkdin, phone, twitter } from '../../data/Navbar/link.json';
+import Container from "../Conatianers/Container";
+import { Button } from "../ui/button";
 interface FormData {
     name: string;
     phone: string;
@@ -101,14 +101,7 @@ export function ContactPage() {
                 <div className="mx-auto py-10 md:py-16">
                     <div className="grid items-center justify-items-stretch xl:gap-x-4 gap-y-10 md:grid-cols-[1fr,1.3fr] lg:grid-cols-2">
                         {/* contact from */}
-                        <div>
 
-<button
-  onClick={() => sendGAEvent({ event: 'buttonClicked', value: 'xyz' })}
->
-  Send Event
-</button>
-</div>
                         <div className="lg:w-1/2 lg:mx-6 order-1 md:order-[0]">
                             <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
                                 Contact us for <br /> more info
@@ -260,7 +253,7 @@ export function ContactPage() {
                                         <input
                                             className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                                             type="tel"
-                                            required                                        
+                                            required
                                             maxLength={12}
                                             minLength={10}
                                             id="phone_number"
