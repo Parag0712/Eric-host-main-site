@@ -208,6 +208,8 @@ export function ContactPage() {
                                                 id="name"
                                                 placeholder="Name"
                                                 value={formData.name}
+                                                pattern="[A-Za-z\s]*"
+                                                title="Only alphabet characters and spaces are allowed"
                                                 onChange={handleChange}
                                             />
                                             {formErrors.name && (
@@ -226,7 +228,8 @@ export function ContactPage() {
                                         </label>
                                         <input
                                             className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                                            type="text"
+                                            type="email"
+                                            required
                                             id="email"
                                             name="email"
                                             placeholder="Email"
@@ -249,12 +252,16 @@ export function ContactPage() {
                                         <input
                                             className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
                                             type="tel"
+                                            required                                        
                                             maxLength={12}
+                                            minLength={10}
                                             id="phone_number"
                                             name="phone"
                                             placeholder="Phone number"
                                             value={formData.phone}
                                             onChange={handleChange}
+                                            pattern="\d{10,12}"
+                                            title="Phone number must be between 10 and 12 digits"
                                         />
                                         {formErrors.phone && (
                                             <p className="text-xs italic text-red-600">

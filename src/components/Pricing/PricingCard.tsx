@@ -3,7 +3,6 @@ import { Badge } from '../ui/badge'
 import { Button } from '../ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card'
 import { useRouter } from 'next/navigation'
-import { sendGAEvent, sendGTMEvent } from '@next/third-parties/google'
 
 const PricingCard = ({ plan, isAnnual }: any) => {
     const currency = "₹"
@@ -45,15 +44,7 @@ const PricingCard = ({ plan, isAnnual }: any) => {
 
             <CardContent>
                 <Button
-                    onClick={() => 
-
-{              
-    sendGAEvent({ event: 'add_to_cart', value: '' })
-    sendGAEvent({ event: 'HeroButtonClicked', value: '' })
-    sendGAEvent({ event: 'page_view', value: '' })
-    router.push(plan.href)
-}
-                    }
+                    onClick={() => router.push(plan.href)}
                     className={`rounded-[4px]  w-full text-[16px] border-[1px] border-primary font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
             </CardContent>
 
