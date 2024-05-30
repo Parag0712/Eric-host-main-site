@@ -39,6 +39,7 @@ export default function RootLayout({
       </body>
       
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS!} />
+      <GoogleAnalytics gaId={"G-TEVYPG39PG"} />
     </html>
   );
 }
