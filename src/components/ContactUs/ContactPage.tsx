@@ -4,6 +4,8 @@ import Container from "../Conatianers/Container"
 import { Button } from "../ui/button"
 import { address, email, phone, facebook, instagram, linkdin, twitter, youtube } from '../../data/Navbar/link.json'
 import { useState } from "react";
+import axios from "axios";
+import { sendGAEvent } from "@next/third-parties/google";
 interface FormData {
     name: string;
     phone: string;
@@ -17,6 +19,7 @@ interface FormErrors {
     message: boolean;
 }
 export function ContactPage() {
+    const [loading,setLoading] = useState<boolean>();
     const [formData, setFormData] = useState<FormData>({
         name: "",
         phone: "",
@@ -48,9 +51,8 @@ export function ContactPage() {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
         const newErrors = {
             name: !formData.name,
             phone: !formData.phone,
@@ -62,21 +64,34 @@ export function ContactPage() {
         if (Object.values(newErrors).some((isError) => isError)) {
             return;
         }
-
-        alert("Form submitted")
-        setFormData({
-            email: "",
-            message: "",
-            name: "",
-            phone: ""
-        });
-        console.log("Form submitted:", formData);
-        setSubmitted(true);
-        localStorage.setItem("formData", JSON.stringify(formData));
-        setTimeout(() => {
-            setSubmitted(false);
-
-        }, 2000);
+        
+        setLoading(true);
+        try {
+            const response = await axios.post("api/openticket", {
+                deptid: 1,
+                subject: "Contact Us Fomr",
+                message: formData.message,
+                name: formData.name,
+                email: formData.email,
+                contactid: formData.phone
+            });
+            setFormData({
+                email: "",
+                message: "",
+                name: "",
+                phone: ""
+            });
+            console.log(response);            
+            alert("Form Submitted");
+            setSubmitted(true);
+            setTimeout(() => {
+                setSubmitted(false);
+            }, 3000);
+        } catch (error) {
+            console.error("Error submitting form:", error);
+        }finally{
+            setLoading(false)
+        }
     };
 
     return (
@@ -171,6 +186,12 @@ export function ContactPage() {
                                 <p className="mt-4 text-lg text-gray-600 text-center md:text-left">
                                     Our friendly team would love to hear from you.
                                 </p>
+                                {submitted && (
+                                <p className="border-[1px] border-green-700 bg-green-50 py-2 px-2 rounded-lg text-[15px]  font-semibold mb-0 text-center text-green-500">
+                                                    Thank you for reaching out! We will get back to you shortly.
+                                                </p>
+                                            )}
+                                
                                 <form onSubmit={handleSubmit} className="mt-8 space-y-4">
                                     <div className="grid w-full gap-y-4 md:gap-x-4 ">
                                         <div className="grid w-full items-center gap-1.5">
@@ -267,7 +288,11 @@ export function ContactPage() {
 
                                     <Button
                                         type="submit"
-                                        className={`rounded-md my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 `}  >Send Message</Button>
+                                        disabled={loading}
+                                        onClick={()=>sendGAEvent({event:"HeroButtonClicked",value:"xyz"})
+                }
+                                        className={`rounded-md my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 `}  >{loading?"Loading...":"Send Message"}</Button>
+                                        
                                 </form>
                             </div>
                         </div>
