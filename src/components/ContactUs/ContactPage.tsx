@@ -101,6 +101,14 @@ export function ContactPage() {
                 <div className="mx-auto py-10 md:py-16">
                     <div className="grid items-center justify-items-stretch xl:gap-x-4 gap-y-10 md:grid-cols-[1fr,1.3fr] lg:grid-cols-2">
                         {/* contact from */}
+                        <div>
+
+<button
+  onClick={() => sendGAEvent({ event: 'buttonClicked', value: 'xyz' })}
+>
+  Send Event
+</button>
+</div>
                         <div className="lg:w-1/2 lg:mx-6 order-1 md:order-[0]">
                             <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
                                 Contact us for <br /> more info

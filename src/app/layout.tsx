@@ -1,5 +1,5 @@
 import { Footer } from "@/components/Footer/Footer";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics, sendGAEvent } from '@next/third-parties/google'
 import { Navbar } from "@/components/Navbar/Navbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -31,15 +31,15 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>
+
           {children}
         </main>
         <footer>
           <Footer />
         </footer>
       </body>
-      
-      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS!} />
+
       <GoogleAnalytics gaId={"G-TEVYPG39PG"} />
-    </html>
+    </html >
   );
 }
