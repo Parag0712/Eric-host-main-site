@@ -19,7 +19,7 @@ interface FormErrors {
     message: boolean;
 }
 export function ContactPage() {
-    const [loading,setLoading] = useState<boolean>();
+    const [loading, setLoading] = useState<boolean>();
     const [formData, setFormData] = useState<FormData>({
         name: "",
         phone: "",
@@ -64,7 +64,7 @@ export function ContactPage() {
         if (Object.values(newErrors).some((isError) => isError)) {
             return;
         }
-        
+
         setLoading(true);
         try {
             const response = await axios.post("api/openticket", {
@@ -81,7 +81,7 @@ export function ContactPage() {
                 name: "",
                 phone: ""
             });
-            console.log(response);            
+            console.log(response);
             alert("Form Submitted");
             setSubmitted(true);
             setTimeout(() => {
@@ -89,7 +89,7 @@ export function ContactPage() {
             }, 3000);
         } catch (error) {
             console.error("Error submitting form:", error);
-        }finally{
+        } finally {
             setLoading(false)
         }
     };
@@ -187,11 +187,11 @@ export function ContactPage() {
                                     Our friendly team would love to hear from you.
                                 </p>
                                 {submitted && (
-                                <p className="border-[1px] border-green-700 bg-green-50 py-2 px-2 rounded-lg text-[15px]  font-semibold mb-0 text-center text-green-500">
-                                                    Thank you for reaching out! We will get back to you shortly.
-                                                </p>
-                                            )}
-                                
+                                    <p className="border-[1px] border-green-700 bg-green-50 py-2 px-2 rounded-lg text-[15px]  font-semibold mb-0 text-center text-green-500">
+                                        Thank you for reaching out! We will get back to you shortly.
+                                    </p>
+                                )}
+
                                 <form onSubmit={handleSubmit} className="mt-8 space-y-4">
                                     <div className="grid w-full gap-y-4 md:gap-x-4 ">
                                         <div className="grid w-full items-center gap-1.5">
@@ -289,10 +289,10 @@ export function ContactPage() {
                                     <Button
                                         type="submit"
                                         disabled={loading}
-                                        onClick={()=>sendGAEvent({event:"HeroButtonClicked",value:"xyz"})
-                }
-                                        className={`rounded-md my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 `}  >{loading?"Loading...":"Send Message"}</Button>
-                                        
+                                        onClick={() => sendGAEvent({ event: "HeroButtonClicked", value: "xyz" })
+                                        }
+                                        className={`rounded-md my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 `}  >{loading ? "Loading..." : "Send Message"}</Button>
+
                                 </form>
                             </div>
                         </div>
