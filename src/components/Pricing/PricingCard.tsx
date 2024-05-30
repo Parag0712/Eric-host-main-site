@@ -47,10 +47,11 @@ const PricingCard = ({ plan, isAnnual }: any) => {
                 <Button
                     onClick={() => 
 
-{                        router.push(plan.href)
+{              
     sendGAEvent({ event: 'add_to_cart', value: '' })
     sendGAEvent({ event: 'HeroButtonClicked', value: '' })
     sendGAEvent({ event: 'page_view', value: '' })
+    router.push(plan.href)
 }
                     }
                     className={`rounded-[4px]  w-full text-[16px] border-[1px] border-primary font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
