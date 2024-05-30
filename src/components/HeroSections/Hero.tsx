@@ -103,7 +103,6 @@ export const Hero = ({
 
                     <div className="space-y-4 md:space-y-0 sm:space-x-4">
                         <Button onClick={() => {
-                            window.gtag("event","view_item")
                             router.push('#pricing')
                         }} className="w-9/12 rounded-[4px]  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
                             {buttonText}

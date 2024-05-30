@@ -1,9 +1,8 @@
 import { Check } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { Badge } from '../ui/badge'
 import { Button } from '../ui/button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card'
-import { useRouter } from 'next/navigation'
-import { sendGAEvent } from '@next/third-parties/google'
 
 const PricingCard = ({ plan, isAnnual }: any) => {
     const currency = "₹"
@@ -45,7 +44,15 @@ const PricingCard = ({ plan, isAnnual }: any) => {
 
             <CardContent>
                 <Button
-                    onClick={() => router.push(plan.href) }
+                    onClick={() => {
+                        const planDetails = {
+                            plan_name: plan.title,
+                            plan_price:PlanPrice
+                        };
+                        window.gtag("event", "order_item",planDetails)
+                        router.push(plan.href)
+                    }
+                    }
                     className={`rounded-[4px]  w-full text-[16px] border-[1px] border-primary font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
             </CardContent>
 
@@ -85,7 +92,7 @@ const PricingCard = ({ plan, isAnnual }: any) => {
 
                 {/* Support */}
                 {
-                    plan?.support?.length  > 0 && (
+                    plan?.support?.length > 0 && (
                         <>
                             <Button className="w-full my-6 py-3 rounded-[4px] ">Support</Button>
                             <div className="space-y-1 md:space-y-3">
@@ -118,9 +125,17 @@ const PricingCard = ({ plan, isAnnual }: any) => {
                                 ))}
                             </div></>
                     )
-                }
-                <Button
-                    onClick={() => router.push(plan.href)}
+                } 
+               <Button
+                    onClick={() => {
+                        const planDetails = {
+                            plan_name: plan.title,
+                            plan_price:PlanPrice
+                        };
+                        window.gtag("event", "order_item",planDetails)
+                        router.push(plan.href)
+                    }
+                    }
                     className={`rounded-[4px] my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
 
             </CardFooter>

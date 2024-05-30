@@ -21,49 +21,49 @@ const hosting: FeatureProps[] = [
         type: "Shared Hosting",
         description: "Perfect for small businesses and personal websites, our shared hosting plans offer cost-effective solutions without compromising on performance or security. Enjoy the benefits of robust hosting without breaking the bank at affordable cost.",
         ratings: "4.5/5",
-        starting_price: "Rs.159/month",
+        starting_price: "Rs.39/month",
         explore_link: "Explore Solution",
-        link: ""
+        link: "/shared-hosting"
     },
     {
         type: "VPS Hosting",
         description: "For businesses that require more power and control, our VPS hosting plans are the ideal choice. Experience dedicated resources, enhanced security, and the flexibility to customize your server environment according to your specific needs.",
         ratings: "5/5",
-        starting_price: "Rs.159/month",
+        starting_price: "Rs.599/month",
         explore_link: "Explore Solution",
-        link: ""
+        link: "/vps-server"
     },
     {
-        type: "Dedicated Hosting",
-        description: "When nothing but the best will do, our dedicated hosting solutions provide unparalleled performance and security. With a dedicated server, you have exclusive access to all resources, ensuring optimal speed, reliability, and customization options.",
-        ratings: "5/5",
-        starting_price: "Rs.159/month",
+        type: "Mini Hosting",
+        description: "Perfect for small websites or blogs, our Mini Hosting plans offer an affordable yet powerful solution. Enjoy reliable uptime, essential features, and easy scalability as your site grows.",
+        ratings: "4.5/5",
+        starting_price: "Rs.39/month",
         explore_link: "Explore Solution",
-        link: ""
+        link: "/mini-hosting"
     },
     {
-        type: "WordPress Hosting",
-        description: "Our specialized WordPress hosting plans are tailored for seamless compatibility and optimal performance. Experience one-click installations, automatic updates, and expert support specifically designed for WordPress websites.",
+        type: "Unlimited Hosting",
+        description: "Experience the freedom of Unlimited Hosting, where you get unlimited storage, bandwidth, and websites. Ideal for growing businesses, large websites, or developers managing multiple sites.",
         ratings: "5/5",
-        starting_price: "Rs.159/month",
+        starting_price: "Rs.999/month",
         explore_link: "Explore Solution",
-        link: ""
+        link: "/unlimited-hosting"
     },
     {
         type: "Reseller Hosting",
         description: "Start Your Journey To Become A Hosting Reseller With Our Reliable And Flexible Reseller Hosting Plans. Offer Hosting Services To Clients While Enjoying The Benefits Of Our Robust Infrastructure, Support, And Unlimited Growth Potential.",
         ratings: "5/5",
-        starting_price: "Rs.159/month",
+        starting_price: "Rs.1199/month",
         explore_link: "Explore Solution",
-        link: ""
+        link: "/reseller-hosting"
     },
     {
         type: "Cloud Hosting",
         description: "Experience the power of scalable and reliable cloud hosting. Our cloud hosting solutions offer on-demand resources, automatic failover, and easy scalability to handle sudden traffic spikes and ensure your website remains online.",
         ratings: "5/5",
-        starting_price: "Rs.159/month",
+        starting_price: "Rs.29/month",
         explore_link: "Explore Solution",
-        link: ""
+        link: "/indian-cloud-hosting"
     }
 ];
 export const FeaturedHosting = () => {

@@ -52,6 +52,8 @@ export function ContactPage() {
     };
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        
+        window.gtag("event", "form_start");
         e.preventDefault();
         const newErrors = {
             name: !formData.name,
@@ -82,12 +84,14 @@ export function ContactPage() {
                 phone: ""
             });
             console.log(response);
+            window.gtag("event", "form_submited");
             alert("Form Submitted");
             setSubmitted(true);
             setTimeout(() => {
                 setSubmitted(false);
             }, 3000);
         } catch (error) {
+            window.gtag("event", "form_error");
             console.error("Error submitting form:", error);
         } finally {
             setLoading(false)

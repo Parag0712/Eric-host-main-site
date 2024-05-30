@@ -48,7 +48,7 @@ const serviceList: ServiceProps[] = [
         title: "Availability",
         description:
             "Our VPS solutions are perfect for hosting business applications in a production or pre-production environment. Our infrastructure offers minimal latency for your services, and hardware availability guaranteed by an SLA.",
-        icon: <Availability  />,
+        icon: <Availability />,
     }
 ];
 const VpsFeatured = (props: Props) => {
@@ -72,7 +72,7 @@ const VpsFeatured = (props: Props) => {
                             {serviceList.map(({ icon, title, description }: ServiceProps) => (
                                 <Card key={title}>
                                     <CardHeader className="space-y-1 flex lg:flex-row justify-start items-center lg:items-start gap-4">
-                                        <div className=""> 
+                                        <div className="">
                                             {icon}
                                         </div>
                                         <div className='text-center lg:text-left'>

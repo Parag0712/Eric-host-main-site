@@ -57,9 +57,17 @@ const PricingCard = ({ plan }: any) => {
                             <h3 className="text-sm lg:text-[16px] ml-2"><span className='font-semibold'>{Object.keys(benefit)[0]}</span>{" - "}{benefit.description}</h3>
                         </span>
                     ))}
-                </div>
+                </div>  
                 <Button
-                    onClick={() => router.push(plan.href)}
+                    onClick={() => {
+                        const planDetails = {
+                            plan_name: plan.title,
+                            plan_price: PlanPrice
+                        };
+                        window.gtag("event", "order_item", planDetails)
+                        router.push(plan.href)
+                    }
+                    }
                     className={`rounded-[4px] my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>
 
             </CardFooter>
