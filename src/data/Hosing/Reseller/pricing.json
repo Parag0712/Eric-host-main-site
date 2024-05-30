@@ -73,7 +73,9 @@
                     "malware protection": "Yes",
                     "description": "Malware Protection"
                 }
-            ]
+            ],"resources":[],
+            "support":[],
+            "security":[]
         },
         {
             "title": "RH-50",
@@ -149,7 +151,10 @@
                     "malware protection": "Yes",
                     "description": "Malware Protection"
                 }
-            ]
+            ],
+            "resources":[],
+            "support":[],
+            "security":[]
         },
         {
             "title": "RH-100",
@@ -158,6 +163,9 @@
             "biannually": 99999,
             "triannually": 129499,
             "description": "100 cPanel Accounts with premium resources",
+            "resources":[],
+            "support":[],
+            "security":[],
             "features": [
                 {
                     "cPanel Accounts": 100,

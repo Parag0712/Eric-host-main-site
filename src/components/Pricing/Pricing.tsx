@@ -1,19 +1,16 @@
 "use client"
-import { useState } from "react";
-import PricingCard from "./PricingCard";
-import Heading from "../Heading/Heading";
-import Container from "../Conatianers/Container";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+import Container from "../Conatianers/Container";
+import Heading from "../Heading/Heading";
+import PricingCard from "./PricingCard";
 
 export const Pricing = ({ data, title }: { data: any, title: string }) => {
 
     const [showMore, setShowMore] = useState(false);
-    const router = useRouter();
+    
     const handleShowMore = () => {
         setShowMore(!showMore);
-        if (showMore) {
-            router.push("#pricing");
-        }
     };
 
     const [isAnnual, setIsAnnual] = useState(true);

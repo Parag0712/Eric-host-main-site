@@ -7,15 +7,30 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/
 const PricingCard = ({ plan, isAnnual, showMore, handleShowMore, className }: any) => {
     const currency = "₹"
     const year = isAnnual;
-    const PlanPrice = year ? plan.annually : plan.title.includes("business")  ? plan.monthly - plan.triannually:plan.monthly;
+    const PlanPrice = year ? plan.annually : plan.title.includes("business") ? plan.monthly - plan.triannually : plan.monthly;
     enum PopularPlanType {
         NO = 0,
         YES = 1,
     }
     const router = useRouter();
+    const newId = plan.title.replace(" ", "_").toLowerCase();
+
+    const scrollToPricingCard = () => {
+        const element = document.getElementById(newId);
+        if (element) {
+            const offset = element.offsetTop;
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth'
+            });
+            setTimeout(() => {
+                handleShowMore(!showMore as boolean);
+            }, 300);
+        }
+    };
 
     return (
-        <section className={`  max-w-[430px] ${className}`}>
+        <section className={`  max-w-[430px] ${className}`} id={newId}>
             <div className='flex rounded-t-2xl bg-primary text-white justify-center'>
                 <h1 className='text-2xl lg:text-3xl font-poppins py-4 font-bold capitalize text-center'>{plan.title}</h1>
             </div>
@@ -29,7 +44,7 @@ const PricingCard = ({ plan, isAnnual, showMore, handleShowMore, className }: an
             >
                 <CardHeader>
                     <CardTitle className="flex item-center  justify-between items-center">
-                        {!year && plan.title.includes("business")  &&
+                        {!year && plan.title.includes("business") &&
                             <div className='flex  items-center gap-3 text-[14px]'>
                                 <p className='line-through'>{currency}{plan.monthly}</p>
                                 <Badge className='bg-blue-100 hover:bg-blue-100 hover:text-blue-950 text-[14px] px-3 py-1  text-blue-950'>Save {Math.round((PlanPrice / plan.monthly) * 100)}%</Badge>
@@ -69,8 +84,15 @@ const PricingCard = ({ plan, isAnnual, showMore, handleShowMore, className }: an
                     </div>
                     <div className="text-center mt-3  order-5">
                         <button
-                            onClick={handleShowMore}
-                            className={`text-center flex justify-center items-center gap-2   w-full text-[15px] lg:text-[18px] font-semibold hover:underline focus:outline-none`}
+                        onClick={() => {
+                            if(showMore){
+                                scrollToPricingCard();
+                            }else{
+                                
+                            handleShowMore(!showMore as boolean)
+                            }
+                        }}
+                            className={`${(plan?.security?.length ==0 || plan?.resources?.length ==0  || plan?.support?.length ==0)&&"hidden"  } text-center flex justify-center items-center gap-2   w-full text-[15px] lg:text-[18px] font-semibold hover:underline focus:outline-none`}
 
                         >
                             {showMore ? <ChevronUp className='bg-indigo-100 rounded-full  ' size={20} /> : <ChevronDown className='bg-indigo-100 rounded-full  ' size={20} />}
@@ -148,15 +170,11 @@ const PricingCard = ({ plan, isAnnual, showMore, handleShowMore, className }: an
                                         </div></>
                                 )
                             }
-
                         </>
                     )
-
                     }
                 </CardFooter>
-
             </Card>
-
         </section>
     )
 }
