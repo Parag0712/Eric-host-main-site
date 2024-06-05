@@ -71,7 +71,7 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
                         showMore={showMore}
                         handleShowMore={handleShowMore}
                         plan={data.plans[index]}
-                        isAnnual={!isAnnual}
+                        isAnnual={isAnnual}
                         className={data.plans.length <= 1 ? "col-start-2 " : ""}
                     />
 
