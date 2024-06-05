@@ -7,7 +7,7 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/
 const PricingCard = ({ plan, isAnnual, showMore, handleShowMore, className }: any) => {
     const currency = "₹"
     const year = isAnnual;
-    const PlanPrice = year ? plan.annually : plan.title.includes("business") ? plan.monthly - plan.triannually : plan.monthly;
+    const PlanPrice = year ? plan.annually :  plan.monthly ;
     enum PopularPlanType {
         NO = 0,
         YES = 1,
@@ -44,10 +44,10 @@ const PricingCard = ({ plan, isAnnual, showMore, handleShowMore, className }: an
             >
                 <CardHeader>
                     <CardTitle className="flex item-center  justify-between items-center">
-                        {!year && plan.title.includes("business") &&
+                        {year && !plan.title.includes("RH") &&
                             <div className='flex  items-center gap-3 text-[14px]'>
                                 <p className='line-through'>{currency}{plan.monthly}</p>
-                                <Badge className='bg-blue-100 hover:bg-blue-100 hover:text-blue-950 text-[14px] px-3 py-1  text-blue-950'>Save {Math.round((PlanPrice / plan.monthly) * 100)}%</Badge>
+                                <Badge className='bg-blue-100 hover:bg-blue-100 hover:text-blue-950 text-[14px] px-3 py-1  text-blue-950'>Save {Math.round(((plan.monthly-plan.annually)/ plan.monthly) * 100)}%</Badge>
                             </div>
                         }
                         {plan.popular === PopularPlanType.YES ? (
