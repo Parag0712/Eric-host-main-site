@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
 import { FaCheckCircle } from "react-icons/fa";
@@ -6,12 +6,17 @@ import Container from "../Conatianers/Container";
 import { Badge } from "../ui/badge";
 import { Button, buttonVariants } from "../ui/button";
 import CountdownTimer from "./CountdownTimer";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
+import currency from "currency.js";
+import useCurrencyConverter from "@/Hooks/useCurrencyConverter";
 
 export interface HeroDynamicProps {
     title: string;
     subtitle: string;
     badgeText?: string;
-    tagline: string
+    tagline: string;
     features: string[];
     price: string;
     buttonText: string;
@@ -28,11 +33,16 @@ export const ImageHeroSection = ({
     heroImage,
 }: HeroDynamicProps) => {
     const router = useRouter();
-    return (
 
+    const { convertedAmount, currencySymbol } = useCurrencyConverter(price);
+
+    return (
         <section className="relative overflow-hidden">
             <Container className="relative grid lg:grid-cols-2 place-items-center xl:gap-y-44 justify-between py-16 md:pb-32 lg:py-12 xl:py-14 xl:mb-20 gap-10">
-                <div aria-hidden="true" className="flex  absolute -top-96 start-1/2 transform -translate-x-1/2">
+                <div
+                    aria-hidden="true"
+                    className="flex  absolute -top-96 start-1/2 transform -translate-x-1/2"
+                >
                     <div className="bg-gradient-to-r  from-violet-300/50 to-purple-100 blur-3xl w-[25rem] h-[44rem] rotate-[-60deg] transform -translate-x-[10rem] "></div>
                     <div className="bg-gradient-to-tl  from-blue-50 via-blue-100 to-blue-50 blur-3xl w-[90rem] h-[50rem] rounded-fulls origin-top-left -rotate-12 -translate-x-[15rem]"></div>
                 </div>
@@ -40,7 +50,9 @@ export const ImageHeroSection = ({
                     <main className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold">
                         <div>
                             {badgeText && (
-                                <Badge className="bg-green-500 mb-2 hover:bg-green-500">{badgeText}</Badge>
+                                <Badge className="bg-green-500 mb-2 hover:bg-green-500">
+                                    {badgeText}
+                                </Badge>
                             )}
                         </div>
                         <h1 className="inline">
@@ -54,7 +66,6 @@ export const ImageHeroSection = ({
                                 {subtitle}
                             </span>{" "}
                         </h2>
-
                         <p className="font-normal text-lg sm:text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
                             {tagline}
                         </p>
@@ -77,23 +88,31 @@ export const ImageHeroSection = ({
                     <div>
                         <div className="text-[15px] md:text-[20px] mt-[-10px]">
                             <span className="text-[30px] md:text-[40px] font-bold">
-                                {price}
+                                {currencySymbol}
+                                {convertedAmount}
                             </span>
                             /month
                         </div>
-                        <div className="text-md leading-[20px] sm:text-lg">Buy & Renew at same cost</div>
+                        <div className="text-md leading-[20px] sm:text-lg">
+                            Buy & Renew at same cost
+                        </div>
                     </div>
 
                     <div className="space-y-4 md:space-y-0 sm:space-x-4">
-                        <Button onClick={() => router.push('#pricing')}  className="w-9/12 rounded-lg  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
+                        <Button
+                            onClick={() => router.push("#pricing")}
+                            className="w-9/12 rounded-lg  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4"
+                        >
                             {buttonText}
                         </Button>
                         <a
                             rel="noreferrer noopener"
                             href="#pricing"
-                            className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-lg  py-5 sm:py-6 px-4 ${buttonVariants({
-                                variant: "outline",
-                            })}`}
+                            className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-lg  py-5 sm:py-6 px-4 ${buttonVariants(
+                                {
+                                    variant: "outline",
+                                }
+                            )}`}
                         >
                             <CountdownTimer />
                         </a>
@@ -119,12 +138,12 @@ export const ImageHeroSection = ({
                 />
             </div> */}
 
-                <div className='right w-full  col-span-2 mx-auto lg:order-2 max-w-[80%] lg:hidden'>
+                <div className="right w-full  col-span-2 mx-auto lg:order-2 max-w-[80%] lg:hidden">
                     <Image
                         src={heroImage}
-                        layout='responsive'
-                        alt='HeroImage'
-                        className='h-auto mx-auto sm:max-h-[400px] object-contain lg:max-h-[100%]'
+                        layout="responsive"
+                        alt="HeroImage"
+                        className="h-auto mx-auto sm:max-h-[400px] object-contain lg:max-h-[100%]"
                     />
                 </div>
                 {/* Rating Image */}

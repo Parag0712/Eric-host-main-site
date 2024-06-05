@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation'
 import { Badge } from '../ui/badge'
 import { Button } from '../ui/button'
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card'
+import useCurrencyConverter from '@/Hooks/useCurrencyConverter'
 
 const PricingCard = ({ plan }: any) => {
     const currency = "₹"
@@ -12,6 +13,7 @@ const PricingCard = ({ plan }: any) => {
         YES = 1,
     }
     const router = useRouter();
+    const { convertedAmount, currencySymbol } = useCurrencyConverter(PlanPrice);
     return (
 
         <Card
@@ -35,7 +37,7 @@ const PricingCard = ({ plan }: any) => {
                     ) : null}
                 </CardTitle>
                 <div>
-                    <span className="text-3xl font-bold">{currency + PlanPrice}</span>
+                    <span className="text-3xl font-bold">{currencySymbol}{convertedAmount}</span>
                     <span className="text-muted-foreground"> /month</span>
                 </div>
 
@@ -57,7 +59,7 @@ const PricingCard = ({ plan }: any) => {
                             <h3 className="text-sm lg:text-[16px] ml-2"><span className='font-semibold'>{Object.keys(benefit)[0]}</span>{" - "}{benefit.description}</h3>
                         </span>
                     ))}
-                </div>  
+                </div>
                 <Button
                     onClick={() => {
                         const planDetails = {

@@ -1,6 +1,7 @@
 "use client"
 import React, { ReactNode } from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';// Assuming you've created the useIsMdScreen hook
+import useIsMdScreen from '@/Hooks/useIsMdScreen';
 
 interface AnimationContainerProps {
     children: ReactNode;
@@ -8,11 +9,13 @@ interface AnimationContainerProps {
 }
 
 const AnimationContainer: React.FC<AnimationContainerProps> = ({ children, className }) => {
+    const isMdScreen = useIsMdScreen();
+
     return (
         <motion.section
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={isMdScreen ? { opacity: 0 } : {}}
+            animate={isMdScreen ? { opacity: 1 } : {}}
+            exit={isMdScreen ? { opacity: 0 } : {}}
             className={className}
             transition={{ duration: 0.3, ease: "easeInOut" }}
         >

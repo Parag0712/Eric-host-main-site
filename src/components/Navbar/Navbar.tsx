@@ -20,6 +20,7 @@ import logo from "../../../public/logo.svg";
 import navData from "../../data/Navbar/data.json";
 import { buttonVariants } from "../ui/button";
 import { NavigationLink } from "./NavigationLink";
+import ContrySelect from "./ContrySelect";
 interface RouteProps {
     href: string;
     label: string;
@@ -107,80 +108,90 @@ export const Navbar = () => {
 
     return (
         <header className="sticky border-b-[1px] top-0 z-1 w-full lg:py-2">
-                <NavigationMenu className="mx-auto">
-                    <NavigationMenuList className=" max-w-[1340px]   lg:max-w-[1300px] xl:max-w-[1200px] 2xl:max-w-[1440px]   w-screen  h-14 px-4  flex justify-between ">
-                        <NavigationMenuItem className="font-bold flex">
-                            <Link href="/" className="flex items-center">
-                                <Image src={logo} className="lg:h-auto h-6" alt="eric-host" />
-                            </Link  >
-                        </NavigationMenuItem>
-                        {/* mobile */}
-                        <span className="flex lg:hidden">
+            <NavigationMenu className="mx-auto">
+                <NavigationMenuList className=" max-w-[1340px]   lg:max-w-[1300px] xl:max-w-[80%] mx-auto  w-screen  h-14 px-4  flex justify-between ">
+                    <NavigationMenuItem className="font-bold flex">
+                        <Link href="/" className="flex items-center">
+                            <Image src={logo} className="lg:h-auto h-6" alt="eric-host" />
+                        </Link  >
+                    </NavigationMenuItem>
+                    {/* mobile */}
+                    <span className="flex lg:hidden">
 
-                            <Sheet
-                                open={isOpen}
-                                onOpenChange={setIsOpen}
-                            >
-                                <SheetTrigger className="px-2 ">
-                                    <Menu
-                                        className="flex lg:hidden h-5 w-5"
-                                        onClick={() => setIsOpen(true)}
+                        <Sheet
+                            open={isOpen}
+                            onOpenChange={setIsOpen}
+                        >
+                            <SheetTrigger className="px-2 ">
+                                <Menu
+                                    className="flex lg:hidden h-5 w-5"
+                                    onClick={() => setIsOpen(true)}
+                                >
+                                </Menu>
+                                
+                            </SheetTrigger>
+
+                            <SheetContent side={"left"} className="flex  flex-col items-stretch justify-between">
+                                <div>
+                                    <SheetHeader>
+                                        <SheetTitle className="font-bold text-xl">
+                                            <Link href="/" className="flex mb-5">
+                                                <Image src={logo} className=" h-7" alt="eric-host" />
+                                            </Link  >
+                                        </SheetTitle>
+                                    </SheetHeader>
+
+                                    <nav>
+                                        <ul className="grid grid-cols-1  gap-2">
+                                            {navData.navbar.map((link) => (
+                                                <li key={link.text} className="">
+                                                    {link.options.length > 0
+                                                        ? renderDropdown(link)
+                                                        : renderNavLink(link)}
+                                                </li>
+                                            ))}
+                                            <li className="w-full">
+                                                <ContrySelect />
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <div className="flex flex-col justify-center items-center gap-2 mt-4 w-full">
+                                    <a
+                                        rel="noreferrer noopener"
+                                        href="https://clients.erichost.com/login"
+                                        className={`w-full border ${buttonVariants({
+                                            variant: "secondary",
+                                        })}`}
+
                                     >
-                                    </Menu>
-                                </SheetTrigger>
+                                        Login
+                                    </a>
+                                    
+                                </div>
+                            </SheetContent>
+                        </Sheet>
+                    </span>
+                        
+                    <NavigationLink />
 
-                                <SheetContent side={"left"} className="flex  flex-col items-stretch justify-between">
-                                    <div>
-                                        <SheetHeader>
-                                            <SheetTitle className="font-bold text-xl">
-                                                <Link href="/" className="flex mb-5">
-                                                    <Image src={logo} className=" h-7" alt="eric-host" />
-                                                </Link  >
-                                            </SheetTitle>
-                                        </SheetHeader>
-
-                                        <nav>
-                                            <ul className="grid grid-cols-1  gap-2">
-                                                {navData.navbar.map((link) => (
-                                                    <li key={link.text} className="">
-                                                        {link.options.length > 0
-                                                            ? renderDropdown(link)
-                                                            : renderNavLink(link)}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </nav>
-                                    </div>
-
-                                    <div className="flex flex-col justify-center items-center gap-2 mt-4 w-full">
-                                        <a
-                                            rel="noreferrer noopener"
-                                            href="https://clients.erichost.com/login"
-                                            className={`w-full border ${buttonVariants({
-                                                variant: "secondary",
-                                            })}`}
-                                        >
-                                            Login
-                                        </a>
-                                    </div>
-                                </SheetContent>
-                            </Sheet>
-                        </span>
-                        <NavigationLink />
-
-                        <div className="hidden lg:flex gap-2">
-                            <a
-                                rel="noreferrer noopener"
-                                href="https://clients.erichost.com/login"
-                                target="_blank"
-                                className={`border ${buttonVariants({ variant: "secondary" })}`}
-                            >
-                                <UserRound className="mr-2 w-5 h-5" />
-                                Login
-                            </a>
-                        </div>
-                    </NavigationMenuList>
-                </NavigationMenu>
+                    <div className="hidden lg:flex gap-2 items-center ">
+                        <a
+                            rel="noreferrer noopener"
+                            href="https://clients.erichost.com/login"
+                            target="_blank"
+                            // className={`border ${buttonVariants({ variant: "secondary" })}`}
+                            className="px-5 py-2 flex items-center justify-center rounded w-full text-[#333] text-sm font-semibold border-2 border-blue-600 outline-none hover:bg-blue-50"
+     
+                        >
+                            <UserRound className="mr-2 w-5 h-5" />
+                            Login
+                        </a>
+                        <ContrySelect />
+                    </div>
+                </NavigationMenuList>
+            </NavigationMenu>
         </header>
     );
 };

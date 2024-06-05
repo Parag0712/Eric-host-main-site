@@ -49,20 +49,12 @@ export const Footer = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <h3 className="font-bold text-lg">Server</h3>
-                    {
-                        navbar[3].options.map((data) => (
-                            <div>
-                                <a
-                                    rel="noreferrer noopener"
-                                    href={data.href}
-                                    className="opacity-100 hover:text-primary"
-                                >
-                                    {data.title}
-                                </a>
-                            </div>
-                        ))
-                    }
+                    <a href="/vps-server">
+                        <h3 className="font-bold text-lg">
+                            Server
+                        </h3>
+
+                    </a>
 
                     <div className="flex flex-col gap-2 mt-5">
                         <h3 className="font-bold text-lg">Navigation</h3>

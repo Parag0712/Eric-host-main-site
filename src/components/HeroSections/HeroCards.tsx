@@ -1,5 +1,6 @@
 "use client"
 MdSizeHeroImage
+import { MdSizeHeroImage, SmSizeHeroImage } from "@/assests/HeroSection/assets";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
     Card,
@@ -12,25 +13,26 @@ import {
 import { } from "@radix-ui/react-icons";
 import { Check, Linkedin } from "lucide-react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { FaFacebook } from "react-icons/fa";
 import link from '../../data/Navbar/link.json';
-import Container from "../Conatianers/Container";
-import { Badge } from "../ui/badge";
 import { CloudIcon, LightBulbIcon } from "../Cta-logo/Logo";
-import { useRouter } from "next/navigation";
-import { MdSizeHeroImage, SmSizeHeroImage } from "@/assests/HeroSection/assets";
+import { Badge } from "../ui/badge";
+import useCurrencyConverter from "@/Hooks/useCurrencyConverter";
 
 type PricingData = {
     name: string;
     popular?: boolean;
     price: string;
-    href:string;
+    href: string;
     description: string;
     buttonText: string;
     features: string[];
 };
 export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
-    
+
+    const { convertedAmount, currencySymbol } = useCurrencyConverter(pricingData.price);
+
     const router = useRouter();
     return (
         <section className="container lg:max-w-full xl:max-w-full  px-0  hidden md:flex flex-row flex-wrap gap-8 relative  w-[300px] lg:w-[600px] xl:w-[700px] h-[500px]">
@@ -221,7 +223,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
                         )}
                     </CardTitle>
                     <div>
-                        <span className="text-3xl font-bold">{pricingData.price}</span>
+                        <span className="text-3xl font-bold">{currencySymbol}{convertedAmount}</span>
                         <span className="text-muted-foreground"> /month</span>
                     </div>
 
@@ -229,7 +231,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
                 </CardHeader>
 
                 <CardContent>
-                    <Button onClick={()=>router.push(pricingData.href)}  className="w-full rounded-lg ">{pricingData.buttonText}</Button>
+                    <Button onClick={() => router.push(pricingData.href)} className="w-full rounded-lg ">{pricingData.buttonText}</Button>
                 </CardContent>
 
                 <hr className="w-4/5 m-auto mb-4" />

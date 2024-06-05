@@ -15,13 +15,17 @@ import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
 import Container from "../Conatianers/Container";
+import useCurrencyConverter from "@/Hooks/useCurrencyConverter";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
+import currency from "currency.js";
 
 const hosting: FeatureProps[] = [
     {
         type: "Shared Hosting",
         description: "Perfect for small businesses and personal websites, our shared hosting plans offer cost-effective solutions without compromising on performance or security. Enjoy the benefits of robust hosting without breaking the bank at affordable cost.",
         ratings: "4.5/5",
-        starting_price: "Rs.39/month",
+        starting_price: "39",
         explore_link: "Explore Solution",
         link: "/shared-hosting"
     },
@@ -29,7 +33,7 @@ const hosting: FeatureProps[] = [
         type: "VPS Hosting",
         description: "For businesses that require more power and control, our VPS hosting plans are the ideal choice. Experience dedicated resources, enhanced security, and the flexibility to customize your server environment according to your specific needs.",
         ratings: "5/5",
-        starting_price: "Rs.599/month",
+        starting_price: "599",
         explore_link: "Explore Solution",
         link: "/vps-server"
     },
@@ -37,7 +41,7 @@ const hosting: FeatureProps[] = [
         type: "Mini Hosting",
         description: "Perfect for small websites or blogs, our Mini Hosting plans offer an affordable yet powerful solution. Enjoy reliable uptime, essential features, and easy scalability as your site grows.",
         ratings: "4.5/5",
-        starting_price: "Rs.39/month",
+        starting_price: "39",
         explore_link: "Explore Solution",
         link: "/mini-hosting"
     },
@@ -45,7 +49,7 @@ const hosting: FeatureProps[] = [
         type: "Unlimited Hosting",
         description: "Experience the freedom of Unlimited Hosting, where you get unlimited storage, bandwidth, and websites. Ideal for growing businesses, large websites, or developers managing multiple sites.",
         ratings: "5/5",
-        starting_price: "Rs.999/month",
+        starting_price: "999",
         explore_link: "Explore Solution",
         link: "/unlimited-hosting"
     },
@@ -53,7 +57,7 @@ const hosting: FeatureProps[] = [
         type: "Reseller Hosting",
         description: "Start Your Journey To Become A Hosting Reseller With Our Reliable And Flexible Reseller Hosting Plans. Offer Hosting Services To Clients While Enjoying The Benefits Of Our Robust Infrastructure, Support, And Unlimited Growth Potential.",
         ratings: "5/5",
-        starting_price: "Rs.1199/month",
+        starting_price: "1199",
         explore_link: "Explore Solution",
         link: "/reseller-hosting"
     },
@@ -61,13 +65,15 @@ const hosting: FeatureProps[] = [
         type: "Cloud Hosting",
         description: "Experience the power of scalable and reliable cloud hosting. Our cloud hosting solutions offer on-demand resources, automatic failover, and easy scalability to handle sudden traffic spikes and ensure your website remains online.",
         ratings: "5/5",
-        starting_price: "Rs.29/month",
+        starting_price: "29",
         explore_link: "Explore Solution",
         link: "/indian-cloud-hosting"
     }
 ];
 export const FeaturedHosting = () => {
     const router = useRouter();
+    const { currencyCode, currencyRate, currencySymbol } = useSelector((state: RootState) => state);
+
     return (
         <Container
             id="howItWorks"
@@ -114,7 +120,9 @@ export const FeaturedHosting = () => {
                                     />
                                 </div>
                                 <div>
-                                    <span className="font-bold">Plans Starts: {starting_price}</span>
+                                    <span className="font-bold">Plans Starts: {currencySymbol}{
+                                        currency(starting_price).multiply(currencyRate).value
+                                    }/Month </span>
                                     {" "}
                                 </div>
                             </div>

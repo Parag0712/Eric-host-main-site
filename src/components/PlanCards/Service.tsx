@@ -1,7 +1,7 @@
 "use client"
 import Image, { StaticImageData } from "next/image";
 import { useRouter } from "next/navigation";
-import { FC, ReactNode } from "react";
+import { FC, FormEvent, ReactNode } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Button } from "../ui/button";
 import Container from "../Conatianers/Container";
@@ -37,6 +37,14 @@ export const Services: FC<ServicesProps> = ({
     shouldBePurple
 }) => {
     const router = useRouter();
+    
+    const handleClick = (e: FormEvent) => {
+        e.preventDefault();
+        const target = document.querySelector(buttonLink);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
     return (
         <Container className=" py-16 sm:py-16">
             <div className={`grid ${reversecard ? "lg:grid-cols-[1fr,1.2fr]" : "lg:grid-cols-[1.2fr,1fr]"}   gap-8 place-items-center text-inherit`} >
@@ -80,7 +88,7 @@ export const Services: FC<ServicesProps> = ({
                     </div>
                     <div>
                         <Button
-                            onClick={() => router.push(buttonLink)}
+                            onClick={handleClick}
                             className="rounded-[4px] w-[200px] mt-1  md:mt-6 text-[14px] md:text-[16px] font-semibold mx-auto py-4 md:py-5 px-4 text-white bg-green-500 hover:bg-green-600">
                             {buttonText}
                         </Button>

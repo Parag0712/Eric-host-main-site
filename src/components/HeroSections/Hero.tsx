@@ -1,14 +1,14 @@
 "use client"
-import { RaingImage, RaingImage2 } from "@/assests/config";
+import useCurrencyConverter from "@/Hooks/useCurrencyConverter";
 import Image, { StaticImageData } from "next/image";
+import { useRouter } from "next/navigation";
+import { FormEvent } from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import Container from "../Conatianers/Container";
 import { Badge } from "../ui/badge";
 import { Button, buttonVariants } from "../ui/button";
-import { HeroCards } from "./HeroCards";
-import { useRouter } from "next/navigation";
-import Container from "../Conatianers/Container";
-import { sendGAEvent } from "@next/third-parties/google";
 import CountdownTimer from "./CountdownTimer";
+import { HeroCards } from "./HeroCards";
 
 type PricingData = {
     name: string;
@@ -44,7 +44,16 @@ export const Hero = ({
     heroImage,
     planhref
 }: HeroDynamicProps) => {
-    const router = useRouter();
+    const { convertedAmount, currencySymbol } = useCurrencyConverter(price);
+
+    const handleClick = (e: FormEvent) => {
+        e.preventDefault();
+        const target = document.querySelector('#pricing');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+    
     return (
         <section className="relative overflow-hidden">
 
@@ -95,7 +104,7 @@ export const Hero = ({
                     <div>
                         <div className="text-[15px] md:text-[20px] mt-[-10px]">
                             <span className="text-[30px] md:text-[40px] font-bold">
-                                {price}
+                                {currencySymbol}{convertedAmount}
                             </span>
                             /month
                         </div>
@@ -103,15 +112,12 @@ export const Hero = ({
                     </div>
 
                     <div className="space-y-4 md:space-y-0 sm:space-x-4">
-                        <Button onClick={() => {
-                            router.push('#pricing')
-                        }} className="w-9/12 rounded-lg  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
+                        <Button onClick={handleClick} className="w-9/12 rounded-lg  sm:w-1/3 text-[14px] md:text-[16px] font-semibold py-5 sm:py-6 px-4">
                             {buttonText}
                         </Button>
                         <a
                             rel="noreferrer noopener"
-                            href={'#pricing'}
-                            
+                            onClick={handleClick}
                             className={`w-9/12 sm:w-1/3 text-[14px] md:text-[16px] font-semibold  rounded-lg  py-5 sm:py-6 px-4 ${buttonVariants({
                                 variant: "outline",
                             })}`}

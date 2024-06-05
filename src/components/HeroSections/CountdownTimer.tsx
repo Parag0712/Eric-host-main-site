@@ -50,7 +50,7 @@ const CountdownTimer = () => {
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Format the countdown timer
-        const formattedTimer = `${days}:${hours}:${minutes}:${seconds}`;
+        const formattedTimer = `${hours}:${minutes}:${seconds}`;
 
         // Update the countdown timer state
         setTimeLeft(formattedTimer);

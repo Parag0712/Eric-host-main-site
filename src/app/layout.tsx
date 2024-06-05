@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import StoreProvider from "./StoreProvider";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Best Affordable and Reliable Web Hosting Provider in India | EricHost",
@@ -31,15 +32,17 @@ export default function RootLayout({
       <body className={cn("scroll-smooth font-poppins ", inter.className, {
         "debug-screens": process.env.NODE_ENV === "development",
       })}>
+        <StoreProvider>
         <header className="sticky-navbar">
           <Navbar />
         </header>
         <main>
-            {children}
+          {children}
         </main>
         <footer>
           <Footer />
         </footer>
+        </StoreProvider>
       </body>
 
       {/* Script Tag For Analytics */}
