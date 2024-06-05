@@ -14,6 +14,7 @@ import { heroProps, servicesProps } from "@/data/Hosing/Unlitmited/data";
 import faq from '../../../../data/Hosing/Unlitmited/faq.json';
 import dynamicInformationProps from '../../../../data/Hosing/Unlitmited/information.json';
 import priceing from "../../../../data/Hosing/Unlitmited/pricing.json";
+import AnimationContainer from "@/components/Conatianers/AnimationContainer";
 
 type Props = {}
 
@@ -22,7 +23,7 @@ const unlimitedhosting = (props: Props) => {
   const colors = ["bg-[#FFFFFF] ", "bg-[#F2F3FF]", "bg-[#4346C2] text-white"];
 
   return (
-    <section>
+    <AnimationContainer>
       <ImageHeroSection {...heroProps
       } />
       <Pricing data={priceing} title="Unlimited" />
@@ -41,7 +42,7 @@ const unlimitedhosting = (props: Props) => {
       <MapSection />
       <Cta />
       <FAQ faq={faq} />
-    </section>
+    </AnimationContainer>
   )
 }
 

@@ -7,12 +7,13 @@ import { Services } from '@/components/PlanCards/Service'
 import Testimonials from '@/components/Testimonials/Testimonials'
 import { servicesProps,heroSectionContent } from '@/data/DomainTransfer/data'
 import faq from '../../../../data/DomainTransfer/faq.json'
+import AnimationContainer from '@/components/Conatianers/AnimationContainer'
 
 type Props = {}
 
 const domainregistration = (props: Props) => {
   return (
-    <section>
+    <AnimationContainer>
       <HeroSection
       {...heroSectionContent}
       />
@@ -34,7 +35,7 @@ const domainregistration = (props: Props) => {
       <Testimonials />
       <MapSection />
       <FAQ faq={faq} />
-    </section>
+    </AnimationContainer>
   )
 }
 

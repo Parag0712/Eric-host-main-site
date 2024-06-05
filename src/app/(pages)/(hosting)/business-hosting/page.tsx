@@ -13,6 +13,7 @@ import faq from '../../../../data/Hosing/Business/faq.json';
 import dynamicInformationProps from '../../../../data/Hosing/Business/information.json';
 
 import priceing from "../../../../data/Hosing/Business/pricing.json";
+import AnimationContainer from "@/components/Conatianers/AnimationContainer";
 
 type Props = {};
 
@@ -21,7 +22,7 @@ const businesshosting = (props: Props) => {
   const colors = ["bg-[#FFFFFF] ", "bg-[#F2F3FF]", "bg-[#4346C2] text-white"];
 
   return (
-    <section>
+    <AnimationContainer>
       <ImageHeroSection {...heroProps
       } />
       <Pricing data={priceing} title="Business" />
@@ -41,7 +42,7 @@ const businesshosting = (props: Props) => {
       <MapSection />
       <Cta />
       <FAQ faq={faq} />
-    </section>
+    </AnimationContainer>
   )
 }
 

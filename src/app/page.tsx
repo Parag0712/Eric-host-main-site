@@ -9,13 +9,12 @@ import { heroProps, servicesProps } from "@/data/HomePage/data";
 import data from "../data/HomePage/pricing.json";
 import MapSection from "@/components/MapSection/MapSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
-import Testimonial from "@/components/Testimonials/Testimonial";
-
+import AnimationContainer from "@/components/Conatianers/AnimationContainer";
 type Props = {};
 
 const page = (props: Props) => {
   return (
-    <section>
+    <AnimationContainer>
       <Hero {...heroProps} />
       <Pricing data={data} title="Business" />
       <section className="bg-[#F2F3FF]">
@@ -45,11 +44,11 @@ const page = (props: Props) => {
       <ChooseThePlans />
       <Testimonials />
       <MapSection />
-      <Cta />
-      <Services
+
+      <Services   
         {...servicesProps[servicesProps.length - 1]}
       />
-    </section>
+    </AnimationContainer>
   );
 };
 

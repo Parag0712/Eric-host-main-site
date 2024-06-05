@@ -14,6 +14,7 @@ import { heroProps, servicesProps } from "@/data/Hosing/Mini/data";
 import faq from '../../../../data/Hosing/Mini/faq.json';
 import dynamicInformationProps from '../../../../data/Hosing/Mini/information.json';
 import priceing from "../../../../data/Hosing/Mini/pricing.json";
+import AnimationContainer from "@/components/Conatianers/AnimationContainer";
 
 type Props = {}
 const minihosting = (props: Props) => {
@@ -21,7 +22,7 @@ const minihosting = (props: Props) => {
   const colors = ["bg-[#FFFFFF] ", "bg-[#F2F3FF]", "bg-[#4346C2] text-white"];
 
   return (
-    <section>
+    <AnimationContainer>
       <ImageHeroSection {...heroProps
       } />
       <Pricing data={priceing} title="Mini"/>
@@ -40,7 +41,7 @@ const minihosting = (props: Props) => {
       <MapSection />
       <Cta />
       <FAQ faq={faq} />
-    </section>
+    </AnimationContainer>
   )
 }
 

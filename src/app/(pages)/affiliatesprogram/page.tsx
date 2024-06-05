@@ -1,3 +1,4 @@
+import AnimationContainer from '@/components/Conatianers/AnimationContainer'
 import Container from '@/components/Conatianers/Container'
 import { InstructionCard } from '@/components/Domain/InstructionCard'
 import { FAQ } from '@/components/Faq/Faq'
@@ -11,7 +12,7 @@ type Props = {}
 
 const affiliatesprogram = (props: Props) => {
     return (
-        <section>
+        <AnimationContainer>
             <HeroSection
                 title="Our Hosting Affiliate Program"
                 description="We offer nice commissions, however most of our affiliates endorse US for a unique reason the standard of service. If you would like to advocate a number that will not fail your customers, readers, be part of our affiliate program!"
@@ -33,7 +34,7 @@ const affiliatesprogram = (props: Props) => {
             />
             <Cta />
             <FAQ faq={faq} />
-        </section>
+        </AnimationContainer>
     )
 }
 

@@ -14,6 +14,7 @@ import { heroProps, servicesProps } from "@/data/Hosing/IndianCloud/data";
 import faq from '../../../../data/Hosing/IndianCloud/faq.json';
 import dynamicInformationProps from '../../../../data/Hosing/IndianCloud/information.json';
 import priceing from "../../../../data/Hosing/IndianCloud/pricing.json";
+import AnimationContainer from "@/components/Conatianers/AnimationContainer";
 
 type Props = {}
 
@@ -22,7 +23,7 @@ const indianhosting = (props: Props) => {
 
   const colors = ["bg-[#FFFFFF] ", "bg-[#F2F3FF]", "bg-[#4346C2] text-white"];
   return (
-    <section>
+    <AnimationContainer>
       <ImageHeroSection {...heroProps
       } />
       <Pricing data={priceing} title="Cloud" />
@@ -41,7 +42,7 @@ const indianhosting = (props: Props) => {
       <MapSection />
       <Cta />
       <FAQ faq={faq} />
-    </section>
+    </AnimationContainer>
   )
 }
 

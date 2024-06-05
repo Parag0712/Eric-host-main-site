@@ -3,10 +3,8 @@
         {
             "title": "VPS-1",
             "monthly": 599,
-         
-            "description": "essential features for small businesses",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=17",
             "features": [
                 {
                     "core": 1,
@@ -29,10 +27,8 @@
         {
             "title": "VPS-2",
             "monthly": 899,
-         
-            "description": "advanced features for growing businesses",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=38",
             "features": [
                 {
                     "core": 1,
@@ -55,10 +51,8 @@
         {
             "title": "VPS-3",
             "monthly": 1899,
-         
-            "description": "enhanced capabilities for intensive workloads",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=39",
             "features": [
                 {
                     "core": 2,
@@ -81,10 +75,9 @@
         {
             "title": "VPS-4",
             "monthly": 3499,
-         
             "description": "high-performance for demanding applications",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=40",
             "features": [
                 {
                     "core": 4,
@@ -110,7 +103,7 @@
          
             "description": "premium resources for large enterprises",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=58",
             "features": [
                 {
                     "core": 8,
@@ -133,10 +126,8 @@
         {
             "title": "VPS-6",
             "monthly": 6499,
-         
-            "description": "enterprise-level performance for critical applications",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=69",
             "features": [
                 {
                     "core": 8,
@@ -159,10 +150,8 @@
         {
             "title": "VPS-7",
             "monthly": 6999,
-         
-            "description": "high-capacity storage for data-intensive tasks",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=70",
             "features": [
                 {
                     "core": 8,
@@ -185,10 +174,8 @@
         {
             "title": "VPS-8",
             "monthly": 7999,
-         
-            "description": "extensive resources for large-scale operations",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=59",
             "features": [
                 {
                     "core": 8,
@@ -211,10 +198,8 @@
         {
             "title": "VPS-9",
             "monthly": 9499,
-         
-            "description": "maximum performance for the most demanding needs",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=71",
             "features": [
                 {
                     "core": 8,
@@ -237,10 +222,8 @@
         {
             "title": "VPS-10",
             "monthly": 11499,
-         
-            "description": "ultra-high performance for critical applications",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=72",
             "features": [
                 {
                     "core": 8,
@@ -263,10 +246,8 @@
         {
             "title": "VPS-11",
             "monthly": 12499,
-         
-            "description": "extensive storage for data-heavy operations",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=73",
             "features": [
                 {
                     "core": 8,
@@ -289,10 +270,8 @@
         {
             "title": "VPS-12",
             "monthly": 12999,
-         
-            "description": "enterprise-level storage and performance",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=74",
             "features": [
                 {
                     "core": 8,
@@ -315,10 +294,8 @@
         {
             "title": "VPS-13",
             "monthly": 15499,
-         
-            "description": "ultimate performance for large enterprises",
             "popular": 0,
-            "href": "",
+            "href": "https://clients.erichost.com/cart.php?a=add&&pid=60",
             "features": [
                 {
                     "core": 8,

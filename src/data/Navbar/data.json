@@ -58,20 +58,9 @@
             ]
         },
         {
-            "href": "/",
-            "text": "Server",
-            "options": [
-                {
-                    "title": "VPS Server",
-                    "href": "/vps-server",
-                    "description": "Get full control of your server"
-                },
-                {
-                    "title": "Managed VPS Server",
-                    "href": "/manage-vps-server",
-                    "description": "Managed VPS Server"
-                }
-            ]
+            "href": "/vps-server",
+            "text": "VPS Server",
+            "options": []
         },
         {
             "href": "http://blog.erichost.com",
@@ -96,3 +85,4 @@
         }
     ]
 }
+

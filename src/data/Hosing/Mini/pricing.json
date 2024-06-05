@@ -1,7 +1,7 @@
 {
     "plans": [
         {
-            "title": "Starter",
+            "title": "Mini Starter",
             "monthly": 39,
             "annually": 29,
             "biannually": 29,
@@ -49,10 +49,6 @@
                 {
                     "database": 3,
                     "description": "3 databases"
-                },
-                {
-                    "terminal": false,
-                    "description": "Terminal access"
                 }
             ],
             "security": [

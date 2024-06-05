@@ -1,12 +1,12 @@
 {
     "plans": [
         {
-            "title": "Basic",
+            "title": "Shared Basic",
             "monthly": 59,
             "annually": 49,
             "biannually": 44,
             "triannually": 39,
-            "description": "Ideal for small websites",
+            "description": "Ideal for small websites, providing essential features and reliable performance for beginners.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=33",
             "features": [
@@ -39,28 +39,16 @@
                     "description": "3 databases"
                 },
                 {
-                    "cpu core": "1 Core",
-                    "description": "1 CPU core"
+                    "Easy Website Builder": true,
+                    "description": "Easy Website Builder"
                 },
                 {
-                    "ram": "512 MB",
-                    "description": "512 MB RAM"
+                    "Weekly Backups": true,
+                    "description": "Weekly Backups"
                 },
                 {
-                    "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
-                },
-                {
-                    "number of processes (nPROC)": 30,
-                    "description": "30 number of processes (nPROC)"
-                },
-                {
-                    "IO limit": "2 MBPS",
-                    "description": "2 MBPS IO limit"
-                },
-                {
-                    "file (node) limit": 50000,
-                    "description": "50000 file (node) limit"
+                    "Free SSL Certificate": true,
+                    "description": "Free SSL Certificate"
                 }
             ],
             "security": [
@@ -100,26 +88,38 @@
                 }
             ],"resources": [
                 {
-                    "Easy Website Builder": true,
-                    "description": "Easy Website Builder"
+                    "cpu core": "1 Core",
+                    "description": "1 CPU core"
                 },
                 {
-                    "Weekly Backups": true,
-                    "description": "Weekly Backups"
+                    "ram": "512 MB",
+                    "description": "512 MB RAM"
                 },
                 {
-                    "Free SSL Certificate": true,
-                    "description": "Free SSL Certificate"
+                    "concurrent connections (EP)": 10,
+                    "description": "10 concurrent connections (EP)"
+                },
+                {
+                    "number of processes (nPROC)": 30,
+                    "description": "30 number of processes (nPROC)"
+                },
+                {
+                    "IO limit": "2 MBPS",
+                    "description": "2 MBPS IO limit"
+                },
+                {
+                    "file (node) limit": 50000,
+                    "description": "50000 file (node) limit"
                 }
             ]
         },
         {
-            "title": "Medium",
+            "title": "Shared Medium",
             "monthly": 99,
             "annually": 79,
             "biannually": 74,
             "triannually": 69,
-            "description": "Suitable for growing websites",
+            "description": "Perfect for growing websites, offering more resources and enhanced performance for moderate traffic.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=3",
             "features": [
@@ -152,28 +152,16 @@
                     "description": "5 databases"
                 },
                 {
-                    "cpu core": "1 Core",
-                    "description": "1 CPU core"
+                    "Easy Website Builder": true,
+                    "description": "Easy Website Builder"
                 },
                 {
-                    "ram": "1 GB",
-                    "description": "1 GB RAM"
+                    "Weekly Backups": true,
+                    "description": "Weekly Backups"
                 },
                 {
-                    "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
-                },
-                {
-                    "number of processes (nPROC)": 40,
-                    "description": "40 number of processes (nPROC)"
-                },
-                {
-                    "IO limit": "2 MBPS",
-                    "description": "2 MBPS IO limit"
-                },
-                {
-                    "file (node) limit": 100000,
-                    "description": "100000 file (node) limit"
+                    "Free SSL Certificate": true,
+                    "description": "Free SSL Certificate"
                 }
             ],
             "security": [
@@ -213,26 +201,38 @@
                 }
             ],"resources": [
                 {
-                    "Easy Website Builder": true,
-                    "description": "Easy Website Builder"
+                    "cpu core": "1 Core",
+                    "description": "1 CPU core"
                 },
                 {
-                    "Weekly Backups": true,
-                    "description": "Weekly Backups"
+                    "ram": "1 GB",
+                    "description": "1 GB RAM"
                 },
                 {
-                    "Free SSL Certificate": true,
-                    "description": "Free SSL Certificate"
+                    "concurrent connections (EP)": 10,
+                    "description": "10 concurrent connections (EP)"
+                },
+                {
+                    "number of processes (nPROC)": 40,
+                    "description": "40 number of processes (nPROC)"
+                },
+                {
+                    "IO limit": "2 MBPS",
+                    "description": "2 MBPS IO limit"
+                },
+                {
+                    "file (node) limit": 100000,
+                    "description": "100000 file (node) limit"
                 }
             ]
         },
         {
-            "title": "Pro",
+            "title": "Shared Pro",
             "monthly": 159,
             "annually": 129,
             "biannually": 119,
             "triannually": 109,
-            "description": "For high-traffic websites",
+            "description": "Best for high-traffic websites, with maximum resources and premium support for optimal performance.",
             "popular": true,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=4",
             "features": [
@@ -265,6 +265,57 @@
                     "description": "10 databases"
                 },
                 {
+                    "Easy Website Builder": true,
+                    "description": "Easy Website Builder"
+                },
+                {
+                    "Weekly Backups": true,
+                    "description": "Weekly Backups"
+                },
+                {
+                    "Free SSL Certificate": true,
+                    "description": "Free SSL Certificate"
+                }
+
+            ],
+            "security": [
+                {
+                    "standard ddos protection": true,
+                    "description": "standard DDoS protection"
+                },
+                {
+                    "web application firewall": true,
+                    "description": "web application firewall"
+                },
+                {
+                    "malware scanner": true,
+                    "description": "malware scanner"
+                },
+                {
+                    "secure access manager": true,
+                    "description": "secure access manager"
+                }
+                
+            ],
+            "support": [
+                {
+                    "30-day money-back guarantee": true,
+                    "description": "30-day money-back guarantee"
+                },
+                {
+                    "99.9% uptime": true,
+                    "description": "99.9% uptime"
+                },
+                {
+                    "24/7 customer support": true,
+                    "description": "24/7 customer support"
+                },
+                {
+                    "instant setup": true,
+                    "description": "instant setup"
+                }
+            ], "resources": [
+                {
                     "cpu core": "1 Core",
                     "description": "1 CPU core"
                 },
@@ -287,55 +338,6 @@
                 {
                     "file (node) limit": 150000,
                     "description": "150000 file (node) limit"
-                }
-            ],
-            "security": [
-                {
-                    "standard ddos protection": true,
-                    "description": "standard DDoS protection"
-                },
-                {
-                    "web application firewall": true,
-                    "description": "web application firewall"
-                },
-                {
-                    "malware scanner": true,
-                    "description": "malware scanner"
-                },
-                {
-                    "secure access manager": true,
-                    "description": "secure access manager"
-                }
-            ],
-            "support": [
-                {
-                    "30-day money-back guarantee": true,
-                    "description": "30-day money-back guarantee"
-                },
-                {
-                    "99.9% uptime": true,
-                    "description": "99.9% uptime"
-                },
-                {
-                    "24/7 customer support": true,
-                    "description": "24/7 customer support"
-                },
-                {
-                    "instant setup": true,
-                    "description": "instant setup"
-                }
-            ], "resources": [
-                {
-                    "Easy Website Builder": true,
-                    "description": "Easy Website Builder"
-                },
-                {
-                    "Weekly Backups": true,
-                    "description": "Weekly Backups"
-                },
-                {
-                    "Free SSL Certificate": true,
-                    "description": "Free SSL Certificate"
                 }
             ]
         }

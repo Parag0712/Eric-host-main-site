@@ -1,5 +1,4 @@
 import { Footer } from "@/components/Footer/Footer";
-import { GoogleAnalytics, sendGAEvent } from '@next/third-parties/google'
 import { Navbar } from "@/components/Navbar/Navbar";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -36,8 +35,7 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>
-
-          {children}
+            {children}
         </main>
         <footer>
           <Footer />

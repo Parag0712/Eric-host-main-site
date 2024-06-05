@@ -119,7 +119,7 @@ export const FeaturedHosting = () => {
                                 </div>
                             </div>
                             <div>
-                                <Button onClick={() => { router }} className="w-full rounded-[4px] ">{explore_link}</Button>
+                                <Button onClick={() => { router.push(link) }} className="w-full rounded-[4px] ">{explore_link}</Button>
                             </div>
                         </CardFooter>
                     </Card>

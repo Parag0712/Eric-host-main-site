@@ -1,12 +1,12 @@
 {
     "plans": [
         {
-            "title": "Basic",
+            "title": "Unlitmited Basic",
             "monthly": 1999,
             "annually": 1699,
             "biannually": 1299,
             "triannually": 999,
-            "description": "Entry-level unlimited hosting",
+            "description": "Unlimited resources for small to medium websites.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=12",
             "features": [
@@ -123,12 +123,12 @@
             ]
         },
         {
-            "title": "Medium",
+            "title": "Unlitmited Medium",
             "monthly": 2799,
             "annually": 2649,
             "biannually": 2199,
             "triannually": 1999,
-            "description": "Mid-range unlimited hosting",
+            "description": "Unlimited hosting for growing websites.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=62",
             "features": [
@@ -245,12 +245,12 @@
             ]
         },
         {
-            "title": "Pro",
+            "title": "Unlitmited Pro",
             "monthly": 3499,
             "annually": 3299,
             "biannually": 2749,
             "triannually": 2499,
-            "description": "High-end unlimited hosting",
+            "description": "Top performance for large websites.",
             "popular": true,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=63",
             "features": [

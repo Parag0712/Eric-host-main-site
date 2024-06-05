@@ -3,11 +3,12 @@ import HeroAboutSection from '@/components/AboutUs/HeroSection'
 import { servicesProps } from '../../../../data/AboutUs/data'
 import { Services } from '@/components/PlanCards/Service'
 import { FaCheckCircle } from 'react-icons/fa'
+import AnimationContainer from '@/components/Conatianers/AnimationContainer'
 type Props = {}
 
 const aboutus = (props: Props) => {
   return (
-    <section>
+    <AnimationContainer>
       <HeroAboutSection />
       <AboutEricHost />
       <div className='bg-[#4346C2] text-white'>
@@ -74,7 +75,7 @@ const aboutus = (props: Props) => {
           <Services {...service} />
         </div>
       ))}
-    </section>
+    </AnimationContainer>
   )
 }
 

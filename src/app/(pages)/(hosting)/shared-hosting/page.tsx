@@ -13,30 +13,31 @@ import { heroProps, servicesProps } from "@/data/Hosing/Shared/data";
 import faq from '../../../../data/Hosing/Shared/faq.json';
 import dynamicInformationProps from '../../../../data/Hosing/Shared/information.json';
 import priceing from "../../../../data/Hosing/Shared/pricing.json";
+import AnimationContainer from "@/components/Conatianers/AnimationContainer";
 
 type Props = {}
 
 const sharedhosting = (props: Props) => {
 
-  
+
   const colors = ["bg-[#FFFFFF] ", "bg-[#F2F3FF]", "bg-[#4346C2] text-white"];
 
   return (
-    <section>
-    <ImageHeroSection {...heroProps
-    } />
-    <Pricing data={priceing} title="Shared" />
-    <ChooseThePlans />
-    <DynamicInformation {...dynamicInformationProps} />
-    {servicesProps.map((service, index) => (
-      <div key={index} className={index % 2 === 0 ? "bg-[#F2F3FF]" : " bg-[#4346C2] text-white" }>
-        <Services {...service} shouldBePurple={index % 2 === 0} />
-      </div>
-    ))}
-    <MapSection />
-    <Testimonials />
-    <FAQ faq={faq} />
-  </section>
+    <AnimationContainer>
+      <ImageHeroSection {...heroProps
+      } />
+      <Pricing data={priceing} title="Shared" />
+      <ChooseThePlans />
+      <DynamicInformation {...dynamicInformationProps} />
+      {servicesProps.map((service, index) => (
+        <div key={index} className={index % 2 === 0 ? "bg-[#F2F3FF]" : " bg-[#4346C2] text-white"}>
+          <Services {...service} shouldBePurple={index % 2 === 0} />
+        </div>
+      ))}
+      <MapSection />
+      <Testimonials />
+      <FAQ faq={faq} />
+    </AnimationContainer>
   )
 }
 

@@ -1,12 +1,12 @@
 {
     "plans": [
         {
-            "title": "Starter",
+            "title": "Cloud Starter",
             "monthly": 59,
             "annually": 49,
             "biannually": 44,
             "triannually": 39,
-            "description": "Ideal for small websites",
+            "description": "Reliable cloud hosting for small to medium websites.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=49",
             "features": [
@@ -119,12 +119,12 @@
             ]
         },
         {
-            "title": "Medium",
+            "title": "Cloud Medium",
             "monthly": 99,
             "annually": 79,
             "biannually": 74,
             "triannually": 69,
-            "description": "Suitable for growing websites",
+            "description": "Enhanced cloud resources for growing websites.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=50",
             "features": [
@@ -237,12 +237,12 @@
             ]
         },
         {
-            "title": "Pro",
+            "title": "Cloud Pro",
             "monthly": 109,
             "annually": 119,
             "biannually": 129,
             "triannually": 159,
-            "description": "Advanced plan for larger websites",
+            "description": "High-performance cloud hosting for large websites.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=51",
             "features": [

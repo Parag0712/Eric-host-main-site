@@ -6,7 +6,7 @@
             "annually": 259,
             "biannually": 199,
             "triannually": 149,
-            "description": "essential features for small businesses",
+            "description": "Basic features for small businesses to start and grow.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=7",
             "features": [
@@ -124,7 +124,7 @@
             "annually": 399,
             "biannually": 319,
             "triannually": 249,
-            "description": "enhanced capabilities for growing businesses",
+            "description": "Better tools and support for growing businesses to expand.",
             "popular": true,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=8",
             "features": [
@@ -242,7 +242,7 @@
             "annually": 999,
             "biannually": 749,
             "triannually": 599,
-            "description": "premium resources for large enterprises",
+            "description": "Top features and dedicated support for established businesses to perform their best.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=9",
             "features": [
@@ -339,10 +339,6 @@
                 {
                     "concurrent connections (EP)": 10,
                     "description": "10 concurrent connections (EP)"
-                },
-                {
-                    "number of processes (nPROC)": 200,
-                    "description": "200 number of processes (nPROC)"
                 },
                 {
                     "IO limit": "50 MBPS",

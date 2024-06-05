@@ -14,34 +14,35 @@ import faq from '../../../../data/Hosing/VpsServer/faq.json';
 import dynamicInformationProps from '../../../../data/Hosing/VpsServer/information.json';
 import priceing from "../../../../data/Hosing/VpsServer/pricing.json";
 import { Services } from "@/components/PlanCards/Service";
+import AnimationContainer from "@/components/Conatianers/AnimationContainer";
 
 type Props = {}
 
 const vpserver = (props: Props) => {
-  
+
   const colors = ["bg-[#FFFFFF] ", "bg-[#F2F3FF]", "bg-[#4346C2] text-white"];
 
   return (
-    <section>
-    <ImageHeroSection {...heroProps
-    } />
-    <Pricing data={priceing} />
-    <VpsFeatured />
-    <DynamicInformation {...dynamicInformationProps} />
-    {servicesProps.map((service, index) => {
-        const shouldBePurple = index % 3 !== 2;
-        return (
-          <div key={index} className={colors[index % 3]}>
-            <Services {...service} shouldBePurple={shouldBePurple} />
-          </div>
-        );
-      })}
+      <AnimationContainer>
+        <ImageHeroSection {...heroProps
+        } />
+        <Pricing data={priceing} />
+        <VpsFeatured />
+        <DynamicInformation {...dynamicInformationProps} />
+        {servicesProps.map((service, index) => {
+          const shouldBePurple = index % 3 !== 2;
+          return (
+            <div key={index} className={colors[index % 3]}>
+              <Services {...service} shouldBePurple={shouldBePurple} />
+            </div>
+          );
+        })}
 
-    <Testimonials />
-    <MapSection />
-    <Cta />
-    <FAQ faq={faq} />
-  </section>
+        <Testimonials />
+        <MapSection />
+        <Cta />
+        <FAQ faq={faq} />
+      </AnimationContainer>
   )
 }
 

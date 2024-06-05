@@ -110,10 +110,16 @@ export function NavigationLink() {
                         </ul>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
-
+                <NavigationMenuItem>
+                    <Link href={navbar[3].href} legacyBehavior passHref className="">
+                        <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                            <span className="text-[16px]">{navbar[3].text}</span>
+                        </NavigationMenuLink>
+                    </Link>
+                </NavigationMenuItem>
                 {/* Vps Server */}
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-[16px]">{navbar[3].text}</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="hidden text-[16px]">{navbar[3].text}</NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid w-[400px] p-4 md:w-[700px] gap-4 md:grid-cols-2 lg:w-[1000px] ">
                             <li className="row-span-3">
