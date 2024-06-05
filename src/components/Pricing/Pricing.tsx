@@ -41,6 +41,17 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
             <div className="flex justify-center max-w-[14rem] m-auto mb-8 lg:mb-16 mt-8">
 
                 <div className=" relative self-center bg-primary rounded-lg p-1 flex">
+
+                <button
+                        type="button"
+                        className={`px-[10px] ml-0.5 relative w-1/2 border rounded-md py-2 text-sm whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 ${isAnnual
+                            ? 'border-transparent text-white'
+                            : 'bg-slate-50 border-slate-50 font-bold text-slate-900 shadow-sm '
+                            }`}
+                        onClick={() => setIsAnnual(false)}
+                    >
+                        Yearly Plan
+                    </button>
                     <button
                         type="button"
                         className={`px-[10px] relative w-1/2 rounded-md py-2 text-sm whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 ${isAnnual
@@ -51,16 +62,7 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
                     >
                         Monthly Plan
                     </button>
-                    <button
-                        type="button"
-                        className={`px-[10px] ml-0.5 relative w-1/2 border rounded-md py-2 text-sm whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 ${isAnnual
-                            ? 'border-transparent text-white'
-                            : 'bg-slate-50 border-slate-50 font-bold text-slate-900 shadow-sm '
-                            }`}
-                        onClick={() => setIsAnnual(false)}
-                    >
-                        Yearly Plan
-                    </button>
+                    
 
                 </div>
             </div>
