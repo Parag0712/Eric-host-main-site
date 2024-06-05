@@ -14,7 +14,7 @@ const AnimationContainer: React.FC<AnimationContainerProps> = ({ children, class
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className={className}
-            transition={{ duration: 0.2, ease: "easeInOut" }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
         >
             {children}
         </motion.section>
