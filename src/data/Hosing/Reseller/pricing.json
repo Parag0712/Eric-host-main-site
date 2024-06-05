@@ -6,7 +6,7 @@
             "annually": 11499,
             "biannually": 19999,
             "triannually": 24999,
-            "description": "20 cPanel Accounts with essential features",
+            "description": "Starter plan for resellers.",
             "href":"https://clients.erichost.com/cart.php?a=add&pid=75",
             "features": [
                 {
@@ -86,7 +86,7 @@
             "triannually": 64499,
             
             "href":"https://clients.erichost.com/cart.php?a=add&pid=76",
-            "description": "50 cPanel Accounts with enhanced capabilities",
+            "description": "Advanced plan for growing resellers.    ",
             "features": [
                 {
                     "cPanel Accounts": 50,
@@ -164,7 +164,7 @@
             "biannually": 99999,
             "triannually": 129499,
             "href":"https://clients.erichost.com/cart.php?a=add&pid=77",
-            "description": "100 cPanel Accounts with premium resources",
+            "description": "Premium plan for large resellers.",
             "resources":[],
             "support":[],
             "security":[],

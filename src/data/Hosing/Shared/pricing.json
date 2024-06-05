@@ -6,7 +6,7 @@
             "annually": 49,
             "biannually": 44,
             "triannually": 39,
-            "description": "Ideal for small websites, providing essential features and reliable performance for beginners.",
+            "description": "Basic plan for shared hosting.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=33",
             "features": [
@@ -119,7 +119,7 @@
             "annually": 79,
             "biannually": 74,
             "triannually": 69,
-            "description": "Perfect for growing websites, offering more resources and enhanced performance for moderate traffic.",
+            "description": "Standard plan for shared hosting.",
             "popular": false,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=3",
             "features": [
@@ -232,7 +232,7 @@
             "annually": 129,
             "biannually": 119,
             "triannually": 109,
-            "description": "Best for high-traffic websites, with maximum resources and premium support for optimal performance.",
+            "description": "Professional plan for shared hosting.",
             "popular": true,
             "href": "https://clients.erichost.com/cart.php?a=add&pid=4",
             "features": [
