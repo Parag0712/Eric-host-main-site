@@ -8,7 +8,7 @@ export const Card = ({ review }: { review: any }) => {
             {/* <div className='absolute top-[-7rem] z-[10] mx-auto'> */}
             <div className=' mx-auto'>
                 <Image
-                    className='aspect-square rounded-full md:w-[120px]  md:h-[120px] z-25'
+                    className='aspect-square rounded-full w-[80px] md:w-[120px]   z-25'
                     src={aimg} alt='' />
                 <div className='w-[80px] md:w-[120px]  md:h-[100px] bg-white rounded-full absolute top-[-6px] z-[-10] left-[10px]'></div>
             </div>

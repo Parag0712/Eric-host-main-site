@@ -25,7 +25,7 @@ export const Testimonials = () => {
 
     return (
         <section className='w-full bg-[#4346C2] mt-7 md:mt-0'>
-            <div 
+            <div
                 className='w-[85vw] md:w-[700px] mx-auto   flex flex-col
             justify-center items-center mt-10 py-10 md:p-10 transition-all duration-700 text-white
              rounded-md'>
