@@ -1,4 +1,4 @@
-import { Check, ChevronDown, ChevronUp } from 'lucide-react'
+import { Check, ChevronDown, ChevronUp, X } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { Badge } from '../ui/badge'
 import { Button } from '../ui/button'
@@ -64,7 +64,7 @@ const PricingCard = ({ plan, isAnnual, showMore, handleShowMore, className }: an
                         <span className="text-muted-foreground"> /month</span>
                     </div>
 
-                    <CardDescription>{plan.description}</CardDescription>
+                    <CardDescription className={`${!year?"hidden":""}`}>{plan.description}</CardDescription>
                 </CardHeader>
 
                 <hr className="w-4/5 m-auto mb-4" />
@@ -77,8 +77,12 @@ const PricingCard = ({ plan, isAnnual, showMore, handleShowMore, className }: an
                                 key={index}
                                 className="flex"
                             >
-                                <Check className="text-green-500" />{" "}
+                                {benefit?.cross?<X className='text-red-500' />:
+                                <Check className="text-green-500" />
+                            }
+                            {" "}
                                 <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
+
                             </span>
                         ))}
                     </div>

@@ -14,6 +14,7 @@
                     "description": "20 cPanel Accounts"
                 },
                 {
+                    "cross":true,
                     "dedicated IP": "Dedicated IP",
                     "description": "Dedicated IP"
                 },

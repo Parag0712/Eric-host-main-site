@@ -106,7 +106,7 @@ export const Navbar = () => {
     };
 
     return (
-        <header className="sticky  border-b-[1px] top-0 z-1 w-full lg:py-2">
+        <header className="sticky border-b-[1px] top-0 z-1 w-full lg:py-2">
                 <NavigationMenu className="mx-auto">
                     <NavigationMenuList className=" max-w-[1340px]   lg:max-w-[1300px] xl:max-w-[1200px] 2xl:max-w-[1440px]   w-screen  h-14 px-4  flex justify-between ">
                         <NavigationMenuItem className="font-bold flex">
