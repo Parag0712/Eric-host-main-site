@@ -8,7 +8,7 @@
             "triannually": 29,
             "description": "Compact hosting for small projects",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=57",
+            "href": "cart.php?a=add&pid=57",
             "features": [
                 {
                     "website": 1,
@@ -28,7 +28,7 @@
                 },
                 {
                     "bandwidth": "5 GB",
-                    "description": "5 GB bandwidth"
+                    "description": "55 GB bandwidth"
                 },
                 {
                     "email": 2,
@@ -94,7 +94,7 @@
                 },
                 {
                     "RAM": "500 MB",
-                    "description": "500 MB RAM"
+                    "description": "512 MB RAM"
                 },
                 {
                     "concurrent connections (EP)": 10,

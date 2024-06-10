@@ -8,11 +8,16 @@
             "triannually": 149,
             "description": "Basic plan for small businesses.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=7",
+            "href": "cart.php?a=add&pid=78",
             "features": [
                 {
                     "website": 200,
                     "description": "200 websites"
+                },
+                {
+                    "monthly":true,
+                    "website": 200,
+                    "description": "Free Domain"
                 },
                 {
                     "disk space": "100 NvMe",
@@ -102,7 +107,7 @@
                 },
                 {
                     "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
+                    "description": "20 concurrent connections (EP)"
                 },
                 {
                     "number of processes (nPROC)": 75,
@@ -126,11 +131,16 @@
             "triannually": 249,
             "description": "Standard plan for growing businesses.",
             "popular": true,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=8",
+            "href": "cart.php?a=add&pid=79",
             "features": [
                 {
                     "website": 300,
                     "description": "300 websites"
+                },
+                {
+                    "monthly":true,
+                    "website": 200,
+                    "description": "Free Domain"
                 },
                 {
                     "disk space": "150 NvMe",
@@ -220,7 +230,7 @@
                 },
                 {
                     "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
+                    "description": "20 concurrent connections (EP)"
                 },
                 {
                     "number of processes (nPROC)": 100,
@@ -244,11 +254,16 @@
             "triannually": 599,
             "description": "Professional plan for large businesses.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=9",
+            "href": "cart.php?a=add&pid=80",
             "features": [
                 {
                     "website": 400,
                     "description": "400 websites"
+                },
+                {
+                    "monthly":true,
+                    "website": 200,
+                    "description": "Free Domain"
                 },
                 {
                     "disk space": "200 NvMe",
@@ -338,7 +353,11 @@
                 },
                 {
                     "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
+                    "description": "20 concurrent connections (EP)"
+                },
+                {
+                    "number of processes (nPROC)": 75,
+                    "description": "75 number of processes (nPROC)"
                 },
                 {
                     "IO limit": "50 MBPS",

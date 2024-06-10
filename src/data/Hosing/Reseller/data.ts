@@ -88,7 +88,7 @@ export const heroProps = {
         "24/7 Customer Support",
         "99.9% uptime guarantee",
     ],
-    price: "₹469",
+    price: "₹699",
     buttonText: "Explore Plans",
     planhref: "",
     heroImage: HeroSection

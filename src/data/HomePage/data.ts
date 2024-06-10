@@ -105,7 +105,7 @@ export const support = {
 export const bronzePricing = {
     name: "Bronze",
     popular: true,
-    price: "₹299",
+    price: "249",
     description: "Enhanced Capabilities For Growing Businesses",
     buttonText: "Buy Now",
     features: [

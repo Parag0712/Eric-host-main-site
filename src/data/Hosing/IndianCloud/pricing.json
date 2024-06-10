@@ -2,13 +2,13 @@
     "plans": [
         {
             "title": "Cloud Starter",
-            "monthly": 59,
-            "annually": 49,
-            "biannually": 44,
-            "triannually": 39,
+            "monthly": 99,
+            "annually": 79,
+            "biannually": 74,
+            "triannually": 69,
             "description": "Cloud hosting for small businesses.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=49",
+            "href": "cart.php?a=add&pid=49",
             "features": [
                 {
                     "website": 1,
@@ -51,6 +51,8 @@
                     "description": "3 databases"
                 },
                 {
+                    
+                    "cross":true,
                     "terminal": true,
                     "description": "Terminal access"
                 }
@@ -100,10 +102,7 @@
                     "RAM": "512 MB",
                     "description": "512 MB RAM"
                 },
-                {
-                    "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
-                },
+
                 {
                     "number of processes (nPROC)": 30,
                     "description": "30 number of processes (nPROC)"
@@ -120,17 +119,17 @@
         },
         {
             "title": "Cloud Medium",
-            "monthly": 99,
-            "annually": 79,
-            "biannually": 74,
-            "triannually": 69,
+            "monthly": 149,
+            "annually": 119,
+            "biannually": 109,
+            "triannually": 105,
             "description": "Cloud hosting for growing websites.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=50",
+            "href": "cart.php?a=add&pid=50",
             "features": [
                 {
-                    "website": 3,
-                    "description": "3 websites"
+                    "website": 5,
+                    "description": "5 websites"
                 },
                 {
                     "disk space": "20 GB",
@@ -169,6 +168,7 @@
                     "description": "5 databases"
                 },
                 {
+                    "cross":true,
                     "terminal": true,
                     "description": "Terminal access"
                 }
@@ -219,10 +219,6 @@
                     "description": "1 GB RAM"
                 },
                 {
-                    "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
-                },
-                {
                     "number of processes (nPROC)": 40,
                     "description": "40 number of processes (nPROC)"
                 },
@@ -238,17 +234,17 @@
         },
         {
             "title": "Cloud Pro",
-            "monthly": 109,
-            "annually": 119,
-            "biannually": 129,
-            "triannually": 159,
+            "monthly": 199,
+            "annually": 159,
+            "biannually": 149,
+            "triannually": 139,
             "description": "Cloud hosting for large enterprises.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=51",
+            "href": "cart.php?a=add&pid=51",
             "features": [
                 {
-                    "website": 5,
-                    "description": "5 websites"
+                    "website": 10,
+                    "description": "10 websites"
                 },
                 {
                     "disk space": "40 GB",
@@ -335,10 +331,6 @@
                 {
                     "RAM": "1 GB",
                     "description": "1 GB RAM"
-                },
-                {
-                    "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
                 },
                 {
                     "number of processes (nPROC)": 50,

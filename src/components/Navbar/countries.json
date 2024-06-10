@@ -1,0 +1,17 @@
+[
+    {
+      "label": "India",
+      "value": "IN",
+      "currency": "INR",
+      "currencySymbol": "₹",
+      "flag": "/INDIA.png"
+    },
+    {
+      "label": "United States",
+      "value": "US",
+      "currency": "USD",
+      "currencySymbol": "$",
+      "flag": "/USA.png"
+    }
+  ]
+  

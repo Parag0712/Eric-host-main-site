@@ -1,4 +1,4 @@
-import { Check, ChevronDown, ChevronUp, X } from 'lucide-react'
+import { Check, ChevronDown, ChevronUp, Target, X } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { Badge } from '../ui/badge'
 import { Button } from '../ui/button'
@@ -6,7 +6,6 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/
 import useCurrencyConverter from '@/Hooks/useCurrencyConverter'
 
 const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, className }: any) => {
-    const currency = "₹";
     let discount;
     let PlanPrice;
     if (billingCycle == "annual") {
@@ -40,7 +39,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
     };
 
     const { convertedAmount, currencySymbol } = useCurrencyConverter(PlanPrice);
-    const { convertedAmount:convertedAmountMonthly } = useCurrencyConverter(plan.monthly);
+    const { convertedAmount: convertedAmountMonthly } = useCurrencyConverter(plan.monthly);
 
     return (
         <section className={`w-full min-w-[262px] md:min-w-[200px] mx-auto max-w-[430px] ${className}`} id={newId}>
@@ -51,13 +50,13 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                 key={plan.title}
                 className={
                     plan.popular === PopularPlanType.YES
-                        ? "drop-shadow-2xl shadow-top rounded-t-none  shadow-black/10 capitalize  rounded-b-2xl dark:shadow-white/10 border-[1px] bg-[#F8FAFC] transition-all duration-150  hover:shadow-xl  hover:lg:scale-[1.04]  lg:scale-[1.03]"
-                        : "drop-shadow-2xl shadow-top rounded-t-none shadow-black/10 capitalize   rounded-b-2xl transition-all duration-150 border-[1px] bg-[#F8FAFC] hover:shadow-xl  hover:lg:scale-[1.01] "
+                        ? "drop-shadow-2xl shadow-top rounded-t-none  shadow-black/10 capitalize  rounded-b-2xl dark:shadow-white/10 sm:border-[2px] border-primary bg-white transition-all duration-150  hover:shadow-xl  hover:lg:scale-[1.04]  lg:scale-[1.03]"
+                        : "drop-shadow-2xl shadow-top rounded-t-none shadow-black/10 capitalize   rounded-b-2xl transition-all duration-150 sm:border-[2px] border-primary bg-white hover:shadow-xl  hover:lg:scale-[1.01] "
                 }
             >
                 <CardHeader>
                     <CardTitle className="flex item-center  justify-between items-center">
-                        {discount && !plan.title.includes("RH") &&
+                        {discount &&
                             <div className='flex  items-center gap-3 text-[14px]'>
                                 <p className='line-through'>{currencySymbol}{convertedAmountMonthly}</p>
                                 <Badge className='bg-blue-100 hover:bg-blue-100 hover:text-blue-950 text-[14px] px-3 py-1  text-blue-950'>Save {Math.round(((plan.monthly - PlanPrice) / plan.monthly) * 100)}%</Badge>
@@ -91,11 +90,11 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                                 key={index}
                                 className="flex"
                             >
-                                {benefit?.cross ? <X className='text-red-500' /> :
+                                {benefit?.cross || (benefit?.monthly && billingCycle == "monthly") ? <X className='text-red-500' /> :
                                     <Check className="text-green-500" />
                                 }
                                 {" "}
-                                <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
+                                <h3 className="text-sm lg:text-[17px] text-black font-[500] ml-2">{benefit.description}</h3>
 
                             </span>
                         ))}
@@ -124,7 +123,8 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                                 plan_price: PlanPrice
                             };
                             window.gtag("event", "order_item", planDetails)
-                            router.push(plan.href)
+                        router.push(`${process.env.NEXT_PUBLIC_baseurl}${plan.href}&${process.env.NEXT_PUBLIC_}`)
+
                         }
                         }
                         className={`order-6 rounded-lg mt-6 w-full text-[16px]  border-primary font-poppins py-5 border-2  text-white `} >Buy Now</Button>
@@ -137,7 +137,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                         <>
                             {plan?.security?.length > 0 && (
                                 <>
-                                    <Button variant={"outline"} className=" w-full my-6 py-3 text-md hover:bg-white  rounded-lg ">Security</Button>
+                                    <Button variant={"outline"} className="font-bold w-full my-6 py-3 text-md hover:bg-white  rounded-lg ">Security</Button>
                                     <div className="space-y-1 md:space-y-3">
                                         {plan.security.map((benefit: any) => (
                                             <span
@@ -145,7 +145,8 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                                                 className="flex"
                                             >
                                                 <Check className="text-green-500" />{" "}
-                                                <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
+                                                <h3 className="text-sm lg:text-[17px] text-black font-[500] ml-2">{benefit.description}</h3>
+                                                
                                             </span>
                                         ))}
                                     </div>
@@ -156,7 +157,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                             {
                                 plan?.support?.length > 0 && (
                                     <>
-                                        <Button variant={"outline"} className="w-full my-6 py-3 text-md hover:bg-white  rounded-lg ">Support</Button>
+                                        <Button variant={"outline"} className="w-full font-bold my-6 py-3 text-md hover:bg-white  rounded-lg ">Support</Button>
                                         <div className="space-y-1 md:space-y-3">
                                             {plan.support.map((benefit: any, index: any) => (
                                                 <span
@@ -164,7 +165,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                                                     className="flex"
                                                 >
                                                     <Check className="text-green-500" />{" "}
-                                                    <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
+                                                    <h3 className="text-sm lg:text-[17px] text-black font-[500] ml-2">{benefit.description}</h3>
                                                 </span>
                                             ))}
                                         </div></>
@@ -174,7 +175,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                             {
                                 plan?.resources?.length > 0 && (
                                     <>
-                                        <Button variant={"outline"} className="w-full my-6 py-3 text-md hover:bg-white  rounded-lg ">Resources</Button>
+                                        <Button variant={"outline"} className="w-full my-6 font-bold py-3 text-md hover:bg-white  rounded-lg ">Resources</Button>
                                         <div className="space-y-1 md:space-y-3">
                                             {plan.resources.map((benefit: any, index: any) => (
                                                 <span
@@ -182,7 +183,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                                                     className="flex"
                                                 >
                                                     <Check className="text-green-500" />{" "}
-                                                    <h3 className="text-sm lg:text-[16px] ml-2">{benefit.description}</h3>
+                                                    <h3 className="text-sm lg:text-[17px] text-black font-[500] ml-2">{benefit.description}</h3>
                                                 </span>
                                             ))}
                                         </div></>

@@ -8,11 +8,16 @@
             "triannually": 999,
             "description": "Basic plan for versatile websites.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=12",
+            "href": "cart.php?a=add&pid=81",
             "features": [
                 {
                     "website": "Unlimited",
                     "description": "Unlimited websites"
+                },
+                {
+                    "monthly":true,
+                    "website": 200,
+                    "description": "Free Domain"
                 },
                 {
                     "disk space": "250 GB",
@@ -53,10 +58,6 @@
                 {
                     "terminal": true,
                     "description": "Terminal access"
-                },
-                {
-                    "dedicated IP": true,
-                    "description": "Dedicated IP"
                 }
             ],
             "security": [
@@ -97,8 +98,8 @@
             ],
             "resources": [
                 {
-                    "cpu core": "2 core",
-                    "description": "2 CPU cores"
+                    "cpu core": "4 core",
+                    "description": "4 CPU cores"
                 },
                 {
                     "ram": "4 GB",
@@ -114,7 +115,7 @@
                 },
                 {
                     "IO limit": "10 MBPS",
-                    "description": "10 MBPS IO limit"
+                    "description": "50 MBPS IO limit"
                 },
                 {
                     "file (node) limit": 3000000,
@@ -130,11 +131,16 @@
             "triannually": 1999,
             "description": "Standard plan for growing websites.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=62",
+            "href": "cart.php?a=add&pid=82",
             "features": [
                 {
                     "website": "Unlimited",
                     "description": "Unlimited websites"
+                },
+                {
+                    "monthly":true,
+                    "website": 200,
+                    "description": "Free Domain"
                 },
                 {
                     "disk space": "300 GB",
@@ -175,10 +181,6 @@
                 {
                     "terminal": true,
                     "description": "Terminal access"
-                },
-                {
-                    "dedicated IP": true,
-                    "description": "Dedicated IP"
                 }
             ],
             "security": [
@@ -235,8 +237,8 @@
                     "description": "400 number of processes (nPROC)"
                 },
                 {
-                    "IO limit": "10 MBPS",
-                    "description": "10 MBPS IO limit"
+                    "IO limit": "50 MBPS",
+                    "description": "50 MBPS IO limit"
                 },
                 {
                     "file (node) limit": 4000000,
@@ -252,11 +254,16 @@
             "triannually": 2499,
             "description": "Top performance for large websites.",
             "popular": true,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=63",
+            "href": "cart.php?a=add&pid=83",
             "features": [
                 {
                     "website": "Unlimited",
                     "description": "Unlimited websites"
+                },
+                {
+                    "monthly":true,
+                    "website": 200,
+                    "description": "Free Domain"
                 },
                 {
                     "disk space": "500 GB",
@@ -267,104 +274,100 @@
                     "description": "Weekly backups"
                 },
                 {
-                "free ssl certificate": true,
-                "description": "Free SSL certificate"
+                    "free ssl certificate": true,
+                    "description": "Free SSL certificate"
                 },
                 {
-                "bandwidth": "Unlimited",
-                "description": "Unlimited bandwidth"
+                    "bandwidth": "Unlimited",
+                    "description": "Unlimited bandwidth"
                 },
                 {
-                "email": "Unlimited",
-                "description": "Unlimited email accounts"
+                    "email": "Unlimited",
+                    "description": "Unlimited email accounts"
                 },
                 {
-                "sub-domain": "Unlimited",
-                "description": "Unlimited sub-domains"
+                    "sub-domain": "Unlimited",
+                    "description": "Unlimited sub-domains"
                 },
                 {
-                "ftp accounts": "Unlimited",
-                "description": "Unlimited FTP accounts"
+                    "ftp accounts": "Unlimited",
+                    "description": "Unlimited FTP accounts"
                 },
                 {
-                "easy website builder": true,
-                "description": "Easy website builder"
+                    "easy website builder": true,
+                    "description": "Easy website builder"
                 },
                 {
-                "database": "Unlimited",
-                "description": "Unlimited databases"
+                    "database": "Unlimited",
+                    "description": "Unlimited databases"
                 },
                 {
-                "terminal": true,
-                "description": "Terminal access"
-                },
-                {
-                "dedicated IP": true,
-                "description": "Dedicated IP"
+                    "terminal": true,
+                    "description": "Terminal access"
                 }
-                ],
-                "security": [
+            ],
+            "security": [
                 {
-                "standard ddos protection": true,
-                "description": "Standard DDoS protection"
+                    "standard ddos protection": true,
+                    "description": "Standard DDoS protection"
                 },
                 {
-                "web application firewall": true,
-                "description": "Web application firewall"
+                    "web application firewall": true,
+                    "description": "Web application firewall"
                 },
                 {
-                "malware scanner": true,
-                "description": "Malware scanner"
+                    "malware scanner": true,
+                    "description": "Malware scanner"
                 },
                 {
-                "secure access manager": true,
-                "description": "Secure access manager"
+                    "secure access manager": true,
+                    "description": "Secure access manager"
                 }
-                ],
-                "support": [
+            ],
+            "support": [
                 {
-                "30-day money-back guarantee": true,
-                "description": "30-day money-back guarantee"
+                    "30-day money-back guarantee": true,
+                    "description": "30-day money-back guarantee"
                 },
                 {
-                "99.9% uptime": true,
-                "description": "99.9% uptime"
+                    "99.9% uptime": true,
+                    "description": "99.9% uptime"
                 },
                 {
-                "24/7 customer support": true,
-                "description": "24/7 customer support"
+                    "24/7 customer support": true,
+                    "description": "24/7 customer support"
                 },
                 {
-                "instant setup": true,
-                "description": "Instant setup"
+                    "instant setup": true,
+                    "description": "Instant setup"
                 }
-                ],
-                "resources": [
+            ],
+            "resources": [
                 {
-                "cpu core": "6 core",
-                "description": "6 CPU cores"
+                    "cpu core": "6 core",
+                    "description": "6 CPU cores"
                 },
                 {
-                "ram": "8 GB",
-                "description": "8 GB RAM"
+                    "ram": "8 GB",
+                    "description": "8 GB RAM"
                 },
                 {
-                "concurrent connections (EP)": 100,
-                "description": "100 concurrent connections (EP)"
+                    "concurrent connections (EP)": 100,
+                    "description": "100 concurrent connections (EP)"
                 },
                 {
-                "number of processes (nPROC)": 500,
-                "description": "500 number of processes (nPROC)"
+                    "number of processes (nPROC)": 500,
+                    "description": "500 number of processes (nPROC)"
                 },
                 {
-                "IO limit": "10 MBPS",
-                "description": "10 MBPS IO limit"
+                    "IO limit": "50 MBPS",
+                    "description": "50 MBPS IO limit"
                 },
                 {
-                "file (node) limit": 5000000,
-                "description": "5000000 file (node) limit"
+                    "file (node) limit": 5000000,
+                    "description": "5000000 file (node) limit"
                 }
-                ]
-                }
-                ]
-                }
+            ]
+        }
+    ]
+}

@@ -3,11 +3,11 @@
         {
             "title": "RH-20",
             "monthly": 1199,
-            "annually": 11499,
-            "biannually": 19999,
-            "triannually": 24999,
+            "annually": 949,
+            "biannually": 849,
+            "triannually": 699,
             "description": "Starter plan for resellers.",
-            "href":"https://clients.erichost.com/cart.php?a=add&pid=75",
+            "href":"cart.php?a=add&pid=75",
             "features": [
                 {
                     "cPanel Accounts": 20,
@@ -27,8 +27,8 @@
                     "description": "Unlimited Bandwidth"
                 },
                 {
-                    "LVE RAM per cPanel": "2GB",
-                    "description": "2GB LVE RAM per cPanel"
+                    "vCPU per cPanel": "2",
+                    "description": "2 vCPU per cPanel"
                 },
                 {
                     "tech support": "24/7",
@@ -57,10 +57,6 @@
                 {
                     "WHM Control Panel": "Yes",
                     "description": "WHM Control Panel"
-                },
-                {
-                    "vCPU per cPanel": "2",
-                    "description": "2 vCPU per cPanel"
                 },
                 {
                     "Softaculous Autoinstaller": "Yes",
@@ -81,11 +77,11 @@
         {
             "title": "RH-50",
             "monthly": 2999,
-            "annually": 28499,
-            "biannually": 49999,
-            "triannually": 64499,
+            "annually": 2349,
+            "biannually": 2099,
+            "triannually": 1799,
             
-            "href":"https://clients.erichost.com/cart.php?a=add&pid=76",
+            "href":"cart.php?a=add&pid=76",
             "description": "Advanced plan for growing resellers.    ",
             "features": [
                 {
@@ -93,6 +89,7 @@
                     "description": "50 cPanel Accounts"
                 },
                 {
+                    "cross":true,
                     "dedicated IP": "Dedicated IP",
                     "description": "Dedicated IP"
                 },
@@ -105,8 +102,8 @@
                     "description": "Unlimited Bandwidth"
                 },
                 {
-                    "LVE RAM per cPanel": "2GB",
-                    "description": "2GB LVE RAM per cPanel"
+                    "vCPU per cPanel": "2",
+                    "description": "3 vCPU per cPanel"
                 },
                 {
                     "tech support": "24/7",
@@ -135,10 +132,6 @@
                 {
                     "WHM Control Panel": "Yes",
                     "description": "WHM Control Panel"
-                },
-                {
-                    "vCPU per cPanel": "2",
-                    "description": "2 vCPU per cPanel"
                 },
                 {
                     "Softaculous Autoinstaller": "Yes",
@@ -160,10 +153,10 @@
         {
             "title": "RH-100",
             "monthly": 5999,
-            "annually": 57499,
-            "biannually": 99999,
-            "triannually": 129499,
-            "href":"https://clients.erichost.com/cart.php?a=add&pid=77",
+            "annually": 4799,
+            "biannually": 4199,
+            "triannually": 3599,
+            "href":"cart.php?a=add&pid=77",
             "description": "Premium plan for large resellers.",
             "resources":[],
             "support":[],
@@ -186,8 +179,8 @@
                     "description": "Unlimited Bandwidth"
                 },
                 {
-                    "LVE RAM per cPanel": "2GB",
-                    "description": "2GB LVE RAM per cPanel"
+                    "vCPU per cPanel": "2",
+                    "description": "4 vCPU per cPanel"
                 },
                 {
                     "tech support": "24/7",
@@ -217,10 +210,6 @@
                 {
                     "WHM Control Panel": "Yes",
                     "description": "WHM Control Panel"
-                },
-                {
-                    "vCPU per cPanel": "2",
-                    "description": "2 vCPU per cPanel"
                 },
                 {
                     "Softaculous Autoinstaller": "Yes",

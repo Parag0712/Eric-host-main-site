@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 interface CountrySelectDropdownProps {
   flags: string[];
   names: string[];
@@ -45,7 +44,7 @@ const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({ flags, na
       >
         {selectedCountry ? (
           <div className="flex items-center">
-            <img src={flags[names.indexOf(selectedCountry)]} className="w-6 mr-3" alt={`${selectedCountry} Flag`} />            
+            <img src={flags[names.indexOf(selectedCountry)]} className="w-6 mr-3" alt={`${selectedCountry} Flag`} />
             {truncateText(selectedCountry, 6)}
           </div>
         ) : (
@@ -74,14 +73,7 @@ const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({ flags, na
 
       {isOpen && (
         <ul className="absolute shadow-lg bg-white py-2 px-2 z-[1000] min-w-full w-max rounded max-h-96 overflow-auto">
-          <li className="mb-2">
-            <input
-              placeholder="Search..."
-              className="px-4 py-2.5 w-full rounded text-[#333] text-sm border-none outline-blue-600 bg-blue-50 focus:bg-transparent"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </li>
+
           {filteredNames.map((name, index) => (
             <li
               key={index}
@@ -90,7 +82,7 @@ const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({ flags, na
             >
               <div className="flex items-center">
                 <img src={flags[names.indexOf(name)]} className="w-6 mr-3" alt={`${name} Flag`} />
-                
+
                 {truncateText(name, 15)}
               </div>
             </li>

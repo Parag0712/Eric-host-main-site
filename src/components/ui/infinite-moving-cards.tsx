@@ -131,13 +131,13 @@ export const InfiniteMovingCards = ({
                                 aria-hidden="true"
                                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
                             ></div>
-                                <div className="relative z-20 mt-6  flex flex-row items-center">
-                                    <span className="flex flex-col gap-1">
-                                        <span className="font-bold text-sm md:text-lg leading-[1.6] text-black font-poppins">
-                                            {item.name}
-                                        </span>
+                            <div className="relative z-20 mt-6  flex flex-row items-center">
+                                <span className="flex flex-col gap-1">
+                                    <span className="font-bold text-sm md:text-lg leading-[1.6] text-black font-poppins">
+                                        {item.name}
                                     </span>
-                                </div>
+                                </span>
+                            </div>
 
                             <span className="relative z-20 sm:mb-3 text-sm md:text-lg leading-[1.6] text-black font-poppins">
                                 {item.testimonial}

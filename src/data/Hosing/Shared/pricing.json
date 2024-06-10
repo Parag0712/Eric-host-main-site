@@ -8,7 +8,7 @@
             "triannually": 39,
             "description": "Basic plan for shared hosting.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=33",
+            "href": "cart.php?a=add&pid=33",
             "features": [
                 {
                     "website": 1,
@@ -96,10 +96,6 @@
                     "description": "512 MB RAM"
                 },
                 {
-                    "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
-                },
-                {
                     "number of processes (nPROC)": 30,
                     "description": "30 number of processes (nPROC)"
                 },
@@ -121,7 +117,7 @@
             "triannually": 69,
             "description": "Standard plan for shared hosting.",
             "popular": false,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=3",
+            "href": "cart.php?a=add&pid=3",
             "features": [
                 {
                     "website": 5,
@@ -209,10 +205,6 @@
                     "description": "1 GB RAM"
                 },
                 {
-                    "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
-                },
-                {
                     "number of processes (nPROC)": 40,
                     "description": "40 number of processes (nPROC)"
                 },
@@ -234,7 +226,7 @@
             "triannually": 109,
             "description": "Professional plan for shared hosting.",
             "popular": true,
-            "href": "https://clients.erichost.com/cart.php?a=add&pid=4",
+            "href": "cart.php?a=add&pid=4",
             "features": [
                 {
                     "website": 10,
@@ -322,10 +314,6 @@
                 {
                     "ram": "1 GB",
                     "description": "1 GB RAM"
-                },
-                {
-                    "concurrent connections (EP)": 10,
-                    "description": "10 concurrent connections (EP)"
                 },
                 {
                     "number of processes (nPROC)": 50,

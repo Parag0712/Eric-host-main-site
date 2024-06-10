@@ -13,7 +13,7 @@ export { default as AIBased } from '../../../public/Creatives/49.png';
 
 export { default as CustomersLove } from '../../../public/Creatives/53.png';
 
-export { default as Faq } from '../../../public/Creatives/57.png';
+export { default as Faq } from '../../../public/Creatives/53.png';
 
 
 
