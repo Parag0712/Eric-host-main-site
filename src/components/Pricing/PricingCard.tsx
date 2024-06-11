@@ -51,8 +51,8 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                 key={plan.title}
                 className={
                     plan.popular === PopularPlanType.YES
-                        ? "drop-shadow-2xl shadow-top rounded-t-none  shadow-black/10 capitalize  rounded-b-2xl dark:shadow-white/10 sm:border-[2px] lg:border-primary bg-white transition-all duration-150  hover:shadow-xl  hover:lg:scale-[1.04]  lg:scale-[1.03]"
-                        : "drop-shadow-2xl shadow-top rounded-t-none shadow-black/10 capitalize   rounded-b-2xl transition-all duration-150 sm:border-[2px] lg:border-primary bg-white hover:shadow-xl  hover:lg:scale-[1.01] "
+                        ? "drop-shadow-2xl shadow-top rounded-t-none  shadow-black/10 capitalize  rounded-b-2xl dark:shadow-white/10   bg-slate-50 transition-all duration-150  hover:shadow-xl  hover:lg:scale-[1.04]  lg:scale-[1.03]"
+                        : "drop-shadow-2xl shadow-top rounded-t-none shadow-black/10 capitalize   rounded-b-2xl transition-all duration-150   bg-slate-50 hover:shadow-xl  hover:lg:scale-[1.01] "
                 }
             >
                 <CardHeader>
