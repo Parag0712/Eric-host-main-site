@@ -37,10 +37,11 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
             }, 300);
         }
     };
-
-    const { convertedAmount, currencySymbol } = useCurrencyConverter(PlanPrice);
+    
+    const { convertedAmount, currencySymbol,currencyCode } = useCurrencyConverter(PlanPrice);
     const { convertedAmount: convertedAmountMonthly } = useCurrencyConverter(plan.monthly);
 
+    
     return (
         <section className={`w-full min-w-[262px] md:min-w-[200px] mx-auto max-w-[430px] ${className}`} id={newId}>
             <div className='flex rounded-t-2xl bg-primary text-white justify-center'>
@@ -50,8 +51,8 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                 key={plan.title}
                 className={
                     plan.popular === PopularPlanType.YES
-                        ? "drop-shadow-2xl shadow-top rounded-t-none  shadow-black/10 capitalize  rounded-b-2xl dark:shadow-white/10 sm:border-[2px] border-primary bg-white transition-all duration-150  hover:shadow-xl  hover:lg:scale-[1.04]  lg:scale-[1.03]"
-                        : "drop-shadow-2xl shadow-top rounded-t-none shadow-black/10 capitalize   rounded-b-2xl transition-all duration-150 sm:border-[2px] border-primary bg-white hover:shadow-xl  hover:lg:scale-[1.01] "
+                        ? "drop-shadow-2xl shadow-top rounded-t-none  shadow-black/10 capitalize  rounded-b-2xl dark:shadow-white/10 sm:border-[2px] lg:border-primary bg-white transition-all duration-150  hover:shadow-xl  hover:lg:scale-[1.04]  lg:scale-[1.03]"
+                        : "drop-shadow-2xl shadow-top rounded-t-none shadow-black/10 capitalize   rounded-b-2xl transition-all duration-150 sm:border-[2px] lg:border-primary bg-white hover:shadow-xl  hover:lg:scale-[1.01] "
                 }
             >
                 <CardHeader>
@@ -123,7 +124,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                                 plan_price: PlanPrice
                             };
                             window.gtag("event", "order_item", planDetails)
-                        router.push(`${process.env.NEXT_PUBLIC_baseurl}${plan.href}&${process.env.NEXT_PUBLIC_}`)
+                            router.push(`${process.env.NEXT_PUBLIC_baseurl}${plan.href}&currency=${currencyCode == "INR"?1:2}&${process.env.NEXT_PUBLIC_}`)
 
                         }
                         }
@@ -146,7 +147,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                                             >
                                                 <Check className="text-green-500" />{" "}
                                                 <h3 className="text-sm lg:text-[17px] text-black font-[500] ml-2">{benefit.description}</h3>
-                                                
+
                                             </span>
                                         ))}
                                     </div>

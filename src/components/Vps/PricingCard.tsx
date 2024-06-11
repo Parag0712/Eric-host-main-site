@@ -13,7 +13,7 @@ const PricingCard = ({ plan }: any) => {
         YES = 1,
     }
     const router = useRouter();
-    const { convertedAmount, currencySymbol } = useCurrencyConverter(PlanPrice);
+    const { convertedAmount, currencySymbol,currencyCode } = useCurrencyConverter(PlanPrice);
     return (
 
         <Card
@@ -66,8 +66,8 @@ const PricingCard = ({ plan }: any) => {
                             plan_name: plan.title,
                             plan_price: PlanPrice
                         };
-                        window.gtag("event", "order_item", planDetails)
-                        router.push(`${process.env.NEXT_PUBLIC_baseurl}${plan.href}&${process.env.NEXT_PUBLIC_}`)
+                        window.gtag("event", "order_item", planDetails);
+                        router.push(`${process.env.NEXT_PUBLIC_baseurl}${plan.href}&currency=${currencyCode == "INR"?1:2}&${process.env.NEXT_PUBLIC_}`)
                     }
                     }
                     className={`rounded-[4px] my-6 w-full text-[16px] border-[1px] border-primary font-poppins py-5 ${plan.popular == 0 && "border-2 border-primary text-primary hover:text-primary"}`} variant={plan.popular == 0 ? "outline" : "default"} >Buy Now</Button>

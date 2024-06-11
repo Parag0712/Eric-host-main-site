@@ -4,7 +4,7 @@
             "title": "VPS-1",
             "monthly": 599,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=17",
+            "href": "cart.php?a=add&pid=17&currency=2",
             "features": [
                 {
                     "core": 1,
@@ -28,7 +28,7 @@
             "title": "VPS-2",
             "monthly": 899,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=38",
+            "href": "cart.php?a=add&pid=38",
             "features": [
                 {
                     "core": 1,
@@ -52,7 +52,7 @@
             "title": "VPS-3",
             "monthly": 1899,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=39",
+            "href": "cart.php?a=add&pid=39",
             "features": [
                 {
                     "core": 2,
@@ -77,7 +77,7 @@
             "monthly": 3499,
             "description": "high-performance for demanding applications",
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=40",
+            "href": "cart.php?a=add&pid=40",
             "features": [
                 {
                     "core": 4,
@@ -100,10 +100,9 @@
         {
             "title": "VPS-5",
             "monthly": 4999,
-         
             "description": "premium resources for large enterprises",
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=58",
+            "href": "cart.php?a=add&pid=58",
             "features": [
                 {
                     "core": 8,
@@ -127,7 +126,7 @@
             "title": "VPS-6",
             "monthly": 6499,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=69",
+            "href": "cart.php?a=add&pid=69",
             "features": [
                 {
                     "core": 8,
@@ -151,7 +150,7 @@
             "title": "VPS-7",
             "monthly": 6999,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=70",
+            "href": "cart.php?a=add&pid=70",
             "features": [
                 {
                     "core": 8,
@@ -175,7 +174,7 @@
             "title": "VPS-8",
             "monthly": 7999,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=59",
+            "href": "cart.php?a=add&pid=59",
             "features": [
                 {
                     "core": 8,
@@ -199,7 +198,7 @@
             "title": "VPS-9",
             "monthly": 9499,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=71",
+            "href": "cart.php?a=add&pid=71",
             "features": [
                 {
                     "core": 8,
@@ -223,7 +222,7 @@
             "title": "VPS-10",
             "monthly": 11499,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=72",
+            "href": "cart.php?a=add&pid=72",
             "features": [
                 {
                     "core": 8,
@@ -247,7 +246,7 @@
             "title": "VPS-11",
             "monthly": 12499,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=73",
+            "href": "cart.php?a=add&pid=73",
             "features": [
                 {
                     "core": 8,
@@ -271,7 +270,7 @@
             "title": "VPS-12",
             "monthly": 12999,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=74",
+            "href": "cart.php?a=add&pid=74",
             "features": [
                 {
                     "core": 8,
@@ -295,7 +294,7 @@
             "title": "VPS-13",
             "monthly": 15499,
             "popular": 0,
-            "href": "https://clients.erichost.com/cart.php?a=add&&pid=60",
+            "href": "cart.php?a=add&pid=60",
             "features": [
                 {
                     "core": 8,

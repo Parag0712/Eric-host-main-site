@@ -33,6 +33,7 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
 
             <div className="flex justify-center max-w-[18rem] xl:max-w-[20rem] m-auto mb-8 lg:mb-16 mt-8">
                 <div className="relative w-full sm:w-fit self-center bg-primary rounded-lg p-1 flex">
+
                     <button
                         type="button"
                         className={`px-[13px] ml-0.5 relative w-1/3 border rounded-md py-2 text-sm whitespace-nowrap focus:outline-none sm:w-auto sm:px-8 ${billingCycle === "triennial"
@@ -41,7 +42,7 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
                             }`}
                         onClick={() => setBillingCycle("triennial")}
                     >
-                        Triennial 
+                        Triennial
                     </button>
                     <button
                         type="button"
@@ -51,7 +52,7 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
                             }`}
                         onClick={() => setBillingCycle("annual")}
                     >
-                        Yearly 
+                        Yearly
                     </button>
                     <button
                         type="button"
@@ -61,7 +62,7 @@ export const Pricing = ({ data, title }: { data: any, title: string }) => {
                             }`}
                         onClick={() => setBillingCycle("monthly")}
                     >
-                        Monthly 
+                        Monthly
                     </button>
                 </div>
             </div>
