@@ -31,7 +31,7 @@ type PricingData = {
 };
 export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
 
-    const { convertedAmount, currencySymbol } = useCurrencyConverter(pricingData.price);
+    const { convertedAmount, currencySymbol,currencyCode } = useCurrencyConverter(pricingData.price);
 
     const router = useRouter();
     return (
@@ -231,7 +231,7 @@ export const HeroCards = ({ pricingData }: { pricingData: PricingData }) => {
                 </CardHeader>
 
                 <CardContent>
-                    <Button onClick={() => router.push(pricingData.href)} className="w-full rounded-lg ">{pricingData.buttonText}</Button>
+                    <Button onClick={() => router.push(`${process.env.NEXT_PUBLIC_baseurl}${pricingData.href}&currency=${currencyCode == "INR"?1:2}&${process.env.NEXT_PUBLIC_}`)} className="w-full rounded-lg ">{pricingData.buttonText}</Button>
                 </CardContent>
 
                 <hr className="w-4/5 m-auto mb-4" />

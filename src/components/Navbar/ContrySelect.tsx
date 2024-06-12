@@ -1,9 +1,10 @@
 "use client";
 import { updateCurrencyRate } from "@/store/CurrencySlice";
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import CountrySelectDropdown from "./CountrySelectDropdown";
 import countryData from "./countries.json";
+import { RootState } from "@/store/store";
 
 interface Country {
   label: string;
@@ -13,8 +14,9 @@ interface Country {
   flag?: string;
 }
 
-const CountrySelect = () => {
+const CountrySelect = ({isOpen,setIsOpen}:any) => {
   const dispatch = useDispatch();
+  const currency=  useSelector((state: RootState) => state);
   const [selectedCountry, setSelectedCountry] = useState<Country | null>({
     label: "India",
     value: "IN",
@@ -22,8 +24,8 @@ const CountrySelect = () => {
     currencySymbol: "₹",
     flag: "/images/india-flag.svg",
   });
-  const [currencyCode, setCurrencyCode] = useState<string>("INR");
-  const [currencySymbol, setCurrencySymbol] = useState<string>("₹");
+  const [currencyCode, setCurrencyCode] = useState<string>(currency.currencyCode);
+  const [currencySymbol, setCurrencySymbol] = useState<string>(currency.currencySymbol);
 
 
   useEffect(() => {
@@ -31,14 +33,16 @@ const CountrySelect = () => {
       const rate = currencyCode === "USD" ? 0.01197 : 1; // Static conversion rate: 1 INR = 0.01197 USD
       dispatch(updateCurrencyRate({ currencyRate: rate, currencyCode, currencySymbol }));
     }
-  }, [currencyCode, dispatch, currencySymbol]);
+  }, [currencyCode, currencySymbol]);
 
   return (
     <>
       <CountrySelectDropdown
         flags={countryData.map((country) => country.flag || '')}
         names={countryData.map((country) => country.label)}
-        defaultCountry={selectedCountry!}
+        currecy={countryData.map((country) => country.currency)}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
         onSelect={(selectedCountryName) => {
           const country = countryData.find((country) => country.label === selectedCountryName);
           if (country) {

@@ -114,7 +114,7 @@ export const bronzePricing = {
         "Free Ssl Certificate",
         "100 Sub-Domains",
     ],
-    href: "https://clients.erichost.com/cart.php?a=add&pid=8"
+    href: "cart.php?a=add&pid=8"
 };
 
 export const heroProps = {

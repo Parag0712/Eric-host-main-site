@@ -1,28 +1,32 @@
+import { RootState } from '@/store/store';
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 interface CountrySelectDropdownProps {
   flags: string[];
   names: string[];
-  defaultCountry?: {
-    label: string;
-    value: string;
-    currency?: string;
-    currencySymbol?: string;
-    flag?: string;
-  };
+  currecy: any[];
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
   onSelect: (country: string) => void;
 }
 
-const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({ flags, names, defaultCountry, onSelect }) => {
+const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({ flags, names, currecy, onSelect, isOpen: open, setIsOpen: setOpnen }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedCountry, setSelectedCountry] = useState('');
+  const currency = useSelector((state: RootState) => state);
+  const [selectedCountry, setSelectedCountry] = useState(currency.currencyCode == "INR" ? "India" : "United States");
+  const [selectedCurrency, setSelectedCurrency] = useState(currency.currencyCode);
   const [searchTerm, setSearchTerm] = useState('');
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleCountryClick = (name: string) => {
+  const handleCountryClick = (name: string, currecy: string) => {
+    if (setOpnen) {
+      setOpnen(false);
+    }
     setSelectedCountry(name);
+    setSelectedCurrency(currecy);
     onSelect(name);
     setIsOpen(false);
   };
@@ -42,21 +46,11 @@ const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({ flags, na
         className="py-1.5 px-0 md:px-5 md:py-2 flex items-center justify-center rounded w-full text-[#333] text-sm font-semibold border-2 border-blue-600 outline-none hover:bg-blue-50"
         onClick={toggleDropdown}
       >
-        {selectedCountry ? (
-          <div className="flex items-center">
-            <img src={flags[names.indexOf(selectedCountry)]} className="w-6 mr-3" alt={`${selectedCountry} Flag`} />
-            {truncateText(selectedCountry, 6)}
-          </div>
-        ) : (
-          <div className="flex items-center">
-            {
-              defaultCountry?.flag !== "" && (
-                <img src={flags[names.indexOf(defaultCountry?.label!)]} className="w-6 mr-3" alt={`${defaultCountry?.label} Flag`} />
-              )
-            }
-            {truncateText(defaultCountry?.label!, 15)}
-          </div>
-        )}
+        <div className="flex items-center">
+          <img src={flags[names.indexOf(selectedCountry)]} className="w-6 mr-3" alt={`${selectedCountry} Flag`} />
+          {truncateText(selectedCurrency, 6)}
+        </div>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-3 fill-[#333] relative top-[2px] inline ml-3"
@@ -78,12 +72,12 @@ const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({ flags, na
             <li
               key={index}
               className="py-2.5 px-4 hover:bg-blue-50 rounded text-black text-sm cursor-pointer"
-              onClick={() => handleCountryClick(name)}
+              onClick={() => handleCountryClick(name, currecy[index])}
             >
               <div className="flex items-center">
                 <img src={flags[names.indexOf(name)]} className="w-6 mr-3" alt={`${name} Flag`} />
 
-                {truncateText(name, 15)}
+                {truncateText(currecy[index], 15)}
               </div>
             </li>
           ))}

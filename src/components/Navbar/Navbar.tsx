@@ -37,9 +37,10 @@ export const Navbar = () => {
             } else {
                 setIsVisible(link.text); // Open the clicked menu
             }
-        },
+        },  
         [isVisible, setIsOpen]
     );
+
     // Render Nav Links
     const renderNavLink = (link: any) => (
         <Link
@@ -93,6 +94,7 @@ export const Navbar = () => {
                                         className={cn(buttonVariants({ variant: "ghost", className: "text-left items-start" }), "text-[15px] w-[100%]")}
                                         onClick={(e) => {
                                             setIsOpen(false);
+                                            handleClick(link);
                                         }}
                                     >
                                         {subLink.title}
@@ -151,7 +153,11 @@ export const Navbar = () => {
                                                 </li>
                                             ))}
                                             <li className="w-full">
-                                                <ContrySelect />
+                                                <ContrySelect 
+                                                    isOpen={isOpen}
+                                                    setIsOpen={setIsOpen}
+                                                
+                                                />
                                             </li>
                                         </ul>
                                     </nav>
