@@ -5,12 +5,13 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import SmallHeading from "../Heading/SmallHeading";
+import Container from "../Conatianers/Container";
 
 export const FAQ = ({ faq }: any) => {
     return (
-        <section
+        <Container
             id="faq"
-            className="container py-20   "
+            className=" py-20   "
         >
             <SmallHeading
                 headingContent={
@@ -53,6 +54,6 @@ export const FAQ = ({ faq }: any) => {
                     Contact us
                 </a>
             </h3>
-        </section>
+        </Container>
     );
 };

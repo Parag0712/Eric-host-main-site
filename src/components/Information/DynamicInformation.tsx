@@ -27,7 +27,7 @@ const DynamicInformation = ({ title, subtitle, paragraphs, buttonText, href }: P
             {/* End Gradients */}
 
             <div className="relative z-10">
-                <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+                <div className=" mx-auto sm:px-6 lg:px-8 py-10 lg:py-16">
                     <div className=" text-center mx-auto">
                         {/* Title */}
                         <div className="mt-5">
@@ -47,7 +47,7 @@ const DynamicInformation = ({ title, subtitle, paragraphs, buttonText, href }: P
 
                         <div className="mt-6 space-y-4">
                             {paragraphs.map((paragraph, index) => {
-                                return <p key={index} className="text-lg lg:text-xl text-gray-600 ">{paragraph}</p>
+                                return <p key={index} className="text-sm lg:text-xl text-gray-600 ">{paragraph}</p>
                             })}
                         </div>
 

@@ -34,7 +34,7 @@ const DynamicInfo2 = ({ title, subtitle, paragraphs, buttonText,href }: Props) =
             <div className="text-center flex flex-col gap-5  md:gap-7">
                 {/* Render paragraphs */}
                 {paragraphs.map((paragraph, index) => (
-                    <p key={index} className="w-full mx-auto text-sm md:text-xl text-ericheading">{paragraph}</p>
+                    <p key={index} className="w-full mx-auto text-sm md:text-, text-ericheading">{paragraph}</p>
                 ))}
             </div>
             <div className="flex justify-center mt-2">
