@@ -72,7 +72,7 @@ const hosting: FeatureProps[] = [
 ];
 export const FeaturedHosting = () => {
     const router = useRouter();
-    const { currencyCode, currencyRate, currencySymbol } = useSelector((state: RootState) => state);
+    const { currencyRate, currencySymbol } = useSelector((state: RootState) => state.reducer);
 
     return (
         <Container

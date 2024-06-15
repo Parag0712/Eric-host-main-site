@@ -7,7 +7,7 @@ const CountdownTimer = () => {
 
   useEffect(() => {
     const storedTargetDate = localStorage.getItem('targetDate');
-    let countdownInterval:any;
+    let countdownInterval:any = 0;
 
     if (storedTargetDate) {
       const targetDate = new Date(storedTargetDate);

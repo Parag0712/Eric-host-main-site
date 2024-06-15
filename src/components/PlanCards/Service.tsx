@@ -36,7 +36,6 @@ export const Services: FC<ServicesProps> = ({
     customElements,
     shouldBePurple
 }) => {
-    const router = useRouter();
     
     const handleClick = (e: FormEvent) => {
         e.preventDefault();
@@ -67,7 +66,7 @@ export const Services: FC<ServicesProps> = ({
                     {
                         offertitle && (
                             <div className="mt-3">
-                                <h3 className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text text-lg md:text-xl text-inherit `}>
+                                <h3 className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] bg-clip-text text-lg md:text-xl text-inherit `}>
                                     {offertitle}
                                 </h3>
                                 <ul className="pl-2 mt-1" style={{ listStyleType: "disc" }}>
