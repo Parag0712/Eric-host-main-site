@@ -5,6 +5,7 @@ import { FC, ReactNode } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Button } from "../ui/button";
 import Container from "../Conatianers/Container";
+import useCurrencyConverter from "@/Hooks/useCurrencyConverter";
 
 interface ServicesProps {
     title: ReactNode;
@@ -35,9 +36,10 @@ export const InstructionCard: FC<ServicesProps> = ({
     instructionNumber,
     customElements
 }) => {
+    const {currencyCode} = useCurrencyConverter(10);
     const router = useRouter();
     return (
-        <Container className=" py-16 sm:py-16">
+        <Container id="domainregister" className=" py-16 sm:py-16">
             <div className={`grid ${reversecard ? "md:grid-cols-[1fr,1.2fr]" : "lg:grid-cols-[1.2fr,1fr]"}  lg:grid-cols-2  gap-8 place-items-center ${textwhite ? "text-white" : ""}`} >
                 <div className={`order-2 ${reversecard ? "" : "lg:order-1"}`}>
                     <p className={`bg-gradient-to-b font-semibold from-[#4346C2]/70 to-[#4346C2] text-transparent bg-clip-text  md:text-[20px] mb-2 ${textwhite ? "text-white" : ""}`}>
@@ -76,7 +78,7 @@ export const InstructionCard: FC<ServicesProps> = ({
                     </div>
                     <div>
                         <Button
-                            onClick={() => router.push(buttonLink)}
+                            onClick={() => router.push(`${process.env.NEXT_PUBLIC_baseurl}${buttonLink}&currency=${currencyCode === "USD" ? 2 : 1}`)}
                             className="rounded-[4px] w-[200px] mt-1  md:mt-6 text-[14px] md:text-[16px] font-semibold mx-auto py-4 md:py-5 px-4 text-white bg-green-500 hover:bg-green-600">
                             {buttonText}
                         </Button>

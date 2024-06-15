@@ -15,7 +15,7 @@ const Testimonial = (props: Props) => {
                     direction="right"
                     speed="slow"
                 />
-               
+
             </div>
             <NewTestimonials 
                     testimonials={testimonials.testimonials}

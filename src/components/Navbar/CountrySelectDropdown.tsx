@@ -12,7 +12,7 @@ interface CountrySelectDropdownProps {
 
 const CountrySelectDropdown: React.FC<CountrySelectDropdownProps> = ({ flags, names, currecy, onSelect, isOpen: open, setIsOpen: setOpnen }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const currency = useSelector((state: RootState) => state);
+  const currency = useSelector((state: RootState) => state.reducer);
   const [selectedCountry, setSelectedCountry] = useState(currency.currencyCode == "INR" ? "India" : "United States");
   const [selectedCurrency, setSelectedCurrency] = useState(currency.currencyCode);
   const [searchTerm, setSearchTerm] = useState('');

@@ -9,7 +9,7 @@ export const servicesProps = [
             "Once you have everything you need, perform these 4 simple steps, to Register .",
         ],
         buttonText: "Register Domain",
-        buttonLink: "https://clients.erichost.com/cart.php?a=add&domain=register",
+        buttonLink: "cart.php?a=add&domain=register",
         imageSrc: teamstronger,
         imageAlt: "Card Image",
         reversecard: false,
@@ -28,7 +28,7 @@ export const servicesProps = [
             "Transform your online presence with our streamlined domain registration process. Register your domains quickly and securely with minimal effort. Benefit from our high success rate and top-notch support."
         ],
         buttonText: "Register Domain",
-        buttonLink: "https://clients.erichost.com/cart.php?a=add&domain=register",
+        buttonLink: "#domainregister",
         imageSrc: cloudhosting_about,
         reversecard: true,
         imageAlt: "Domain Registration Success"
@@ -40,7 +40,7 @@ export const servicesProps = [
             "Manage your domains effortlessly with our user-friendly interfaces. Benefit from superior tools designed for easy domain management and registration. Experience high standards in domain services with our platform."
         ],
         buttonText: "Register Domain",
-        buttonLink: "https://clients.erichost.com/cart.php?a=add&domain=register",
+        buttonLink: "#domainregister",
         imageSrc: managemnet,
         imageAlt: "Domain Management"
     }
@@ -53,7 +53,7 @@ export const support = {
         "With Erichost hosting you will get quality support for all your server related issues !"
     ],
     buttonText: "We're Here to Help You",
-    buttonLink: "/",
+    buttonLink: "#domainregister",
     imageSrc: Faq,
     imageAlt: "Card Image",
 }
@@ -64,5 +64,5 @@ export const heroSectionContent = {
     description:"Web hosting made easy & affordable, choose a fine-tuned web hosting services solution for successful personal and business websites.",
     label:"Search article",
     placeholder:"Register your Domain",
-    redirectBaseUrl:"https://clients.erichost.com/cart.php?a=add&domain=register",
+    redirectBaseUrl:"cart.php?a=add&domain=register",
 }

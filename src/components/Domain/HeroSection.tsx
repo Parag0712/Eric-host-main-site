@@ -1,4 +1,5 @@
 "use client"
+import useCurrencyConverter from '@/Hooks/useCurrencyConverter';
 import React, { useState } from 'react';
 
 type Props = {
@@ -11,15 +12,9 @@ type Props = {
 
 const HeroSection = ({ title, description, label, placeholder, redirectBaseUrl }: Props) => {
   const [searchTerm, setSearchTerm] = useState('');
-
+  const {currencyCode} = useCurrencyConverter(10);
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchTerm(e.target.value);
-  };
-
-  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const url = `${redirectBaseUrl}?search=${encodeURIComponent(searchTerm)}`;
-    window.location.href = url;
   };
 
   return (
@@ -45,7 +40,7 @@ const HeroSection = ({ title, description, label, placeholder, redirectBaseUrl }
               </div>
               {/* <!-- Buttons --> */}
               <div className="mt-8 gap-3">
-                <form className="w-[80%] md:w-[60%] mx-auto" action={redirectBaseUrl}  method="post">
+                <form className="w-[80%] md:w-[60%] mx-auto" action={`${process.env.NEXT_PUBLIC_baseurl}${redirectBaseUrl}&currency=${currencyCode === "USD" ? 2 : 1}`}  method="post">
                   <div className="relative z-10 flex space-x-3 p-1 md:p-2 bg-white border rounded-lg shadow-lg dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-gray-900/20">
                     <div className="flex-[1_0_0%]">
                       <label htmlFor="hs-search-article-1" className="block text-sm text-gray-700 font-medium dark:text-white">

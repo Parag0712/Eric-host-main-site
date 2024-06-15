@@ -9,7 +9,7 @@ export const servicesProps = [
             "Once you have everything you need, perform these 4 simple steps, ti transfer your domain with us.",
         ],
         buttonText: "Transfer Domain",
-        buttonLink: "https://clients.erichost.com/cart.php?a=add&domain=transfer",
+        buttonLink: "cart.php?a=add&domain=transfer",
         imageSrc: teamstronger,
         imageAlt: "Card Image",
         reversecard: false,
@@ -28,7 +28,7 @@ export const servicesProps = [
             "Phosfluorescently fashion front-end web-readiness vis-a-vis robust fabricate scalable web-readiness technologies.",
         ],
         buttonText: "Transfer Domain",
-        buttonLink: "https://clients.erichost.com/cart.php?a=add&domain=transfer",
+        buttonLink: "cart.php?a=add&domain=transfer",
         imageSrc: teamstronger,
         imageAlt: "Card Image",
         reversecard: true,
@@ -50,5 +50,5 @@ export const heroSectionContent = {
     description:"Web hosting made easy & affordable, choose a fine-tuned web hosting services solution for successful personal and business websites.",
     label:"Search Domain",
     placeholder:"Transfer your Domain",
-    redirectBaseUrl:"https://clients.erichost.com/cart.php?a=add&domain=transfer"
+    redirectBaseUrl:"cart.php?a=add&domain=transfer"
 }

@@ -16,7 +16,7 @@ interface Country {
 
 const CountrySelect = ({isOpen,setIsOpen}:any) => {
   const dispatch = useDispatch();
-  const currency=  useSelector((state: RootState) => state);
+  const currency=  useSelector((state: RootState) => state.reducer);
   const [selectedCountry, setSelectedCountry] = useState<Country | null>({
     label: "India",
     value: "IN",

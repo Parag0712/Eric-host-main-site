@@ -37,11 +37,11 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
             }, 300);
         }
     };
-    
-    const { convertedAmount, currencySymbol,currencyCode } = useCurrencyConverter(PlanPrice);
+
+    const { convertedAmount, currencySymbol, currencyCode } = useCurrencyConverter(PlanPrice);
     const { convertedAmount: convertedAmountMonthly } = useCurrencyConverter(plan.monthly);
 
-    
+
     return (
         <section className={`w-full min-w-[262px] md:min-w-[200px] mx-auto max-w-[430px] ${className}`} id={newId}>
             <div className='flex rounded-t-2xl bg-primary text-white justify-center'>
@@ -124,7 +124,7 @@ const PricingCard = ({ plan, billingCycle, isAnnual, showMore, handleShowMore, c
                                 plan_price: PlanPrice
                             };
                             window.gtag("event", "order_item", planDetails)
-                            router.push(`${process.env.NEXT_PUBLIC_baseurl}${plan.href}&currency=${currencyCode == "INR"?1:2}&${process.env.NEXT_PUBLIC_}`)
+                            router.push(`${process.env.NEXT_PUBLIC_baseurl}${plan.href}&currency=${currencyCode == "INR" ? 1 : 2}&${process.env.NEXT_PUBLIC_}`)
 
                         }
                         }

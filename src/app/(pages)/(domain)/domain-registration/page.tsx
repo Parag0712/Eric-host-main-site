@@ -24,7 +24,7 @@ const domainregistration = (props: Props) => {
         />
       </div>
       <FeaturedDomain />
-
+      
       <section className="bg-[#F2F3FF]">
         <Services
           {...servicesProps[1]}
