@@ -29,7 +29,7 @@ export default function RootLayout({
       </head>
 
       {/* Body */}
-      <body className={cn("scroll-smooth  font-poppins ", inter.className, {
+      <body className={cn("font-poppins ", inter.className, {
         "debug-screens": process.env.NODE_ENV === "development",
       })}>
         <StoreProvider>

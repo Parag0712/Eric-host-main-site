@@ -41,7 +41,7 @@ export const Services: FC<ServicesProps> = ({
         e.preventDefault();
         const target = document.querySelector(buttonLink);
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            target.scrollIntoView({behavior:'smooth',  block: 'start' });
         }
     };
     return (
