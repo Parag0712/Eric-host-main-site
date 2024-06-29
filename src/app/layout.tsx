@@ -7,11 +7,28 @@ import "./globals.css";
 import Script from "next/script";
 import StoreProvider from "./StoreProvider";
 const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "Best Affordable and Reliable Web Hosting Provider in India | EricHost",
   description: "Best Affordable and Reliable Web Hosting Provider in India | EricHost",
   keywords: "Web Hosting, Affordable Hosting, Reliable Hosting, EricHost, Hosting Provider, India",
+  icons: {
+    icon: "/favicon.png",
+  },
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+  alternates: {
+    canonical: "http://erichost.com/",
+  },
+  openGraph: {
+    locale: "en_US",
+    type: "website",
+    title: "Home",
+    description: "Best Affordable and Reliable Web Hosting Provider in India | EricHost",
+    url: "http://erichost.com/",
+    siteName: "erichost",
+  },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,15 +50,15 @@ export default function RootLayout({
         "debug-screens": process.env.NODE_ENV === "development",
       })}>
         <StoreProvider>
-        <header className="sticky-navbar">
-          <Navbar />
-        </header>
-        <main>
-          {children}
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+          <header className="sticky-navbar">
+            <Navbar />
+          </header>
+          <main>
+            {children}
+          </main>
+          <footer>
+            <Footer />
+          </footer>
         </StoreProvider>
       </body>
 
